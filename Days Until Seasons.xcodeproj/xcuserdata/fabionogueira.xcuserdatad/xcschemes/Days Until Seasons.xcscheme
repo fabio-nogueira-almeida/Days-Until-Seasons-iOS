@@ -34,6 +34,20 @@
                ReferencedContainer = "container:Days Until Seasons.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7052814E1ACB841F0099A80D"
+               BuildableName = "DUSFrameworkTests.xctest"
+               BlueprintName = "DUSFrameworkTests"
+               ReferencedContainer = "container:Days Until Seasons.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "705280DC1ACB718D0099A80D"
                BuildableName = "Days Until SeasonsTests.xctest"
                BlueprintName = "Days Until SeasonsTests"
+               ReferencedContainer = "container:Days Until Seasons.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7052814E1ACB841F0099A80D"
+               BuildableName = "DUSFrameworkTests.xctest"
+               BlueprintName = "DUSFrameworkTests"
                ReferencedContainer = "container:Days Until Seasons.xcodeproj">
             </BuildableReference>
          </TestableReference>

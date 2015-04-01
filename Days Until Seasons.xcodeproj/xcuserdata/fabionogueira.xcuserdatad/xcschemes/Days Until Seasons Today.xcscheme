@@ -35,6 +35,20 @@
                ReferencedContainer = "container:Days Until Seasons.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7052814E1ACB841F0099A80D"
+               BuildableName = "DUSFrameworkTests.xctest"
+               BlueprintName = "DUSFrameworkTests"
+               ReferencedContainer = "container:Days Until Seasons.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -43,13 +57,23 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7052814E1ACB841F0099A80D"
+               BuildableName = "DUSFrameworkTests.xctest"
+               BlueprintName = "DUSFrameworkTests"
+               ReferencedContainer = "container:Days Until Seasons.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "705281061ACB73210099A80D"
-            BuildableName = "Days Until Seasons Today.appex"
-            BlueprintName = "Days Until Seasons Today"
+            BlueprintIdentifier = "705280C31ACB718D0099A80D"
+            BuildableName = "Days Until Seasons.app"
+            BlueprintName = "Days Until Seasons"
             ReferencedContainer = "container:Days Until Seasons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

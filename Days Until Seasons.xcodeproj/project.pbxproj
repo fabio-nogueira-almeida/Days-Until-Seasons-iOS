@@ -25,6 +25,11 @@
 		7052812A1ACB74140099A80D /*  WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 705281291ACB74140099A80D /*  WatchKit App.app */; };
 		705281321ACB74140099A80D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 705281301ACB74140099A80D /* Interface.storyboard */; };
 		705281371ACB74140099A80D /*  WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7052811A1ACB74140099A80D /*  WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7052814A1ACB841F0099A80D /* DUSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 705281491ACB841F0099A80D /* DUSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		705281501ACB841F0099A80D /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
+		705281591ACB84200099A80D /* DUSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705281581ACB84200099A80D /* DUSFrameworkTests.swift */; };
+		7052815C1ACB84200099A80D /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
+		7052815D1ACB84200099A80D /* DUSFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,27 @@
 			remoteGlobalIDString = 705281191ACB74140099A80D;
 			remoteInfo = " WatchKit Extension";
 		};
+		705281511ACB841F0099A80D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 705281441ACB841F0099A80D;
+			remoteInfo = DUSFramework;
+		};
+		705281531ACB84200099A80D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 705280C31ACB718D0099A80D;
+			remoteInfo = "Days Until Seasons";
+		};
+		7052815A1ACB84200099A80D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 705281441ACB841F0099A80D;
+			remoteInfo = DUSFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +95,17 @@
 				705281371ACB74140099A80D /*  WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		705281611ACB84200099A80D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7052815D1ACB84200099A80D /* DUSFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -102,6 +139,12 @@
 		705281291ACB74140099A80D /*  WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = " WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7052812F1ACB74140099A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705281311ACB74140099A80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		705281451ACB841F0099A80D /* DUSFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DUSFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		705281481ACB841F0099A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		705281491ACB841F0099A80D /* DUSFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DUSFramework.h; sourceTree = "<group>"; };
+		7052814F1ACB841F0099A80D /* DUSFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DUSFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		705281571ACB84200099A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		705281581ACB84200099A80D /* DUSFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUSFrameworkTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7052815C1ACB84200099A80D /* DUSFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +178,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		705281411ACB841F0099A80D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7052814C1ACB841F0099A80D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				705281501ACB841F0099A80D /* DUSFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -145,6 +204,8 @@
 				705281091ACB73210099A80D /* Days Until Seasons Today */,
 				7052811B1ACB74140099A80D /*  WatchKit Extension */,
 				7052812D1ACB74140099A80D /*  WatchKit App */,
+				705281461ACB841F0099A80D /* DUSFramework */,
+				705281551ACB84200099A80D /* DUSFrameworkTests */,
 				705280F21ACB73020099A80D /* Frameworks */,
 				705280C51ACB718D0099A80D /* Products */,
 			);
@@ -158,6 +219,8 @@
 				705281071ACB73210099A80D /* Days Until Seasons Today.appex */,
 				7052811A1ACB74140099A80D /*  WatchKit Extension.appex */,
 				705281291ACB74140099A80D /*  WatchKit App.app */,
+				705281451ACB841F0099A80D /* DUSFramework.framework */,
+				7052814F1ACB841F0099A80D /* DUSFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,7 +330,52 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		705281461ACB841F0099A80D /* DUSFramework */ = {
+			isa = PBXGroup;
+			children = (
+				705281491ACB841F0099A80D /* DUSFramework.h */,
+				705281471ACB841F0099A80D /* Supporting Files */,
+			);
+			path = DUSFramework;
+			sourceTree = "<group>";
+		};
+		705281471ACB841F0099A80D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				705281481ACB841F0099A80D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		705281551ACB84200099A80D /* DUSFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				705281581ACB84200099A80D /* DUSFrameworkTests.swift */,
+				705281561ACB84200099A80D /* Supporting Files */,
+			);
+			path = DUSFrameworkTests;
+			sourceTree = "<group>";
+		};
+		705281561ACB84200099A80D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				705281571ACB84200099A80D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		705281421ACB841F0099A80D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7052814A1ACB841F0099A80D /* DUSFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		705280C31ACB718D0099A80D /* Days Until Seasons */ = {
@@ -278,12 +386,14 @@
 				705280C11ACB718D0099A80D /* Frameworks */,
 				705280C21ACB718D0099A80D /* Resources */,
 				705281021ACB73020099A80D /* Embed App Extensions */,
+				705281611ACB84200099A80D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				705281111ACB73210099A80D /* PBXTargetDependency */,
 				705281361ACB74140099A80D /* PBXTargetDependency */,
+				7052815B1ACB84200099A80D /* PBXTargetDependency */,
 			);
 			name = "Days Until Seasons";
 			productName = "Days Until Seasons";
@@ -358,6 +468,43 @@
 			productReference = 705281291ACB74140099A80D /*  WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp";
 		};
+		705281441ACB841F0099A80D /* DUSFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7052815E1ACB84200099A80D /* Build configuration list for PBXNativeTarget "DUSFramework" */;
+			buildPhases = (
+				705281401ACB841F0099A80D /* Sources */,
+				705281411ACB841F0099A80D /* Frameworks */,
+				705281421ACB841F0099A80D /* Headers */,
+				705281431ACB841F0099A80D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DUSFramework;
+			productName = DUSFramework;
+			productReference = 705281451ACB841F0099A80D /* DUSFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7052814E1ACB841F0099A80D /* DUSFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 705281621ACB84200099A80D /* Build configuration list for PBXNativeTarget "DUSFrameworkTests" */;
+			buildPhases = (
+				7052814B1ACB841F0099A80D /* Sources */,
+				7052814C1ACB841F0099A80D /* Frameworks */,
+				7052814D1ACB841F0099A80D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				705281521ACB841F0099A80D /* PBXTargetDependency */,
+				705281541ACB84200099A80D /* PBXTargetDependency */,
+			);
+			name = DUSFrameworkTests;
+			productName = DUSFrameworkTests;
+			productReference = 7052814F1ACB841F0099A80D /* DUSFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -386,6 +533,13 @@
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = C7Q44C43S9;
 					};
+					705281441ACB841F0099A80D = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					7052814E1ACB841F0099A80D = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 705280C31ACB718D0099A80D;
+					};
 				};
 			};
 			buildConfigurationList = 705280BF1ACB718D0099A80D /* Build configuration list for PBXProject "Days Until Seasons" */;
@@ -406,6 +560,8 @@
 				705281061ACB73210099A80D /* Days Until Seasons Today */,
 				705281191ACB74140099A80D /*  WatchKit Extension */,
 				705281281ACB74140099A80D /*  WatchKit App */,
+				705281441ACB841F0099A80D /* DUSFramework */,
+				7052814E1ACB841F0099A80D /* DUSFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -453,6 +609,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		705281431ACB841F0099A80D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7052814D1ACB841F0099A80D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -492,6 +662,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		705281401ACB841F0099A80D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7052814B1ACB841F0099A80D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				705281591ACB84200099A80D /* DUSFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -514,6 +699,21 @@
 			isa = PBXTargetDependency;
 			target = 705281191ACB74140099A80D /*  WatchKit Extension */;
 			targetProxy = 705281351ACB74140099A80D /* PBXContainerItemProxy */;
+		};
+		705281521ACB841F0099A80D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 705281441ACB841F0099A80D /* DUSFramework */;
+			targetProxy = 705281511ACB841F0099A80D /* PBXContainerItemProxy */;
+		};
+		705281541ACB84200099A80D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 705280C31ACB718D0099A80D /* Days Until Seasons */;
+			targetProxy = 705281531ACB84200099A80D /* PBXContainerItemProxy */;
+		};
+		7052815B1ACB84200099A80D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 705281441ACB841F0099A80D /* DUSFramework */;
+			targetProxy = 7052815A1ACB84200099A80D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -765,6 +965,81 @@
 			};
 			name = Release;
 		};
+		7052815F1ACB84200099A80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DUSFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		705281601ACB84200099A80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DUSFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		705281631ACB84200099A80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DUSFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Days Until Seasons.app/Days Until Seasons";
+			};
+			name = Debug;
+		};
+		705281641ACB84200099A80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DUSFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Days Until Seasons.app/Days Until Seasons";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -816,6 +1091,22 @@
 			buildConfigurations = (
 				7052813C1ACB74150099A80D /* Debug */,
 				7052813D1ACB74150099A80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7052815E1ACB84200099A80D /* Build configuration list for PBXNativeTarget "DUSFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7052815F1ACB84200099A80D /* Debug */,
+				705281601ACB84200099A80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		705281621ACB84200099A80D /* Build configuration list for PBXNativeTarget "DUSFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				705281631ACB84200099A80D /* Debug */,
+				705281641ACB84200099A80D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
