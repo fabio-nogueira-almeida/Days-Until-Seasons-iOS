@@ -4,10 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key> WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Days Until Seaons.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Days Until Seasons Today.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Days Until Seasons.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Glance -  WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Notification -  WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +43,21 @@
 			<true/>
 		</dict>
 		<key>705280DC1ACB718D0099A80D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>705280F01ACB73010099A80D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>705281061ACB73210099A80D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>705281281ACB74140099A80D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
