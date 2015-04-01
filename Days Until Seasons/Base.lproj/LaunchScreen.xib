@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6214" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6207"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,31 +11,71 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Fábio Nogueira de Almeida. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days Until Seasons" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="140" width="441" height="43"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6O1-Wa-bny">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spring" translatesAutoresizingMaskIntoConstraints="NO" id="sp5-s6-BW0">
+                    <rect key="frame" x="8" y="8" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="CQf-XL-Jyw"/>
+                        <constraint firstAttribute="width" constant="160" id="mIX-V0-uMj"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="summer" translatesAutoresizingMaskIntoConstraints="NO" id="EbZ-uh-Jg7">
+                    <rect key="frame" x="312" y="8" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="CvP-oq-EGU"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winter" translatesAutoresizingMaskIntoConstraints="NO" id="mab-4l-cyt">
+                    <rect key="frame" x="312" y="312" width="160" height="160"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="autumn" translatesAutoresizingMaskIntoConstraints="NO" id="TQr-sX-fCd">
+                    <rect key="frame" x="8" y="312" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="Adl-Eg-YwW"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loop" translatesAutoresizingMaskIntoConstraints="NO" id="gCp-23-dcM">
+                    <rect key="frame" x="160" y="160" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="JuY-qe-Bon"/>
+                        <constraint firstAttribute="width" constant="160" id="fpX-4t-caC"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="5cJ-9S-tgC"/>
-                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstItem="EbZ-uh-Jg7" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="3nN-db-tUN"/>
+                <constraint firstItem="EbZ-uh-Jg7" firstAttribute="top" secondItem="sp5-s6-BW0" secondAttribute="top" id="5jf-BT-AbI"/>
+                <constraint firstItem="EbZ-uh-Jg7" firstAttribute="trailing" secondItem="mab-4l-cyt" secondAttribute="trailing" id="Bfb-iJ-BIl"/>
+                <constraint firstAttribute="trailing" secondItem="6O1-Wa-bny" secondAttribute="trailing" id="MbZ-dT-jjV"/>
+                <constraint firstItem="6O1-Wa-bny" firstAttribute="centerX" secondItem="gCp-23-dcM" secondAttribute="centerX" id="OCt-Al-mHs"/>
+                <constraint firstItem="TQr-sX-fCd" firstAttribute="leading" secondItem="sp5-s6-BW0" secondAttribute="leading" id="Q8D-5a-sX1"/>
+                <constraint firstItem="sp5-s6-BW0" firstAttribute="trailing" secondItem="TQr-sX-fCd" secondAttribute="trailing" id="ZZn-Ab-l1a"/>
+                <constraint firstItem="gCp-23-dcM" firstAttribute="centerY" secondItem="6O1-Wa-bny" secondAttribute="centerY" id="bbm-M0-zDE"/>
+                <constraint firstItem="mab-4l-cyt" firstAttribute="bottom" secondItem="TQr-sX-fCd" secondAttribute="bottom" id="cPX-NT-TxK"/>
+                <constraint firstItem="EbZ-uh-Jg7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="cWD-Vl-AN8"/>
+                <constraint firstItem="6O1-Wa-bny" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="diQ-NC-Zlj"/>
+                <constraint firstItem="mab-4l-cyt" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="e8E-aa-HHQ"/>
+                <constraint firstAttribute="bottom" secondItem="6O1-Wa-bny" secondAttribute="bottom" id="fCQ-83-I73"/>
+                <constraint firstItem="EbZ-uh-Jg7" firstAttribute="bottom" secondItem="sp5-s6-BW0" secondAttribute="bottom" id="i3d-bZ-tHa"/>
+                <constraint firstItem="mab-4l-cyt" firstAttribute="leading" secondItem="EbZ-uh-Jg7" secondAttribute="leading" id="n44-QS-N1h"/>
+                <constraint firstItem="6O1-Wa-bny" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="p5o-Dh-38D"/>
+                <constraint firstItem="sp5-s6-BW0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="rbf-fb-qm9"/>
+                <constraint firstItem="mab-4l-cyt" firstAttribute="top" secondItem="TQr-sX-fCd" secondAttribute="top" id="toz-l0-Peg"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
+    <resources>
+        <image name="autumn" width="267" height="267"/>
+        <image name="fundo_logo" width="1024" height="1024"/>
+        <image name="loop" width="200" height="200"/>
+        <image name="spring" width="268" height="256"/>
+        <image name="summer" width="270" height="271"/>
+        <image name="winter" width="268" height="304"/>
+    </resources>
 </document>
