@@ -414,6 +414,7 @@
 				705280E91ACB718D0099A80D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		705280EA1ACB718D0099A80D /* Build configuration list for PBXNativeTarget "Days Until SeasonsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				705280EC1ACB718D0099A80D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
