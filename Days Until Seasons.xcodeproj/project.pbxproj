@@ -24,7 +24,6 @@
 		705281261ACB74140099A80D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705281251ACB74140099A80D /* Images.xcassets */; };
 		7052812A1ACB74140099A80D /*  WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 705281291ACB74140099A80D /*  WatchKit App.app */; };
 		705281321ACB74140099A80D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 705281301ACB74140099A80D /* Interface.storyboard */; };
-		705281341ACB74140099A80D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705281331ACB74140099A80D /* Images.xcassets */; };
 		705281371ACB74140099A80D /*  WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7052811A1ACB74140099A80D /*  WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -103,7 +102,6 @@
 		705281291ACB74140099A80D /*  WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = " WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7052812F1ACB74140099A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705281311ACB74140099A80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		705281331ACB74140099A80D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,7 +254,6 @@
 			isa = PBXGroup;
 			children = (
 				705281301ACB74140099A80D /* Interface.storyboard */,
-				705281331ACB74140099A80D /* Images.xcassets */,
 				7052812E1ACB74140099A80D /* Supporting Files */,
 			);
 			path = " WatchKit App";
@@ -379,12 +376,15 @@
 					};
 					705281061ACB73210099A80D = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = C7Q44C43S9;
 					};
 					705281191ACB74140099A80D = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = C7Q44C43S9;
 					};
 					705281281ACB74140099A80D = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = C7Q44C43S9;
 					};
 				};
 			};
@@ -450,7 +450,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				705281321ACB74140099A80D /* Interface.storyboard in Resources */,
-				705281341ACB74140099A80D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +682,7 @@
 		705281141ACB73210099A80D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -698,6 +698,7 @@
 		705281151ACB73210099A80D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Days Until Seasons Today/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -709,6 +710,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -726,6 +728,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IBSC_MODULE = _WatchKit_Extension;
 				INFOPLIST_FILE = " WatchKit App/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -738,6 +741,7 @@
 		7052813C1ACB74150099A80D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -753,6 +757,7 @@
 		7052813D1ACB74150099A80D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = " WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
