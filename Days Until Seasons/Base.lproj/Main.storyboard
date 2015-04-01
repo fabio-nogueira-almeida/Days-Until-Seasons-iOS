@@ -16,16 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spring" translatesAutoresizingMaskIntoConstraints="NO" id="yAi-1a-2pC">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spring_bg" translatesAutoresizingMaskIntoConstraints="NO" id="OeB-jw-nzi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Rlj-B5-IJm">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pU0-5b-p4P">
                                 <rect key="frame" x="0.0" y="40" width="600" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="Q8K-e9-ncz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="80"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.94509803920000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="128" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Lf-GI-KPy">
@@ -34,38 +34,41 @@
                                     <constraint firstAttribute="height" constant="96" id="UrK-QD-dmQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="80"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.94509803920000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days until Summer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdp-XX-zfl">
                                 <rect key="frame" x="0.0" y="356" width="600" height="96"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="60"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.94509803920000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tdp-XX-zfl" firstAttribute="centerX" secondItem="5Lf-GI-KPy" secondAttribute="centerX" id="07q-Ol-QwX"/>
-                            <constraint firstAttribute="trailing" secondItem="yAi-1a-2pC" secondAttribute="trailing" id="2Uy-Kn-iLw"/>
-                            <constraint firstItem="yAi-1a-2pC" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="9Md-3V-Jgg"/>
-                            <constraint firstItem="OeB-jw-nzi" firstAttribute="top" secondItem="pU0-5b-p4P" secondAttribute="bottom" constant="-136" id="BOd-uO-i4E"/>
-                            <constraint firstItem="pU0-5b-p4P" firstAttribute="leading" secondItem="OeB-jw-nzi" secondAttribute="leading" id="Fmj-Xd-K8k"/>
-                            <constraint firstItem="yAi-1a-2pC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L5r-Mp-kQZ"/>
-                            <constraint firstItem="OeB-jw-nzi" firstAttribute="trailing" secondItem="yAi-1a-2pC" secondAttribute="trailing" id="O6R-UE-OHG"/>
-                            <constraint firstItem="yAi-1a-2pC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UEO-xF-8f2"/>
-                            <constraint firstItem="OeB-jw-nzi" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Znm-sZ-wcS"/>
-                            <constraint firstItem="5Lf-GI-KPy" firstAttribute="centerX" secondItem="OeB-jw-nzi" secondAttribute="centerX" id="c1K-ZW-PqA"/>
-                            <constraint firstItem="OeB-jw-nzi" firstAttribute="leading" secondItem="yAi-1a-2pC" secondAttribute="leading" id="f36-eX-Mb7"/>
-                            <constraint firstItem="pU0-5b-p4P" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="hg6-Eq-AS3"/>
-                            <constraint firstItem="OeB-jw-nzi" firstAttribute="top" secondItem="yAi-1a-2pC" secondAttribute="top" id="jWE-Xs-VlW"/>
+                            <constraint firstItem="pU0-5b-p4P" firstAttribute="trailing" secondItem="5Lf-GI-KPy" secondAttribute="trailing" id="DyF-Cu-OwS"/>
+                            <constraint firstAttribute="trailing" secondItem="pU0-5b-p4P" secondAttribute="trailing" id="SBe-Q5-wWf"/>
+                            <constraint firstItem="Rlj-B5-IJm" firstAttribute="leading" secondItem="tdp-XX-zfl" secondAttribute="leading" id="UKi-CD-yFm"/>
+                            <constraint firstItem="Rlj-B5-IJm" firstAttribute="centerY" secondItem="5Lf-GI-KPy" secondAttribute="centerY" id="VEx-YZ-OPr"/>
+                            <constraint firstItem="pU0-5b-p4P" firstAttribute="trailing" secondItem="5Lf-GI-KPy" secondAttribute="trailing" id="ZtI-hb-Vj2"/>
+                            <constraint firstItem="pU0-5b-p4P" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="c0s-T5-fq5"/>
+                            <constraint firstItem="Rlj-B5-IJm" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="hKK-lq-k0h"/>
+                            <constraint firstItem="pU0-5b-p4P" firstAttribute="leading" secondItem="5Lf-GI-KPy" secondAttribute="leading" id="nAc-sA-Cvu"/>
+                            <constraint firstItem="5Lf-GI-KPy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="noz-6h-8FF"/>
                             <constraint firstItem="tdp-XX-zfl" firstAttribute="width" secondItem="5Lf-GI-KPy" secondAttribute="width" id="nvN-PT-bYz"/>
-                            <constraint firstItem="OeB-jw-nzi" firstAttribute="width" secondItem="pU0-5b-p4P" secondAttribute="width" id="qSg-HT-Ahc"/>
+                            <constraint firstItem="pU0-5b-p4P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="odE-ZB-fmm"/>
+                            <constraint firstItem="pU0-5b-p4P" firstAttribute="top" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="rJC-j1-4gc"/>
                             <constraint firstItem="tdp-XX-zfl" firstAttribute="top" secondItem="5Lf-GI-KPy" secondAttribute="bottom" constant="8" id="rPW-Zw-pYV"/>
-                            <constraint firstItem="5Lf-GI-KPy" firstAttribute="width" secondItem="OeB-jw-nzi" secondAttribute="width" id="utf-Q7-o9L"/>
+                            <constraint firstItem="Rlj-B5-IJm" firstAttribute="trailing" secondItem="5Lf-GI-KPy" secondAttribute="trailing" id="tJX-7V-mBP"/>
                             <constraint firstItem="tdp-XX-zfl" firstAttribute="height" secondItem="5Lf-GI-KPy" secondAttribute="height" id="xFT-E4-52c"/>
-                            <constraint firstItem="5Lf-GI-KPy" firstAttribute="centerY" secondItem="OeB-jw-nzi" secondAttribute="centerY" id="yHy-zU-zbg"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DyF-Cu-OwS"/>
+                                <exclude reference="rJC-j1-4gc"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -73,7 +76,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="spring" width="268" height="256"/>
-        <image name="spring_bg" width="5184" height="3456"/>
+        <image name="background" width="750" height="1334"/>
     </resources>
 </document>

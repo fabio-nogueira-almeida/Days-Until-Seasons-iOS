@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6O1-Wa-bny">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="6O1-Wa-bny">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spring" translatesAutoresizingMaskIntoConstraints="NO" id="sp5-s6-BW0">
@@ -72,7 +72,7 @@
     </objects>
     <resources>
         <image name="autumn" width="267" height="267"/>
-        <image name="fundo_logo" width="1024" height="1024"/>
+        <image name="background" width="750" height="1334"/>
         <image name="loop" width="200" height="200"/>
         <image name="spring" width="268" height="256"/>
         <image name="summer" width="270" height="271"/>
