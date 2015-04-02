@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2Uv-ma-24V">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Xil-7R-vDD">
+            <objects>
+                <viewController id="2Uv-ma-24V" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gx7-cQ-ea2"/>
+                        <viewControllerLayoutGuide type="bottom" id="yZ1-vK-N9u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LgE-9g-0G2">
+                        <rect key="frame" x="0.0" y="0.0" width="900" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="NfL-Ih-Vxx">
+                                <rect key="frame" x="0.0" y="0.0" width="900" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JKl-tO-Z7q">
+                                <rect key="frame" x="345" y="248" width="212" height="95"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="80"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.94509803920000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winter" translatesAutoresizingMaskIntoConstraints="NO" id="HTp-rv-eQL">
+                                <rect key="frame" x="360" y="60" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="1Zt-uJ-brz"/>
+                                    <constraint firstAttribute="height" constant="180" id="HCI-zd-4g3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlr-rH-AlY">
+                                <rect key="frame" x="862" y="570" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="6hG-3K-RDE"/>
+                                    <constraint firstAttribute="height" constant="22" id="9j6-g0-b6b"/>
+                                </constraints>
+                                <color key="tintColor" red="0.93725490199999995" green="0.94509803920000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="324 days until Spring" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OIr-SS-wqz">
+                                <rect key="frame" x="1" y="351" width="900" height="158"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="80"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.94509803920000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JKl-tO-Z7q" firstAttribute="top" secondItem="HTp-rv-eQL" secondAttribute="bottom" constant="8" id="4Fl-1p-JGh"/>
+                            <constraint firstItem="Wlr-rH-AlY" firstAttribute="trailing" secondItem="LgE-9g-0G2" secondAttribute="trailingMargin" id="6lg-uX-4ZD"/>
+                            <constraint firstItem="OIr-SS-wqz" firstAttribute="top" secondItem="JKl-tO-Z7q" secondAttribute="bottom" constant="8" symbolic="YES" id="B2v-Am-DxD"/>
+                            <constraint firstItem="NfL-Ih-Vxx" firstAttribute="centerX" secondItem="HTp-rv-eQL" secondAttribute="centerX" id="DbE-P9-jkX"/>
+                            <constraint firstItem="NfL-Ih-Vxx" firstAttribute="top" secondItem="LgE-9g-0G2" secondAttribute="top" id="EY0-4D-SDk"/>
+                            <constraint firstItem="NfL-Ih-Vxx" firstAttribute="bottom" secondItem="yZ1-vK-N9u" secondAttribute="top" id="F4f-zt-xad"/>
+                            <constraint firstItem="JKl-tO-Z7q" firstAttribute="top" secondItem="NfL-Ih-Vxx" secondAttribute="top" constant="248" id="IJ8-UE-uxh"/>
+                            <constraint firstItem="OIr-SS-wqz" firstAttribute="leading" secondItem="LgE-9g-0G2" secondAttribute="leadingMargin" constant="-15" id="IoH-Uj-UDj"/>
+                            <constraint firstAttribute="trailing" secondItem="NfL-Ih-Vxx" secondAttribute="trailing" id="M0K-yM-djf"/>
+                            <constraint firstItem="yZ1-vK-N9u" firstAttribute="top" secondItem="Wlr-rH-AlY" secondAttribute="bottom" constant="8" symbolic="YES" id="OTm-8x-coP"/>
+                            <constraint firstItem="yZ1-vK-N9u" firstAttribute="top" secondItem="Wlr-rH-AlY" secondAttribute="bottom" constant="8" id="SKa-bm-YDW"/>
+                            <constraint firstItem="NfL-Ih-Vxx" firstAttribute="leading" secondItem="LgE-9g-0G2" secondAttribute="leading" id="aFl-HE-Gh5"/>
+                            <constraint firstItem="JKl-tO-Z7q" firstAttribute="centerX" secondItem="NfL-Ih-Vxx" secondAttribute="centerX" constant="0.5" id="csB-dd-Y0h"/>
+                            <constraint firstItem="HTp-rv-eQL" firstAttribute="top" secondItem="Gx7-cQ-ea2" secondAttribute="bottom" constant="40" id="hc6-o5-x2I"/>
+                            <constraint firstItem="OIr-SS-wqz" firstAttribute="centerX" secondItem="JKl-tO-Z7q" secondAttribute="centerX" id="l8p-oQ-K8X"/>
+                            <constraint firstItem="JKl-tO-Z7q" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="NfL-Ih-Vxx" secondAttribute="bottom" constant="-274" id="rhb-HZ-vIb"/>
+                            <constraint firstItem="NfL-Ih-Vxx" firstAttribute="centerY" secondItem="HTp-rv-eQL" secondAttribute="centerY" constant="150" id="v0t-k2-5dd"/>
+                            <constraint firstItem="Wlr-rH-AlY" firstAttribute="trailing" secondItem="LgE-9g-0G2" secondAttribute="trailingMargin" id="wpI-zN-GMZ"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="900" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NhB-gM-5rZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="511"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="750" height="1334"/>
+        <image name="winter" width="268" height="304"/>
+    </resources>
+</document>

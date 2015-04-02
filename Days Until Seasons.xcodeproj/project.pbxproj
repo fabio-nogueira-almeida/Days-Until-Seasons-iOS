@@ -30,6 +30,7 @@
 		705281591ACB84200099A80D /* DUSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705281581ACB84200099A80D /* DUSFrameworkTests.swift */; };
 		7052815C1ACB84200099A80D /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
 		7052815D1ACB84200099A80D /* DUSFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70F68D581ACCB6AE00C048CB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,7 @@
 		7052814F1ACB841F0099A80D /* DUSFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DUSFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		705281571ACB84200099A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705281581ACB84200099A80D /* DUSFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUSFrameworkTests.swift; sourceTree = "<group>"; };
+		70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 				705280CE1ACB718D0099A80D /* ViewController.h */,
 				705280CF1ACB718D0099A80D /* ViewController.m */,
 				705280D11ACB718D0099A80D /* Main.storyboard */,
+				70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */,
 				705280D41ACB718D0099A80D /* Images.xcassets */,
 				705280D61ACB718D0099A80D /* LaunchScreen.xib */,
 				705280C71ACB718D0099A80D /* Supporting Files */,
@@ -574,6 +577,7 @@
 				705280D31ACB718D0099A80D /* Main.storyboard in Resources */,
 				705280D81ACB718D0099A80D /* LaunchScreen.xib in Resources */,
 				705280D51ACB718D0099A80D /* Images.xcassets in Resources */,
+				70F68D581ACCB6AE00C048CB /* Main_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,6 +835,7 @@
 				INFOPLIST_FILE = "Days Until Seasons/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -842,6 +847,7 @@
 				INFOPLIST_FILE = "Days Until Seasons/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1077,6 +1083,7 @@
 				705281151ACB73210099A80D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		705281381ACB74150099A80D /* Build configuration list for PBXNativeTarget " WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -1085,6 +1092,7 @@
 				7052813A1ACB74150099A80D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7052813B1ACB74150099A80D /* Build configuration list for PBXNativeTarget " WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -1093,6 +1101,7 @@
 				7052813D1ACB74150099A80D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7052815E1ACB84200099A80D /* Build configuration list for PBXNativeTarget "DUSFramework" */ = {
 			isa = XCConfigurationList;
@@ -1101,6 +1110,7 @@
 				705281601ACB84200099A80D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		705281621ACB84200099A80D /* Build configuration list for PBXNativeTarget "DUSFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -1109,6 +1119,7 @@
 				705281641ACB84200099A80D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

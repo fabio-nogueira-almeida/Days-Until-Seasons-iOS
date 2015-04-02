@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,56 +13,13 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="6O1-Wa-bny">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spring" translatesAutoresizingMaskIntoConstraints="NO" id="sp5-s6-BW0">
-                    <rect key="frame" x="8" y="8" width="120" height="120"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="120" id="SBg-Xo-R5w"/>
-                        <constraint firstAttribute="width" constant="120" id="n76-Ef-6Ii"/>
-                    </constraints>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="summer" translatesAutoresizingMaskIntoConstraints="NO" id="EbZ-uh-Jg7">
-                    <rect key="frame" x="352" y="8" width="120" height="120"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="120" id="oRb-nH-aA2"/>
-                    </constraints>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winter" translatesAutoresizingMaskIntoConstraints="NO" id="mab-4l-cyt">
-                    <rect key="frame" x="352" y="352" width="120" height="120"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="autumn" translatesAutoresizingMaskIntoConstraints="NO" id="TQr-sX-fCd">
-                    <rect key="frame" x="8" y="352" width="120" height="120"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="120" id="Yor-gp-zAD"/>
-                    </constraints>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loop" translatesAutoresizingMaskIntoConstraints="NO" id="gCp-23-dcM">
-                    <rect key="frame" x="180" y="180" width="120" height="120"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="120" id="04b-Sm-ZeV"/>
-                        <constraint firstAttribute="width" constant="120" id="PRx-YD-nYv"/>
-                    </constraints>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="6O1-Wa-bny" secondAttribute="bottom" id="1AG-so-xt2"/>
-                <constraint firstItem="TQr-sX-fCd" firstAttribute="top" secondItem="mab-4l-cyt" secondAttribute="top" id="4Si-63-pKv"/>
                 <constraint firstAttribute="trailing" secondItem="6O1-Wa-bny" secondAttribute="trailing" id="5vT-KO-bGD"/>
-                <constraint firstItem="sp5-s6-BW0" firstAttribute="bottom" secondItem="EbZ-uh-Jg7" secondAttribute="bottom" id="9Ey-H0-TTR"/>
-                <constraint firstItem="sp5-s6-BW0" firstAttribute="top" secondItem="EbZ-uh-Jg7" secondAttribute="top" id="Fav-i9-KWt"/>
-                <constraint firstItem="sp5-s6-BW0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="Ffn-Is-NI3"/>
-                <constraint firstItem="mab-4l-cyt" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="GZn-0G-UuA"/>
-                <constraint firstItem="mab-4l-cyt" firstAttribute="leading" secondItem="EbZ-uh-Jg7" secondAttribute="leading" id="Lq3-lI-2sb"/>
-                <constraint firstItem="TQr-sX-fCd" firstAttribute="bottom" secondItem="mab-4l-cyt" secondAttribute="bottom" id="NXg-Pz-E5c"/>
-                <constraint firstItem="sp5-s6-BW0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="NbO-JN-Gtm"/>
                 <constraint firstItem="6O1-Wa-bny" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="V5r-HY-xOl"/>
                 <constraint firstItem="6O1-Wa-bny" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dT8-Qe-afL"/>
-                <constraint firstItem="gCp-23-dcM" firstAttribute="centerY" secondItem="6O1-Wa-bny" secondAttribute="centerY" id="e0U-li-Z1i"/>
-                <constraint firstItem="sp5-s6-BW0" firstAttribute="trailing" secondItem="TQr-sX-fCd" secondAttribute="trailing" id="g8G-GC-bsh"/>
-                <constraint firstItem="gCp-23-dcM" firstAttribute="centerX" secondItem="6O1-Wa-bny" secondAttribute="centerX" id="iej-4x-qHX"/>
-                <constraint firstItem="EbZ-uh-Jg7" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="iir-Vc-y34"/>
-                <constraint firstItem="sp5-s6-BW0" firstAttribute="leading" secondItem="TQr-sX-fCd" secondAttribute="leading" id="pQe-ui-CHY"/>
-                <constraint firstItem="mab-4l-cyt" firstAttribute="trailing" secondItem="EbZ-uh-Jg7" secondAttribute="trailing" id="q3g-t8-Kza"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -71,11 +27,6 @@
         </view>
     </objects>
     <resources>
-        <image name="autumn" width="267" height="267"/>
         <image name="background" width="750" height="1334"/>
-        <image name="loop" width="200" height="200"/>
-        <image name="spring" width="268" height="256"/>
-        <image name="summer" width="270" height="271"/>
-        <image name="winter" width="268" height="304"/>
     </resources>
 </document>
