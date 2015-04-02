@@ -31,6 +31,7 @@
 		7052815C1ACB84200099A80D /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
 		7052815D1ACB84200099A80D /* DUSFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		70F68D581ACCB6AE00C048CB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */; };
+		70F68D591ACDE7A900C048CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705280D41ACB718D0099A80D /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -593,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7052810F1ACB73210099A80D /* MainInterface.storyboard in Resources */,
+				70F68D591ACDE7A900C048CB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

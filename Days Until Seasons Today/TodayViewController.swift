@@ -13,7 +13,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
+        self.preferredContentSize = CGSizeMake(320, 44);
     }
     
     override func didReceiveMemoryWarning() {
@@ -27,7 +27,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
-
+        
         completionHandler(NCUpdateResult.NewData)
     }
     
