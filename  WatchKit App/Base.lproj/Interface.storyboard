@@ -10,12 +10,33 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <timer alignment="left" id="Jjd-rd-Qh1"/>
+                        <imageView width="38" height="38" alignment="center" image="winter_watch" contentMode="scaleAspectFit" id="AIR-5w-hcI"/>
+                        <label width="1" alignment="left" text="324" textAlignment="center" minimumScaleFactor="0.90000000000000002" id="1Kf-Ay-LwN">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" pointSize="34"/>
+                        </label>
+                        <label width="1" alignment="left" text="Days until" textAlignment="center" id="HRc-rC-gRl">
+                            <color key="textColor" red="0.6470588235294118" green="0.65490196078431373" blue="0.70588235294117652" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label width="1" alignment="left" text="Spring" textAlignment="center" id="Y8E-yc-Hgs">
+                            <color key="textColor" red="0.64705882349999999" green="0.65490196079999996" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="light" pointSize="28"/>
+                        </label>
                     </items>
                     <menu key="menu" id="uwn-ZF-cj7"/>
+                    <connections>
+                        <segue destination="r4C-lq-uXM" kind="relationship" relationship="nextPage" id="nfx-eO-eB6"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="eXK-OQ-j6O">
+            <objects>
+                <controller id="r4C-lq-uXM"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
