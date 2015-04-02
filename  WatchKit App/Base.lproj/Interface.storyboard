@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <imageView width="38" height="38" alignment="center" image="winter_watch" contentMode="scaleAspectFit" id="AIR-5w-hcI"/>
+                        <imageView width="40" height="40" alignment="center" image="winter_watch" contentMode="scaleAspectFit" id="AIR-5w-hcI"/>
                         <label width="1" alignment="left" text="324" textAlignment="center" minimumScaleFactor="0.90000000000000002" id="1Kf-Ay-LwN">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="font" type="system" pointSize="34"/>
@@ -41,10 +41,24 @@
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="_WatchKit_App" customModuleProvider="target">
+                <glanceController spacing="0.0" topTemplateType="extraLarge" bottomTemplateType="groupLargeLargeFooter" id="0uZ-2p-rRc" customClass="GlanceController" customModule="_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y"/>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <label alignment="left" text="12" id="F1d-4y-OjA"/>
+                        <group alignment="left" id="uCw-4Q-Ouw">
+                            <items>
+                                <label alignment="left" id="xuK-pm-bs6">
+                                    <fontDescription key="font" type="system" pointSize="34"/>
+                                </label>
+                                <label height="20" alignment="left" text="Days until" id="2QF-vl-REy">
+                                    <color key="textColor" red="0.64705882349999999" green="0.65490196079999996" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Spring" minimumScaleFactor="0.0" id="NL4-uf-SRn">
+                            <color key="textColor" red="0.64705882349999999" green="0.65490196079999996" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label alignment="left" id="hwe-Hv-17c"/>
+                        <label alignment="left" hidden="YES" text="Days Until Seasons" id="PVf-Ga-N8d"/>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>
