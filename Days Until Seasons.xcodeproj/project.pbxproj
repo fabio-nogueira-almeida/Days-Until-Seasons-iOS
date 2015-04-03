@@ -30,6 +30,13 @@
 		705281591ACB84200099A80D /* DUSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705281581ACB84200099A80D /* DUSFrameworkTests.swift */; };
 		7052815C1ACB84200099A80D /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
 		7052815D1ACB84200099A80D /* DUSFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70DFDF3A1ACEE18800A2DE87 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF391ACEE18800A2DE87 /* Season.swift */; };
+		70DFDF3C1ACEE19A00A2DE87 /* Seasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF3B1ACEE19A00A2DE87 /* Seasons.swift */; };
+		70DFDF431ACEE7DE00A2DE87 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF421ACEE7DE00A2DE87 /* NSDateExtension.swift */; };
+		70DFDF451ACEEAC100A2DE87 /* NSDateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF441ACEEAC100A2DE87 /* NSDateExtensionTests.swift */; };
+		70DFDF461ACEEC3000A2DE87 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF421ACEE7DE00A2DE87 /* NSDateExtension.swift */; };
+		70DFDF471ACEF04A00A2DE87 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF391ACEE18800A2DE87 /* Season.swift */; };
+		70DFDF481ACEF04A00A2DE87 /* Seasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF3B1ACEE19A00A2DE87 /* Seasons.swift */; };
 		70F68D581ACCB6AE00C048CB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */; };
 		70F68D591ACDE7A900C048CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705280D41ACB718D0099A80D /* Images.xcassets */; };
 		70F68D5D1ACDEF2100C048CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705280D41ACB718D0099A80D /* Images.xcassets */; };
@@ -150,6 +157,10 @@
 		7052814F1ACB841F0099A80D /* DUSFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DUSFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		705281571ACB84200099A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705281581ACB84200099A80D /* DUSFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUSFrameworkTests.swift; sourceTree = "<group>"; };
+		70DFDF391ACEE18800A2DE87 /* Season.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		70DFDF3B1ACEE19A00A2DE87 /* Seasons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seasons.swift; sourceTree = "<group>"; };
+		70DFDF421ACEE7DE00A2DE87 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		70DFDF441ACEEAC100A2DE87 /* NSDateExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensionTests.swift; sourceTree = "<group>"; };
 		70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -340,6 +351,8 @@
 		705281461ACB841F0099A80D /* DUSFramework */ = {
 			isa = PBXGroup;
 			children = (
+				70DFDF3D1ACEE65700A2DE87 /* Categories */,
+				70DFDF361ACEE14D00A2DE87 /* Models */,
 				705281491ACB841F0099A80D /* DUSFramework.h */,
 				705281471ACB841F0099A80D /* Supporting Files */,
 			);
@@ -359,6 +372,7 @@
 			children = (
 				705281581ACB84200099A80D /* DUSFrameworkTests.swift */,
 				705281561ACB84200099A80D /* Supporting Files */,
+				70DFDF441ACEEAC100A2DE87 /* NSDateExtensionTests.swift */,
 			);
 			path = DUSFrameworkTests;
 			sourceTree = "<group>";
@@ -369,6 +383,23 @@
 				705281571ACB84200099A80D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70DFDF361ACEE14D00A2DE87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70DFDF391ACEE18800A2DE87 /* Season.swift */,
+				70DFDF3B1ACEE19A00A2DE87 /* Seasons.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		70DFDF3D1ACEE65700A2DE87 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				70DFDF421ACEE7DE00A2DE87 /* NSDateExtension.swift */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -678,6 +709,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70DFDF431ACEE7DE00A2DE87 /* NSDateExtension.swift in Sources */,
+				70DFDF3C1ACEE19A00A2DE87 /* Seasons.swift in Sources */,
+				70DFDF3A1ACEE18800A2DE87 /* Season.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +719,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70DFDF471ACEF04A00A2DE87 /* Season.swift in Sources */,
+				70DFDF461ACEEC3000A2DE87 /* NSDateExtension.swift in Sources */,
+				70DFDF451ACEEAC100A2DE87 /* NSDateExtensionTests.swift in Sources */,
+				70DFDF481ACEF04A00A2DE87 /* Seasons.swift in Sources */,
 				705281591ACB84200099A80D /* DUSFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -983,6 +1021,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1007,6 +1046,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double DUSFrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char DUSFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DUSFramework/PublicHeader.h>
-
-
