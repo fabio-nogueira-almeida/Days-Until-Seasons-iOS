@@ -37,6 +37,7 @@
 		70DFDF461ACEEC3000A2DE87 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF421ACEE7DE00A2DE87 /* NSDateExtension.swift */; };
 		70DFDF471ACEF04A00A2DE87 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF391ACEE18800A2DE87 /* Season.swift */; };
 		70DFDF481ACEF04A00A2DE87 /* Seasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF3B1ACEE19A00A2DE87 /* Seasons.swift */; };
+		70DFDF4A1ACF483800A2DE87 /* SeasonsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF491ACF483800A2DE87 /* SeasonsTest.swift */; };
 		70F68D581ACCB6AE00C048CB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */; };
 		70F68D591ACDE7A900C048CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705280D41ACB718D0099A80D /* Images.xcassets */; };
 		70F68D5D1ACDEF2100C048CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705280D41ACB718D0099A80D /* Images.xcassets */; };
@@ -161,6 +162,7 @@
 		70DFDF3B1ACEE19A00A2DE87 /* Seasons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seasons.swift; sourceTree = "<group>"; };
 		70DFDF421ACEE7DE00A2DE87 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		70DFDF441ACEEAC100A2DE87 /* NSDateExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensionTests.swift; sourceTree = "<group>"; };
+		70DFDF491ACF483800A2DE87 /* SeasonsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonsTest.swift; sourceTree = "<group>"; };
 		70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -371,8 +373,9 @@
 			isa = PBXGroup;
 			children = (
 				705281581ACB84200099A80D /* DUSFrameworkTests.swift */,
-				705281561ACB84200099A80D /* Supporting Files */,
 				70DFDF441ACEEAC100A2DE87 /* NSDateExtensionTests.swift */,
+				70DFDF491ACF483800A2DE87 /* SeasonsTest.swift */,
+				705281561ACB84200099A80D /* Supporting Files */,
 			);
 			path = DUSFrameworkTests;
 			sourceTree = "<group>";
@@ -723,6 +726,7 @@
 				70DFDF461ACEEC3000A2DE87 /* NSDateExtension.swift in Sources */,
 				70DFDF451ACEEAC100A2DE87 /* NSDateExtensionTests.swift in Sources */,
 				70DFDF481ACEF04A00A2DE87 /* Seasons.swift in Sources */,
+				70DFDF4A1ACF483800A2DE87 /* SeasonsTest.swift in Sources */,
 				705281591ACB84200099A80D /* DUSFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

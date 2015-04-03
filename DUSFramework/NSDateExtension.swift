@@ -36,14 +36,19 @@ extension NSDate {
     }
  
     // MARK: Class/Static Methods
-    
+
     class func dateFromActualYear(day: Int, month: Int) -> NSDate {
+        let dateWithActualYear = NSDate.date(day, month: month, year: NSDate().year())
+        return dateWithActualYear
+    }
+    
+    class func date(day: Int, month: Int, year: Int) -> NSDate {
         var dateComponent = NSDateComponents()
         dateComponent.day = day
         dateComponent.month = month
-        dateComponent.year = NSDate().year()
+        dateComponent.year = year
         
-        let dateWithActualYear = NSCalendar.currentCalendar().dateFromComponents(dateComponent)
-        return dateWithActualYear!
+        let date = NSCalendar.currentCalendar().dateFromComponents(dateComponent)
+        return date!
     }
 }

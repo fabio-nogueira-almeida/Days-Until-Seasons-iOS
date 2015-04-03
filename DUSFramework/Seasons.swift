@@ -27,8 +27,8 @@ class Seasons: NSObject {
             seasonEndDate: endSpring,
             seasonName: NSLocalizedString("Spring", value: "Spring", comment: ""))
         
-        let startSummer = NSDate.dateFromActualYear(22, month: 12)
-        let endSummer = NSDate.dateFromActualYear(21, month: 3)
+        let startSummer = NSDate.date(21, month: 12, year: NSDate().year()-1)
+        let endSummer = NSDate.dateFromActualYear(20, month: 3)
         self.summer = Season(
             seasonStartDate: startSummer,
             seasonEndDate: endSummer,
@@ -44,19 +44,30 @@ class Seasons: NSObject {
         let startWinter = NSDate.dateFromActualYear(22, month: 6)
         let endWinter = NSDate.dateFromActualYear(21, month: 9)
         self.winter = Season(
-            seasonStartDate: startSpring,
-            seasonEndDate: endSpring,
+            seasonStartDate: startWinter,
+            seasonEndDate: endWinter,
             seasonName: NSLocalizedString("Winter", value: "Winter", comment: ""))
     }
     
     // MARK: Private Methods
     
-//    func currentSeason() -> Season {
-//        
-//        
-//        
-//    }
-
+    func currentSeason() -> Season {
+        return seasonForDate(NSDate())
+    }
     
-    // MARK: Public Methods
+    func seasonForDate(date: NSDate) -> Season {
+        var currentSeason = Season()
+        
+        if (date.IsBetween(self.spring.startDate, endDate: self.spring.endDate)) {
+            currentSeason = self.spring
+        } else if (date.IsBetween(self.summer.startDate, endDate: self.summer.endDate)) {
+            currentSeason = self.summer
+        } else if (date.IsBetween(self.autumn.startDate, endDate: self.autumn.endDate)) {
+            currentSeason = self.autumn
+        } else if (date.IsBetween(self.winter.startDate, endDate: self.winter.endDate)) {
+            currentSeason = self.winter
+        }
+        
+        return currentSeason
+    }
 }
