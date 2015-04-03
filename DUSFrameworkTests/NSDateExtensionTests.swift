@@ -38,22 +38,39 @@ class NSDateExtensionTests: XCTestCase {
         dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
         dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
         
-        XCTAssertNotEqual(dateFormatter.stringFromDate(date), "December 9, 2014", "testShouldNotReturnDateWithYear2014 December 9, 2019")
+        XCTAssertNotEqual(dateFormatter.stringFromDate(date), "December 9, 2014", "Date = December 9, 2019")
     }
     
     func testShouldReturnTheDayFromDate() {
         let date = NSDate.dateFromActualYear(5, month: 9)
-        XCTAssertEqual(date.day(), 5, "testShouldReturnTheDayFromDate day 05")
+        XCTAssertEqual(date.day(), 5, "Day = 05")
     }
     
     func testShouldReturnTheMonthFromDate() {
         let date = NSDate.dateFromActualYear(5, month: 9)
-        XCTAssertEqual(date.month(), 9, "testShouldReturnTheDayFromDate month 09")
+        XCTAssertEqual(date.month(), 9, "Month = 09")
     }
     
     func testShouldReturnTheYearFromDate() {
         let date = NSDate.dateFromActualYear(5, month: 9)
-        XCTAssertEqual(date.year(), 2015, "testShouldReturnTheDayFromDate year 2015")
+        XCTAssertEqual(date.year(), 2015, "Year = 2015")
+    }
+    
+    func testShouldReturnTrueForDateBetweenDates() {
+        let startDate = NSDate.dateFromActualYear(1, month: 01)
+        let endDate = NSDate.dateFromActualYear(30, month: 01)
+        let date = NSDate.dateFromActualYear(15, month: 01)
+
+        XCTAssertTrue(date.IsBetween(startDate, endDate: endDate), "True")
+    }
+    
+    func testShouldReturnFalseForDateBetweenDates() {
+        let startDate = NSDate.dateFromActualYear(01, month: 01)
+        let endDate = NSDate.dateFromActualYear(30, month: 01)
+        
+        let date = NSDate.dateFromActualYear(15, month: 09)
+        
+        XCTAssertFalse(date.IsBetween(startDate, endDate: endDate), "False")
     }
     
 }

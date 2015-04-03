@@ -50,15 +50,12 @@ class Seasons: NSObject {
     }
     
     // MARK: Private Methods
-//    
+    
 //    func currentSeason() -> Season {
 //        
 //        
 //        
 //    }
-    
-
-}
 
     
     // MARK: Public Methods

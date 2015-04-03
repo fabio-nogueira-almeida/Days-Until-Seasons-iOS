@@ -24,6 +24,16 @@ extension NSDate {
         let components = NSCalendar.currentCalendar().components(.CalendarUnitYear, fromDate: self)
         return components.year
     }
+    
+    func IsBetween(beginDate: NSDate, endDate:NSDate) -> Bool {
+        var isBetween = false
+        
+        if (self.compare(beginDate) == NSComparisonResult.OrderedDescending &&
+            self.compare(endDate) == NSComparisonResult.OrderedAscending) {
+            isBetween = true;
+        }   
+        return isBetween
+    }
  
     // MARK: Class/Static Methods
     
@@ -36,5 +46,4 @@ extension NSDate {
         let dateWithActualYear = NSCalendar.currentCalendar().dateFromComponents(dateComponent)
         return dateWithActualYear!
     }
-    
 }
