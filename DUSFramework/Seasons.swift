@@ -20,14 +20,46 @@ class Seasons: NSObject {
     // MARK: Initialize Methods
     
     override init() {
-        self.spring = Season()
-        self.summer = Season()
-        self.autumn = Season()
-        self.winter = Season()
+        let startSpring = NSDate.dateFromActualYear(22, month: 9)
+        let endSpring = NSDate.dateFromActualYear(21, month: 12)
+        self.spring = Season(
+            seasonStartDate: startSpring,
+            seasonEndDate: endSpring,
+            seasonName: NSLocalizedString("Spring", value: "Spring", comment: ""))
+        
+        let startSummer = NSDate.dateFromActualYear(22, month: 12)
+        let endSummer = NSDate.dateFromActualYear(21, month: 3)
+        self.summer = Season(
+            seasonStartDate: startSummer,
+            seasonEndDate: endSummer,
+            seasonName: NSLocalizedString("Summer", value: "Summer", comment: ""))
+        
+        let startAutumn = NSDate.dateFromActualYear(22, month: 3)
+        let endAutumn = NSDate.dateFromActualYear(21, month: 6)
+        self.autumn = Season(
+            seasonStartDate: startAutumn,
+            seasonEndDate: endAutumn,
+            seasonName: NSLocalizedString("Autumn", value: "Autumn", comment: ""))
+        
+        let startWinter = NSDate.dateFromActualYear(22, month: 6)
+        let endWinter = NSDate.dateFromActualYear(21, month: 9)
+        self.winter = Season(
+            seasonStartDate: startSpring,
+            seasonEndDate: endSpring,
+            seasonName: NSLocalizedString("Winter", value: "Winter", comment: ""))
     }
     
     // MARK: Private Methods
+//    
+//    func currentSeason() -> Season {
+//        
+//        
+//        
+//    }
     
+
+}
+
     
     // MARK: Public Methods
 }

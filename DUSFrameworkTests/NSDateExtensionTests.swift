@@ -28,7 +28,7 @@ class NSDateExtensionTests: XCTestCase {
         dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
         dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
         
-        XCTAssertEqual(dateFormatter.stringFromDate(date), "July 3, 2015", "testShouldReturnDateWithYear2015")
+        XCTAssertEqual(dateFormatter.stringFromDate(date), "July 3, 2015", "testShouldReturnDateWithYear2015 July 3, 2015")
     }
 
     func testShouldNotReturnDateWithYear2014() {
@@ -38,7 +38,22 @@ class NSDateExtensionTests: XCTestCase {
         dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
         dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
         
-        XCTAssertNotEqual(dateFormatter.stringFromDate(date), "December 9, 2014", "testShouldNotReturnDateWithYear2014")
+        XCTAssertNotEqual(dateFormatter.stringFromDate(date), "December 9, 2014", "testShouldNotReturnDateWithYear2014 December 9, 2019")
+    }
+    
+    func testShouldReturnTheDayFromDate() {
+        let date = NSDate.dateFromActualYear(5, month: 9)
+        XCTAssertEqual(date.day(), 5, "testShouldReturnTheDayFromDate day 05")
+    }
+    
+    func testShouldReturnTheMonthFromDate() {
+        let date = NSDate.dateFromActualYear(5, month: 9)
+        XCTAssertEqual(date.month(), 9, "testShouldReturnTheDayFromDate month 09")
+    }
+    
+    func testShouldReturnTheYearFromDate() {
+        let date = NSDate.dateFromActualYear(5, month: 9)
+        XCTAssertEqual(date.year(), 2015, "testShouldReturnTheDayFromDate year 2015")
     }
     
 }

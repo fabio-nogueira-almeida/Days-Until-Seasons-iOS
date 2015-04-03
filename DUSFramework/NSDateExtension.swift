@@ -10,17 +10,31 @@ import Foundation
 
 extension NSDate {
     
-    class func dateFromActualYear(day: Int, month: Int) -> NSDate {   
-        let dateForYear = NSDate()
-        let components = NSCalendar.currentCalendar().components(.CalendarUnitYear, fromDate: dateForYear)
-        let year = components.year
-        
-        var dateComponent = NSDateComponents()
-        dateComponent.day = day;
-        dateComponent.month = month;
-        dateComponent.year = year;
-        
-        let dateWithActualYear = NSCalendar.currentCalendar().dateFromComponents(dateComponent);
-        return dateWithActualYear!;
+    func day() -> Int {
+        let components = NSCalendar.currentCalendar().components(.CalendarUnitDay, fromDate: self)
+        return components.day
     }
+    
+    func month() -> Int {
+        let components = NSCalendar.currentCalendar().components(.CalendarUnitMonth, fromDate: self)
+        return components.month
+    }
+    
+    func year() -> Int {
+        let components = NSCalendar.currentCalendar().components(.CalendarUnitYear, fromDate: self)
+        return components.year
+    }
+ 
+    // MARK: Class/Static Methods
+    
+    class func dateFromActualYear(day: Int, month: Int) -> NSDate {
+        var dateComponent = NSDateComponents()
+        dateComponent.day = day
+        dateComponent.month = month
+        dateComponent.year = NSDate().year()
+        
+        let dateWithActualYear = NSCalendar.currentCalendar().dateFromComponents(dateComponent)
+        return dateWithActualYear!
+    }
+    
 }
