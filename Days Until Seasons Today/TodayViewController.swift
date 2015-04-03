@@ -13,7 +13,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.preferredContentSize = CGSizeMake(320, 44);
+        self.preferredContentSize = CGSizeMake(320, 60);
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,6 +29,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If there's an update, use NCUpdateResult.NewData
         
         completionHandler(NCUpdateResult.NewData)
+    }
+    
+    func widgetMarginInsetsForProposedMarginInsets(_ defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets{
+        return UIEdgeInsetsZero;
     }
     
 }

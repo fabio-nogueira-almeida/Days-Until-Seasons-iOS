@@ -14,30 +14,30 @@
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winter" translatesAutoresizingMaskIntoConstraints="NO" id="L6Z-Xk-z10">
-                                <rect key="frame" x="30" y="3" width="38" height="38"/>
+                                <rect key="frame" x="50" y="9" width="42" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="38" id="iAd-iU-2Ov"/>
+                                    <constraint firstAttribute="width" constant="42" id="iAd-iU-2Ov"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="279 days until Spring" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
-                                <rect key="frame" x="86" y="8" width="248" height="28"/>
+                                <rect key="frame" x="105" y="8" width="248" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="-30" id="2nN-bg-si0"/>
-                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="8" symbolic="YES" id="A5u-ND-p1Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="-49" id="2nN-bg-si0"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="8" id="A5u-ND-p1Z"/>
                             <constraint firstItem="L6Z-Xk-z10" firstAttribute="centerY" secondItem="GcN-lo-r42" secondAttribute="centerY" id="J5n-Z1-sI0"/>
-                            <constraint firstItem="L6Z-Xk-z10" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="14" id="QKT-K0-dMn"/>
-                            <constraint firstItem="L6Z-Xk-z10" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="3" id="Tig-4C-lYo"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" symbolic="YES" id="aNm-3t-b6o"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="L6Z-Xk-z10" secondAttribute="trailing" constant="18" id="yjH-Ki-iYy"/>
+                            <constraint firstItem="L6Z-Xk-z10" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="34" id="QKT-K0-dMn"/>
+                            <constraint firstItem="L6Z-Xk-z10" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="9" id="Tig-4C-lYo"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="aNm-3t-b6o"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="L6Z-Xk-z10" secondAttribute="trailing" constant="13" id="yjH-Ki-iYy"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -45,7 +45,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="44"/>
+                    <size key="freeformSize" width="320" height="60"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
