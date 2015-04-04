@@ -8,6 +8,7 @@
 
 import UIKit
 import NotificationCenter
+import DUSFramework
 
 class TodayViewController: UIViewController, NCWidgetProviding {
         
@@ -18,11 +19,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.preferredContentSize = CGSizeMake(320, 60);
+        
+        addInformationToScreen(Seasons.currentSeason())
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: Private Methods
+    
+    func addInformationToScreen(aseason: Season) {
+        var descriptionText = "245 days until \(aseason.name)"
+        self.descriptionLabel.text = descriptionText;
     }
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {

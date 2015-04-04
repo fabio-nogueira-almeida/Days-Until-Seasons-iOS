@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Seasons: NSObject {
+public class Seasons: NSObject {
     
     // MARK: Properties
     
@@ -19,7 +19,7 @@ class Seasons: NSObject {
     
     // MARK: Initialize Methods
     
-    override init() {
+    override public init() {
         let startSpring = NSDate.dateFromActualYear(22, month: 9)
         let endSpring = NSDate.dateFromActualYear(21, month: 12)
         self.spring = Season(
@@ -51,10 +51,6 @@ class Seasons: NSObject {
     
     // MARK: Private Methods
     
-    func currentSeason() -> Season {
-        return seasonForDate(NSDate())
-    }
-    
     func seasonForDate(date: NSDate) -> Season {
         var currentSeason = Season()
         
@@ -69,5 +65,11 @@ class Seasons: NSObject {
         }
         
         return currentSeason
+    }
+    
+    // MARK: Public Methods
+    
+    public class func currentSeason() -> Season {
+        return Seasons().seasonForDate(NSDate())
     }
 }

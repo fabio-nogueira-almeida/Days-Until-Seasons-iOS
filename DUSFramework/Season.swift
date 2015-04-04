@@ -8,13 +8,13 @@
 
 import UIKit
 
-class Season: NSObject {
+public class Season: NSObject {
    
     // MARK: Properties
     
     var startDate : NSDate
     var endDate : NSDate
-    var name : NSString = ""
+    public var name : NSString = ""
  
     // MARK: Initialize Methods
     
