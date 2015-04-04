@@ -23,7 +23,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        addInformationToScreen(Seasons.currentSeason())
+//        addInformationToScreen(Seasons.currentSeason())
     }
     
     // MARK: Private Methods

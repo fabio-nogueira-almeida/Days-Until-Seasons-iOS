@@ -25,7 +25,7 @@ class InterfaceController: WKInterfaceController {
     }
 
     override func willActivate() {
-        addInformationToScreen(Seasons.currentSeason())
+//        addInformationToScreen(Seasons.currentSeason())
         super.willActivate()
     }
 

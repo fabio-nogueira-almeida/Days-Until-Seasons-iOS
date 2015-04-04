@@ -12,7 +12,7 @@
 
 @interface ViewController ()
 
-- (void)_addInformationToScreen:(Season *)season;
+- (void)_addInformationToScreen;
 
 @end
 
@@ -26,24 +26,26 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
-    [self _addInformationToScreen:[Seasons currentSeason]];
+    [self _addInformationToScreen];
 }
 
 #pragma mark - Private Methods
 
-- (void)_addInformationToScreen:(Season *)season {
-    NSString *imageNamed = NSLocalizedString(season.name, nil);
+- (void)_addInformationToScreen {
+    Seasons *seasons = [[Seasons alloc] init];
+    
+    NSString *imageNamed = NSLocalizedString(seasons.currentSeason.name, nil);
     NSString *daysUntil = NSLocalizedString(@"Days until", nil);
-    NSString *days = @"184";
-    NSString *nextSeason = @"Spring";
+    NSString *days = [NSString stringWithFormat:@"%ld", (long)seasons.daysUntilNextSeason];
+    NSString *nextSeason = seasons.nextSeason.name;
     
     self.currentSeasonImageView.image = [UIImage imageNamed:imageNamed];
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         NSString *ipadText = [NSString stringWithFormat:@"%@ %@ %@", days, daysUntil, nextSeason];
         self.descriptionIpadLabel.text = ipadText;
-    } else {
 
+    } else {
         self.currentSeasonLabel.text = imageNamed;
         self.daysLabel.text = days;
         self.descriptionLabel.text = daysUntil;

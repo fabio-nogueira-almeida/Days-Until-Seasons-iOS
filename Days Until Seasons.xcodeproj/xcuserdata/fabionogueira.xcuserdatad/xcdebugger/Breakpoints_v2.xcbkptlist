@@ -10,55 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DUSFramework/Seasons.swift"
-            timestampString = "449808124.328462"
+            timestampString = "449851072.345417"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DUSFramework.Seasons.spring.getter : DUSFramework.Season"
-                  moduleName = "DUSFramework"
-                  urlString = "file:///Users/fabionogueira/Desktop/Projetos%20pessoais%20GIT/Days%20Until%20Seasons/DUSFramework/Seasons.swift"
-                  timestampString = "449809029.817527"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DUSFramework.Seasons.spring.setter : DUSFramework.Season"
-                  moduleName = "DUSFramework"
-                  urlString = "file:///Users/fabionogueira/Desktop/Projetos%20pessoais%20GIT/Days%20Until%20Seasons/DUSFramework/Seasons.swift"
-                  timestampString = "449809029.817907"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "27">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DUSFramework.Seasons.spring.materializeForSet : DUSFramework.Season"
-                  moduleName = "DUSFramework"
-                  urlString = "file:///Users/fabionogueira/Desktop/Projetos%20pessoais%20GIT/Days%20Until%20Seasons/DUSFramework/Seasons.swift"
-                  timestampString = "449809029.81839"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "25">
-               </Location>
-            </Locations>
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "setDaysUntilNextSeason()"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
