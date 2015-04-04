@@ -8,7 +8,7 @@
 
 import WatchKit
 import Foundation
-
+import DUSFramework
 
 class GlanceController: WKInterfaceController {
 
@@ -24,13 +24,25 @@ class GlanceController: WKInterfaceController {
     }
 
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
+        addInformationToScreen(Seasons.currentSeason())
         super.willActivate()
     }
 
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+
+    // MARK: Private Methods
+    
+    func addInformationToScreen(season: Season) {
+        let daysUntil = NSLocalizedString("Days until", value: "Days until", comment: "")
+        let days = "164"
+        let nextSeason = "Summer"
+        
+        self.daysLabel.setText(days)
+        self.descriptionLabel.setText(daysUntil)
+        self.nextSeasonLabel.setText(nextSeason)
     }
 
 }
