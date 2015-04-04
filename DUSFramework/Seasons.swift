@@ -17,9 +17,13 @@ import UIKit
     var autumn : Season = Season()
     var winter : Season = Season()
 
-    var northernSeasons : NSArray = []
-    var southernSeasons : NSArray = []
+    var currentHemisphereSeasons : NSArray = []
     
+    public var isNorthernHemisphere: Bool = false {
+        didSet {
+            self.initialize()
+        }
+    }
     public var currentSeason: Season = Season()
     public var nextSeason : Season = Season()
     public var daysUntilNextSeason: Int = 0
@@ -28,15 +32,25 @@ import UIKit
     
     override public init() {
         super.init()
-//        northernSeasons = northernHemisphereSeasons()
-        southernSeasons = southernHemisphereSeasons()
-        
-        self.currentSeason = seasonForDate(NSDate())
-        self.setNextSeasonOnSeasons(self.southernSeasons)
-        self.setDaysUntilNextSeason()
+        self.initialize()
     }
     
     // MARK: Private Methods
+    
+    func initialize() {
+        self.currentHemisphere()
+        self.currentSeason = seasonForDate(NSDate())
+        self.setNextSeasonOnSeasons(currentHemisphereSeasons)
+        self.setDaysUntilNextSeason()
+    }
+    
+    func currentHemisphere() {
+        if (self.isNorthernHemisphere) {
+            self.currentHemisphereSeasons = northernHemisphereSeasons()
+        } else {
+            currentHemisphereSeasons = southernHemisphereSeasons()
+        }
+    }
     
     func seasonForDate(date: NSDate) -> Season {
         var currentSeason = Season()
