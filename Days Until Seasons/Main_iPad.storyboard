@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="Xil-7R-vDD">
             <objects>
-                <viewController id="2Uv-ma-24V" sceneMemberID="viewController">
+                <viewController id="2Uv-ma-24V" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gx7-cQ-ea2"/>
                         <viewControllerLayoutGuide type="bottom" id="yZ1-vK-N9u"/>
@@ -88,6 +88,11 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="900" height="600"/>
+                    <connections>
+                        <outlet property="currentSeasonLabel" destination="JKl-tO-Z7q" id="pgU-7Y-HII"/>
+                        <outlet property="descriptionIpadLabel" destination="OIr-SS-wqz" id="0Vm-9w-NOw"/>
+                        <outlet property="seasonIconImageView" destination="HTp-rv-eQL" id="80D-F9-DVR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhB-gM-5rZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

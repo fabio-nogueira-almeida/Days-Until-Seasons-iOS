@@ -158,6 +158,13 @@
                     <navigationItem key="navigationItem" id="Tmz-U4-vjJ"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="currentSeasonLabel" destination="IGE-QZ-DoQ" id="MKB-ME-xlc"/>
+                        <outlet property="daysLabel" destination="0QV-YH-nSm" id="M1E-AT-5Pa"/>
+                        <outlet property="descriptionLabel" destination="Cmd-DR-0U0" id="izG-4A-WHa"/>
+                        <outlet property="nextSeasonLabel" destination="VzQ-Aw-LLM" id="7KM-9k-LGC"/>
+                        <outlet property="seasonIconImageView" destination="aZL-IK-q87" id="5Ex-te-qW8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
