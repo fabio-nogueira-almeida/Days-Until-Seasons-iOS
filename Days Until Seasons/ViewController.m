@@ -54,7 +54,6 @@
     self.locationManager.distanceFilter = kCLDistanceFilterNone;
     
     [self.locationManager requestWhenInUseAuthorization];
-    [self.locationManager startMonitoringSignificantLocationChanges];
     [self.locationManager startUpdatingLocation];
 }
 
@@ -86,6 +85,10 @@
         self.seasons.isNorthernHemisphere = YES;
         [self _addInformationToScreen];
     }
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    
 }
 
 @end
