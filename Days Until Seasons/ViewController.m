@@ -40,13 +40,13 @@
     NSString *nextSeason = seasons.nextSeason.name;
     
     self.currentSeasonImageView.image = [UIImage imageNamed:imageNamed];
+    self.currentSeasonLabel.text = imageNamed;
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         NSString *ipadText = [NSString stringWithFormat:@"%@ %@ %@", days, daysUntil, nextSeason];
         self.descriptionIpadLabel.text = ipadText;
 
     } else {
-        self.currentSeasonLabel.text = imageNamed;
         self.daysLabel.text = days;
         self.descriptionLabel.text = daysUntil;
         self.nextSeasonLabel.text = nextSeason;
