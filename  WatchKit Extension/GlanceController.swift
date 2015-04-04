@@ -12,6 +12,11 @@ import Foundation
 
 class GlanceController: WKInterfaceController {
 
+    
+    @IBOutlet weak var daysLabel: WKInterfaceLabel!
+    @IBOutlet weak var descriptionLabel: WKInterfaceLabel!
+    @IBOutlet weak var nextSeasonLabel: WKInterfaceLabel!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         

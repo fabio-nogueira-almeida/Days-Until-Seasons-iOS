@@ -12,6 +12,11 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var currentSeasonImageView: WKInterfaceImage!
+    @IBOutlet weak var daysLabel: WKInterfaceLabel!
+    @IBOutlet weak var descriptionLabel: WKInterfaceLabel!
+    @IBOutlet weak var nextSeasonLabel: WKInterfaceLabel!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         

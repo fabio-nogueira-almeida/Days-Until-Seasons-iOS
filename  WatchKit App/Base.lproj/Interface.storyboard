@@ -25,6 +25,10 @@
                     </items>
                     <menu key="menu" id="uwn-ZF-cj7"/>
                     <connections>
+                        <outlet property="currentSeasonImageView" destination="AIR-5w-hcI" id="Td3-Kc-FET"/>
+                        <outlet property="daysLabel" destination="1Kf-Ay-LwN" id="hGh-Fe-o6k"/>
+                        <outlet property="descriptionLabel" destination="HRc-rC-gRl" id="Bd8-Fj-SsV"/>
+                        <outlet property="nextSeasonLabel" destination="Y8E-yc-Hgs" id="LI7-VG-zbK"/>
                         <segue destination="r4C-lq-uXM" kind="relationship" relationship="nextPage" id="nfx-eO-eB6"/>
                     </connections>
                 </controller>
@@ -61,6 +65,11 @@
                         <label alignment="left" hidden="YES" text="Days Until Seasons" id="PVf-Ga-N8d"/>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="daysLabel" destination="F1d-4y-OjA" id="fhI-Bb-zdN"/>
+                        <outlet property="descriptionLabel" destination="2QF-vl-REy" id="bIb-G2-onb"/>
+                        <outlet property="nextSeasonLabel" destination="NL4-uf-SRn" id="BlX-v0-leg"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="235" y="672"/>
