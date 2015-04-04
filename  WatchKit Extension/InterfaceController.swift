@@ -25,7 +25,7 @@ class InterfaceController: WKInterfaceController {
     }
 
     override func willActivate() {
-//        addInformationToScreen(Seasons.currentSeason())
+        addInformationToScreen()
         super.willActivate()
     }
 
@@ -36,14 +36,15 @@ class InterfaceController: WKInterfaceController {
     
     // MARK: Private Methods
     
-    func addInformationToScreen(season: Season) {
-        let seasonName = NSLocalizedString(season.name, value: season.name, comment: "")
+    func addInformationToScreen() {
+        let seasons = Seasons()
+        let seasonName = NSLocalizedString(seasons.currentSeason.name, value: seasons.currentSeason.name, comment: "")
         let daysUntil = NSLocalizedString("Days until", value: "Days until", comment: "")
-        let days = "164"
-        let nextSeason = "Summer"
+        let days = seasons.daysUntilNextSeason
+        let nextSeason = seasons.nextSeason.name
         
         self.currentSeasonImageView.setImage(UIImage(named: "\(seasonName)_Watch"))
-        self.daysLabel.setText(days)
+        self.daysLabel.setText("\(days)")
         self.descriptionLabel.setText(daysUntil)
         self.nextSeasonLabel.setText(nextSeason)
     }

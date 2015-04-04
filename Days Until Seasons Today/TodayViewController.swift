@@ -23,18 +23,19 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-//        addInformationToScreen(Seasons.currentSeason())
+        addInformationToScreen()
     }
     
     // MARK: Private Methods
     
-    func addInformationToScreen(season: Season) {
-        let seasonName = NSLocalizedString(season.name, value: season.name, comment: "")
+    func addInformationToScreen() {
+        let seasons = Seasons()
+        let seasonName = NSLocalizedString(seasons.currentSeason.name, value: seasons.currentSeason.name, comment: "")
         let daysUntil = NSLocalizedString("Days until", value: "Days until", comment: "")
         
-        self.currentSeasonImageView.image = UIImage(named: seasonName)
+        self.currentSeasonImageView.image = UIImage(named: seasons.currentSeason.name)
         
-        var descriptionText = "245 \(daysUntil) \(seasonName)"
+        var descriptionText = "\(seasons.daysUntilNextSeason) \(daysUntil) \(seasons.nextSeason.name)"
         self.descriptionLabel.text = descriptionText;
     }
     
