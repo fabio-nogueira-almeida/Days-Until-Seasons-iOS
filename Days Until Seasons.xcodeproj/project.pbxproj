@@ -42,6 +42,11 @@
 		70DFDF721ACF82E500A2DE87 /* NSDateExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 70DFDF421ACEE7DE00A2DE87 /* NSDateExtension.swift */; };
 		70DFDF731ACF82E500A2DE87 /* Season.swift in Headers */ = {isa = PBXBuildFile; fileRef = 70DFDF391ACEE18800A2DE87 /* Season.swift */; };
 		70DFDF741ACF831D00A2DE87 /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
+		70DFDF7C1ACF8C0200A2DE87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
+		70DFDF7D1ACF8C0200A2DE87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
+		70DFDF7E1ACF8C0200A2DE87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
+		70DFDF7F1ACF8C0200A2DE87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
+		70DFDF801ACF8C0200A2DE87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
 		70F68D581ACCB6AE00C048CB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */; };
 		70F68D591ACDE7A900C048CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705280D41ACB718D0099A80D /* Images.xcassets */; };
 		70F68D5D1ACDEF2100C048CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705280D41ACB718D0099A80D /* Images.xcassets */; };
@@ -167,6 +172,10 @@
 		70DFDF421ACEE7DE00A2DE87 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		70DFDF441ACEEAC100A2DE87 /* NSDateExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensionTests.swift; sourceTree = "<group>"; };
 		70DFDF491ACF483800A2DE87 /* SeasonsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonsTest.swift; sourceTree = "<group>"; };
+		70DFDF751ACF8B3400A2DE87 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
+		70DFDF811ACF8C0200A2DE87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		70DFDF831ACF8C0600A2DE87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		70DFDF841ACF8C0700A2DE87 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -267,6 +276,7 @@
 			children = (
 				705280C81ACB718D0099A80D /* Info.plist */,
 				705280C91ACB718D0099A80D /* main.m */,
+				70DFDF821ACF8C0200A2DE87 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -614,6 +624,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pt,
 			);
 			mainGroup = 705280BB1ACB718D0099A80D;
 			productRefGroup = 705280C51ACB718D0099A80D /* Products */;
@@ -636,6 +647,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70DFDF7C1ACF8C0200A2DE87 /* Localizable.strings in Resources */,
 				705280D31ACB718D0099A80D /* Main.storyboard in Resources */,
 				705280D81ACB718D0099A80D /* LaunchScreen.xib in Resources */,
 				705280D51ACB718D0099A80D /* Images.xcassets in Resources */,
@@ -655,6 +667,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7052810F1ACB73210099A80D /* MainInterface.storyboard in Resources */,
+				70DFDF7D1ACF8C0200A2DE87 /* Localizable.strings in Resources */,
 				70F68D591ACDE7A900C048CB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,6 +677,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70F68D5E1ACDEF2600C048CB /* Images.xcassets in Resources */,
+				70DFDF7E1ACF8C0200A2DE87 /* Localizable.strings in Resources */,
 				7052812A1ACB74140099A80D /*  WatchKit App.app in Resources */,
 				705281261ACB74140099A80D /* Images.xcassets in Resources */,
 			);
@@ -674,6 +688,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				705281321ACB74140099A80D /* Interface.storyboard in Resources */,
+				70DFDF7F1ACF8C0200A2DE87 /* Localizable.strings in Resources */,
 				70F68D5D1ACDEF2100C048CB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,6 +698,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70F68D5F1ACDEF2C00C048CB /* Images.xcassets in Resources */,
+				70DFDF801ACF8C0200A2DE87 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,6 +816,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				705280D21ACB718D0099A80D /* Base */,
+				70DFDF751ACF8B3400A2DE87 /* pt */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -818,6 +835,16 @@
 				705281311ACB74140099A80D /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		70DFDF821ACF8C0200A2DE87 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70DFDF811ACF8C0200A2DE87 /* Base */,
+				70DFDF831ACF8C0600A2DE87 /* en */,
+				70DFDF841ACF8C0700A2DE87 /* pt */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
