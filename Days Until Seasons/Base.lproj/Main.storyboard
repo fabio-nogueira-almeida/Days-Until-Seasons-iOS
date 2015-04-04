@@ -48,7 +48,7 @@
                                         <color key="textColor" red="0.93725490199999995" green="0.94509803920000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winter" translatesAutoresizingMaskIntoConstraints="NO" id="aZL-IK-q87">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Winter" translatesAutoresizingMaskIntoConstraints="NO" id="aZL-IK-q87">
                                         <rect key="frame" x="230" y="24" width="140" height="140"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="SE9-PL-Rte"/>
@@ -159,11 +159,11 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="currentSeasonImageView" destination="aZL-IK-q87" id="YIi-Te-rpx"/>
                         <outlet property="currentSeasonLabel" destination="IGE-QZ-DoQ" id="MKB-ME-xlc"/>
                         <outlet property="daysLabel" destination="0QV-YH-nSm" id="M1E-AT-5Pa"/>
                         <outlet property="descriptionLabel" destination="Cmd-DR-0U0" id="izG-4A-WHa"/>
                         <outlet property="nextSeasonLabel" destination="VzQ-Aw-LLM" id="7KM-9k-LGC"/>
-                        <outlet property="seasonIconImageView" destination="aZL-IK-q87" id="5Ex-te-qW8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -172,8 +172,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Winter" width="268" height="304"/>
         <image name="background" width="750" height="1334"/>
-        <image name="winter" width="268" height="304"/>
     </resources>
     <color key="tintColor" red="0.93725490199999995" green="0.94509803920000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>

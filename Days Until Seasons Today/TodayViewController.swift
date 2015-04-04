@@ -19,14 +19,22 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.preferredContentSize = CGSizeMake(320, 60);
-        
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         addInformationToScreen(Seasons.currentSeason())
     }
     
     // MARK: Private Methods
     
-    func addInformationToScreen(aseason: Season) {
-        var descriptionText = "245 days until \(aseason.name)"
+    func addInformationToScreen(season: Season) {
+        let seasonName = NSLocalizedString(season.name, value: season.name, comment: "")
+        let daysUntil = NSLocalizedString("Days until", value: "Days until", comment: "")
+        
+        self.currentSeasonImageView.image = UIImage(named: seasonName)
+        
+        var descriptionText = "245 \(daysUntil) \(seasonName)"
         self.descriptionLabel.text = descriptionText;
     }
     

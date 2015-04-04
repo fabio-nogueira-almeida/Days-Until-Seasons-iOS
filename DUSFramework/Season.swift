@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class Season: NSObject {
+@objc public class Season: NSObject {
    
     // MARK: Properties
     

@@ -38,7 +38,7 @@
                                         <color key="textColor" red="0.93725490199999995" green="0.94509803920000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winter" translatesAutoresizingMaskIntoConstraints="NO" id="HTp-rv-eQL">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Winter" translatesAutoresizingMaskIntoConstraints="NO" id="HTp-rv-eQL">
                                         <rect key="frame" x="360" y="30" width="180" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="180" id="1Zt-uJ-brz"/>
@@ -89,9 +89,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="900" height="600"/>
                     <connections>
+                        <outlet property="currentSeasonImageView" destination="HTp-rv-eQL" id="Ost-q8-HuB"/>
                         <outlet property="currentSeasonLabel" destination="JKl-tO-Z7q" id="pgU-7Y-HII"/>
                         <outlet property="descriptionIpadLabel" destination="OIr-SS-wqz" id="0Vm-9w-NOw"/>
-                        <outlet property="seasonIconImageView" destination="HTp-rv-eQL" id="80D-F9-DVR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhB-gM-5rZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -100,7 +100,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Winter" width="268" height="304"/>
         <image name="background" width="750" height="1334"/>
-        <image name="winter" width="268" height="304"/>
     </resources>
 </document>

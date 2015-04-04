@@ -5,3 +5,19 @@
   Created by Fábio Nogueira de Almeida on 04/04/15.
   Copyright (c) 2015 Fábio Nogueira de Almeida. All rights reserved.
 */
+
+// DUSFrameWork
+
+"Spring" = "Primavera";
+"Summer" = "Verão";
+"Autumn" = "Outono";
+"Winter" = "Inverno";
+
+"Spring_description" = "a Primavera";
+"Summer_description" = "o Verão";
+"Autumn_description" = "o Outono";
+"Winter_description" = "o Inverno";
+
+// Interface
+
+"Days until" = "dias até";

@@ -10,7 +10,7 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *seasonIconImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *currentSeasonImageView;
 @property (weak, nonatomic) IBOutlet UILabel *currentSeasonLabel;
 @property (weak, nonatomic) IBOutlet UILabel *daysLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
