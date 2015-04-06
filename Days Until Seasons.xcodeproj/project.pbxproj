@@ -11,6 +11,12 @@
 		7047DEED1AD33CBE007C441D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
 		7047DEF11AD341AF007C441D /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
 		7047DEF21AD341AF007C441D /* DUSFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7047DF0A1AD345D7007C441D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7047DF041AD345D7007C441D /* Bolts.framework */; };
+		7047DF0B1AD345D7007C441D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7047DF051AD345D7007C441D /* Parse.framework */; };
+		7047DF0C1AD345D7007C441D /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7047DF061AD345D7007C441D /* ParseCrashReporting.framework */; };
+		7047DF0D1AD345D7007C441D /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7047DF071AD345D7007C441D /* ParseFacebookUtils.framework */; };
+		7047DF0E1AD345D7007C441D /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7047DF081AD345D7007C441D /* ParseFacebookUtilsV4.framework */; };
+		7047DF0F1AD345D7007C441D /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7047DF091AD345D7007C441D /* ParseUI.framework */; };
 		705280CA1ACB718D0099A80D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 705280C91ACB718D0099A80D /* main.m */; };
 		705280CD1ACB718D0099A80D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 705280CC1ACB718D0099A80D /* AppDelegate.m */; };
 		705280D01ACB718D0099A80D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705280CF1ACB718D0099A80D /* ViewController.m */; };
@@ -155,6 +161,12 @@
 		5FED708C0C79D1EE33457FE9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7047DEF61AD3437F007C441D /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pt; path = pt.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7047DEF71AD34380007C441D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7047DF041AD345D7007C441D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Frameworks/Bolts.framework; sourceTree = "<group>"; };
+		7047DF051AD345D7007C441D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Frameworks/Parse.framework; sourceTree = "<group>"; };
+		7047DF061AD345D7007C441D /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = Frameworks/ParseCrashReporting.framework; sourceTree = "<group>"; };
+		7047DF071AD345D7007C441D /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = Frameworks/ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		7047DF081AD345D7007C441D /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = Frameworks/ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		7047DF091AD345D7007C441D /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = Frameworks/ParseUI.framework; sourceTree = "<group>"; };
 		705280C41ACB718D0099A80D /* Days Until Seasons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Days Until Seasons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		705280C81ACB718D0099A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705280C91ACB718D0099A80D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -204,6 +216,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7047DF0A1AD345D7007C441D /* Bolts.framework in Frameworks */,
+				7047DF0B1AD345D7007C441D /* Parse.framework in Frameworks */,
+				7047DF0C1AD345D7007C441D /* ParseCrashReporting.framework in Frameworks */,
+				7047DF0D1AD345D7007C441D /* ParseFacebookUtils.framework in Frameworks */,
+				7047DF0E1AD345D7007C441D /* ParseFacebookUtilsV4.framework in Frameworks */,
+				7047DF0F1AD345D7007C441D /* ParseUI.framework in Frameworks */,
 				7052815C1ACB84200099A80D /* DUSFramework.framework in Frameworks */,
 				789EED57CEE91C60BA3A3D66 /* libPods.a in Frameworks */,
 			);
@@ -332,6 +350,12 @@
 		705280F21ACB73020099A80D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7047DF041AD345D7007C441D /* Bolts.framework */,
+				7047DF051AD345D7007C441D /* Parse.framework */,
+				7047DF061AD345D7007C441D /* ParseCrashReporting.framework */,
+				7047DF071AD345D7007C441D /* ParseFacebookUtils.framework */,
+				7047DF081AD345D7007C441D /* ParseFacebookUtilsV4.framework */,
+				7047DF091AD345D7007C441D /* ParseUI.framework */,
 				705280F31ACB73020099A80D /* NotificationCenter.framework */,
 				7C054168DA74CA833D341685 /* libPods.a */,
 			);
@@ -1011,6 +1035,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/fabionogueira/Downloads/parse-library-1.7.1",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "Days Until Seasons/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1025,6 +1054,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/fabionogueira/Downloads/parse-library-1.7.1",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "Days Until Seasons/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
