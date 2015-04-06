@@ -1,6 +1,6 @@
 #Days Until Seasons
 
-![Alt text](.Design/Days until Seasons - Mockup.png)
+![Alt text](Design/Days until Seasons - Mockup.png)
 
 Days Until Seasons is a project that I started for some personal reasons.
 Sometimes I need to know what is the current seasons and what is the next season for treatment of bonsais and others plants that I really love. For a healthy growth we need to know the season for apply fertilizer corretly.
