@@ -7,7 +7,7 @@ Sometimes I need to know what is the current seasons and what is the next season
 
 So I think the focus on this app is show the information on the **Widget** and **Apple Watch** Screen. And that is what I made.
 
-The app will be on Apple store after the apple review. I will put the link in this page when aproved it.
+**The app will be on Apple store after the apple review. I will put the link in this page when aproved it.
 
 ### Technology used in this project
 
@@ -18,10 +18,10 @@ The app will be on Apple store after the apple review. I will put the link in th
 *	Today Extension (Widget)
 *	Create our own Cocoa Touch Framework
 *	Core Location (we get the user Localization for defining the current Hemisphere)
-*	Internationalization
+*	Internationalization ( as soon as possible )
 *	Unit Tests
-*	Google Analitycs
-*	Facebook Parse and Analitycs
+*	Google Analitycs ( as soon as possible )
+*	Facebook Parse and Analitycs ( as soon as possible )
 *	CI with Travis ( as soon as possible )
 *	Sketch 3 Design ( all arquives from sketch 3 is inside the project )
 
@@ -29,7 +29,7 @@ The app will be on Apple store after the apple review. I will put the link in th
 
 For creating the app I search about some information about the Word's Seasons and I find some great.
 Word's Seasons had two type of Seasons. *Meteorological* and *Astronomical*.
-Our app will work with **Meteorological Seasons** and with distincting of which *hemisphere the user will be*. Yes, each hemisphere has your on Meteorological seasons. So, if the user location is on Northern Hemisphere, we will set the corretly seasons for that location
+Our app will work with **Meteorological Seasons** and with distincting of which *hemisphere the user will be*. Yes, each hemisphere has your on Meteorological seasons. So, if the user location is on Northern Hemisphere, we will set the corretly seasons for that location.
 
 ##Contact
 
