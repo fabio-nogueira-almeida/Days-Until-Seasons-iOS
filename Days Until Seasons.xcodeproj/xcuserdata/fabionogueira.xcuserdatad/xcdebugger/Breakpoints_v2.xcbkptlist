@@ -25,12 +25,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Days Until Seasons Today/TodayViewController.swift"
-            timestampString = "449968185.347894"
+            filePath = " WatchKit Extension/InterfaceController.swift"
+            timestampString = "450052083.258011"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = " WatchKit Extension/InterfaceController.swift"
-            timestampString = "449971022.837613"
+            filePath = "Days Until Seasons Today/TodayViewController.swift"
+            timestampString = "450051960.84332"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "locationManager(_:didUpdateLocations:)"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "addInformationToScreen()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

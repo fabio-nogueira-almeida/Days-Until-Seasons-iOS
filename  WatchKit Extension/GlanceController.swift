@@ -35,7 +35,10 @@ class GlanceController: WKInterfaceController, CLLocationManagerDelegate {
     func addInformationToScreen() {
         let daysUntil = NSLocalizedString("Days until", value: "Days until", comment: "")
         let days = self.seasons.daysUntilNextSeason
-        let nextSeason = "\(self.seasons.nextSeason.name)_description"
+        let nextSeason = NSLocalizedString(
+            "\(self.seasons.nextSeason.name)_description",
+            value:"\(self.seasons.nextSeason.name)_description",
+            comment: "")
         
         self.daysLabel.setText("\(days)")
         self.descriptionLabel.setText(daysUntil)
