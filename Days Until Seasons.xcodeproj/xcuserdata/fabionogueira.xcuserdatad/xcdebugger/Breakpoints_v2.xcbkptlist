@@ -9,56 +9,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DUSFramework/Seasons.swift"
-            timestampString = "449808124.328462"
+            filePath = "Days Until Seasons/ViewController.m"
+            timestampString = "449967762.370075"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DUSFramework.Seasons.spring.getter : DUSFramework.Season"
-                  moduleName = "DUSFramework"
-                  urlString = "file:///Users/fabionogueira/Desktop/Projetos%20pessoais%20GIT/Days%20Until%20Seasons/DUSFramework/Seasons.swift"
-                  timestampString = "449809029.817527"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DUSFramework.Seasons.spring.setter : DUSFramework.Season"
-                  moduleName = "DUSFramework"
-                  urlString = "file:///Users/fabionogueira/Desktop/Projetos%20pessoais%20GIT/Days%20Until%20Seasons/DUSFramework/Seasons.swift"
-                  timestampString = "449809029.817907"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "27">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DUSFramework.Seasons.spring.materializeForSet : DUSFramework.Season"
-                  moduleName = "DUSFramework"
-                  urlString = "file:///Users/fabionogueira/Desktop/Projetos%20pessoais%20GIT/Days%20Until%20Seasons/DUSFramework/Seasons.swift"
-                  timestampString = "449809029.81839"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "25">
-               </Location>
-            </Locations>
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "-locationManager:didUpdateLocations:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Days Until Seasons Today/TodayViewController.swift"
+            timestampString = "449968185.347894"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = " WatchKit Extension/InterfaceController.swift"
+            timestampString = "449971022.837613"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

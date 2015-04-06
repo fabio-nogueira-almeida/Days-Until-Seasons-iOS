@@ -9,14 +9,34 @@
 #import "ViewController.h"
 
 @import DUSFramework;
+@import CoreLocation;
 
-@interface ViewController ()
+@interface ViewController () <CLLocationManagerDelegate>
 
-- (void)_addInformationToScreen:(Season *)season;
+@property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic, strong) Seasons *seasons;
+
+- (void)_addInformationToScreen;
 
 @end
 
 @implementation ViewController
+
+#pragma mark - Getter Methods
+
+- (Seasons *)seasons {
+    if (!_seasons) {
+        _seasons = [[Seasons alloc] init];
+    }
+    return _seasons;
+}
+
+- (CLLocationManager *)locationManager {
+    if (_locationManager) {
+        _locationManager = [[CLLocationManager alloc] init];
+    }
+    return _locationManager;
+}
 
 #pragma mark - UIViewController Methods
 
@@ -26,29 +46,50 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
-    [self _addInformationToScreen:[Seasons currentSeason]];
+    [self _addInformationToScreen];
+    [self _startStandardUpdates];
 }
 
 #pragma mark - Private Methods
 
-- (void)_addInformationToScreen:(Season *)season {
-    NSString *imageNamed = NSLocalizedString(season.name, nil);
+- (void)_startStandardUpdates {
+    self.locationManager.delegate = self;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    [self.locationManager requestWhenInUseAuthorization];
+    [self.locationManager startUpdatingLocation];
+}
+
+- (void)_addInformationToScreen {
+    NSString *imageNamed = NSLocalizedString(self.seasons.currentSeason.name, nil);
     NSString *daysUntil = NSLocalizedString(@"Days until", nil);
-    NSString *days = @"184";
-    NSString *nextSeason = @"Spring";
+    NSString *days = [NSString stringWithFormat:@"%ld", (long)self.seasons.daysUntilNextSeason];
+    NSString *nextSeason = [NSString stringWithFormat:@"%@_description", self.seasons.nextSeason.name];
     
     self.currentSeasonImageView.image = [UIImage imageNamed:imageNamed];
+    self.currentSeasonLabel.text = imageNamed;
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         NSString *ipadText = [NSString stringWithFormat:@"%@ %@ %@", days, daysUntil, nextSeason];
         self.descriptionIpadLabel.text = ipadText;
-    } else {
 
-        self.currentSeasonLabel.text = imageNamed;
+    } else {
         self.daysLabel.text = days;
         self.descriptionLabel.text = daysUntil;
         self.nextSeasonLabel.text = nextSeason;
     }
 }
+
+#pragma mark - CLocationManagerDelete Methods
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    CLLocation *location = [locations lastObject];
+    if (location.coordinate.latitude > 0) {
+        self.seasons.isNorthernHemisphere = YES;
+        [self _addInformationToScreen];
+    }
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {}
 
 @end

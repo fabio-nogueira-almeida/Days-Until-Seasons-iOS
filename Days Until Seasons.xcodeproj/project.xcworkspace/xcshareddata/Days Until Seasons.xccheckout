@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>305F8C21-ADB0-4B5D-A9F8-D63BFEB7ACF6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Days Until Seasons</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2B7A32B64359519A003502A34AC16A3ABCE27CD4</key>
+		<string>github.com:fabiotk/Days-Until-Seasons.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Days Until Seasons.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2B7A32B64359519A003502A34AC16A3ABCE27CD4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:fabiotk/Days-Until-Seasons.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2B7A32B64359519A003502A34AC16A3ABCE27CD4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2B7A32B64359519A003502A34AC16A3ABCE27CD4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Days%20Until%20Seasons</string>
+		</dict>
+	</array>
+</dict>
+</plist>

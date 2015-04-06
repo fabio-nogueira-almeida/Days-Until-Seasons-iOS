@@ -51,4 +51,9 @@ extension NSDate {
         let date = NSCalendar.currentCalendar().dateFromComponents(dateComponent)
         return date!
     }
+    
+    class func numberOfDaysBetweenDates(fromDate: NSDate, toDate: NSDate) -> Int{
+        let components = NSCalendar.currentCalendar().components(.CalendarUnitDay, fromDate: fromDate, toDate: toDate, options: NSCalendarOptions.allZeros)
+        return components.day
+    }
 }
