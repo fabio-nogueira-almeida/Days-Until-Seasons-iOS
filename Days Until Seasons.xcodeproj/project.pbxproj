@@ -30,6 +30,8 @@
 		705281591ACB84200099A80D /* DUSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705281581ACB84200099A80D /* DUSFrameworkTests.swift */; };
 		7052815C1ACB84200099A80D /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
 		7052815D1ACB84200099A80D /* DUSFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70A0520F1AD1FD6D005EB46F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70A0520E1AD1FD6D005EB46F /* Info.plist */; };
+		70A052121AD1FD9E005EB46F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70A052141AD1FD9E005EB46F /* Localizable.strings */; };
 		70DFDF3A1ACEE18800A2DE87 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF391ACEE18800A2DE87 /* Season.swift */; };
 		70DFDF3C1ACEE19A00A2DE87 /* Seasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF3B1ACEE19A00A2DE87 /* Seasons.swift */; };
 		70DFDF431ACEE7DE00A2DE87 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF421ACEE7DE00A2DE87 /* NSDateExtension.swift */; };
@@ -148,7 +150,6 @@
 		705280E31ACB718D0099A80D /* Days_Until_SeasonsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Days_Until_SeasonsTests.m; sourceTree = "<group>"; };
 		705280F31ACB73020099A80D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		705281071ACB73210099A80D /* Days Until Seasons Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Days Until Seasons Today.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7052810B1ACB73210099A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7052810C1ACB73210099A80D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		7052810E1ACB73210099A80D /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		7052811A1ACB74140099A80D /*  WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = " WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +168,10 @@
 		7052814F1ACB841F0099A80D /* DUSFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DUSFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		705281571ACB84200099A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705281581ACB84200099A80D /* DUSFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUSFrameworkTests.swift; sourceTree = "<group>"; };
+		70A0520E1AD1FD6D005EB46F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70A052131AD1FD9E005EB46F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		70A052151AD1FD9F005EB46F /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		70A052161AD1FE6B005EB46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		70DFDF391ACEE18800A2DE87 /* Season.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		70DFDF3B1ACEE19A00A2DE87 /* Seasons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seasons.swift; sourceTree = "<group>"; };
 		70DFDF421ACEE7DE00A2DE87 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
@@ -319,7 +324,8 @@
 		7052810A1ACB73210099A80D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7052810B1ACB73210099A80D /* Info.plist */,
+				70A0520E1AD1FD6D005EB46F /* Info.plist */,
+				70A052141AD1FD9E005EB46F /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -591,6 +597,7 @@
 				TargetAttributes = {
 					705280C31ACB718D0099A80D = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = C7Q44C43S9;
 					};
 					705280DC1ACB718D0099A80D = {
 						CreatedOnToolsVersion = 6.2;
@@ -666,6 +673,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70A052121AD1FD9E005EB46F /* Localizable.strings in Resources */,
+				70A0520F1AD1FD6D005EB46F /* Info.plist in Resources */,
 				7052810F1ACB73210099A80D /* MainInterface.storyboard in Resources */,
 				70DFDF7D1ACF8C0200A2DE87 /* Localizable.strings in Resources */,
 				70F68D591ACDE7A900C048CB /* Images.xcassets in Resources */,
@@ -837,6 +846,16 @@
 			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
+		70A052141AD1FD9E005EB46F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70A052131AD1FD9E005EB46F /* en */,
+				70A052151AD1FD9F005EB46F /* pt */,
+				70A052161AD1FE6B005EB46F /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		70DFDF821ACF8C0200A2DE87 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -934,6 +953,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Days Until Seasons/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -946,6 +966,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Days Until Seasons/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

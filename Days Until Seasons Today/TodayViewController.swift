@@ -9,12 +9,16 @@
 import UIKit
 import NotificationCenter
 import DUSFramework
+import CoreLocation
 
-class TodayViewController: UIViewController, NCWidgetProviding {
+class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManagerDelegate {
         
     @IBOutlet weak var currentSeasonImageView: UIImageView!
     
     @IBOutlet weak var descriptionLabel: UILabel!
+    
+    var seasons: Seasons = Seasons ()
+    var locationManager: CLLocationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,20 +28,30 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         addInformationToScreen()
+        startStandardUpdates()
     }
     
     // MARK: Private Methods
     
     func addInformationToScreen() {
-        let seasons = Seasons()
-        let seasonName = NSLocalizedString(seasons.currentSeason.name, value: seasons.currentSeason.name, comment: "")
+        let seasonName = NSLocalizedString(self.seasons.currentSeason.name, value: self.seasons.currentSeason.name, comment: "")
         let daysUntil = NSLocalizedString("Days until", value: "Days until", comment: "")
         
-        self.currentSeasonImageView.image = UIImage(named: seasons.currentSeason.name)
+        self.currentSeasonImageView.image = UIImage(named: self.seasons.currentSeason.name)
         
-        var descriptionText = "\(seasons.daysUntilNextSeason) \(daysUntil) \(seasons.nextSeason.name)"
+        var descriptionText = "\(self.seasons.daysUntilNextSeason) \(daysUntil) \(self.seasons.nextSeason.name)_description"
         self.descriptionLabel.text = descriptionText;
     }
+    
+    func startStandardUpdates() {
+        self.locationManager.delegate = self;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        self.locationManager.distanceFilter = kCLDistanceFilterNone;
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.startUpdatingLocation()
+    }
+    
+    // MARK: Today Methods
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
         // Perform any setup necessary in order to update the view.
@@ -53,4 +67,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         return UIEdgeInsetsZero;
     }
     
+    // MARK: CLLocationManagerDelegate Methods
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        let location = locations.last as CLLocation
+        if (location.coordinate.latitude > 0) {
+            self.seasons.isNorthernHemisphere = true;
+            addInformationToScreen()
+        }
+    }
+    
+    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {}
 }

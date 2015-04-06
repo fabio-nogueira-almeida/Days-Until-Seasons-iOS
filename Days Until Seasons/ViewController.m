@@ -31,6 +31,13 @@
     return _seasons;
 }
 
+- (CLLocationManager *)locationManager {
+    if (_locationManager) {
+        _locationManager = [[CLLocationManager alloc] init];
+    }
+    return _locationManager;
+}
+
 #pragma mark - UIViewController Methods
 
 - (void)viewDidLoad {
@@ -46,13 +53,9 @@
 #pragma mark - Private Methods
 
 - (void)_startStandardUpdates {
-    if (self.locationManager == nil) {
-        self.locationManager = [[CLLocationManager alloc] init];
-    }
     self.locationManager.delegate = self;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     self.locationManager.distanceFilter = kCLDistanceFilterNone;
-    
     [self.locationManager requestWhenInUseAuthorization];
     [self.locationManager startUpdatingLocation];
 }
@@ -61,7 +64,7 @@
     NSString *imageNamed = NSLocalizedString(self.seasons.currentSeason.name, nil);
     NSString *daysUntil = NSLocalizedString(@"Days until", nil);
     NSString *days = [NSString stringWithFormat:@"%ld", (long)self.seasons.daysUntilNextSeason];
-    NSString *nextSeason = self.seasons.nextSeason.name;
+    NSString *nextSeason = [NSString stringWithFormat:@"%@_description", self.seasons.nextSeason.name];
     
     self.currentSeasonImageView.image = [UIImage imageNamed:imageNamed];
     self.currentSeasonLabel.text = imageNamed;
@@ -87,8 +90,6 @@
     }
 }
 
-- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    
-}
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {}
 
 @end

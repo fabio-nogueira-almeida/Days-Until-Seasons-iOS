@@ -9,15 +9,20 @@
 import WatchKit
 import Foundation
 import DUSFramework
+import CoreLocation
 
-class GlanceController: WKInterfaceController {
+class GlanceController: WKInterfaceController, CLLocationManagerDelegate {
     
     @IBOutlet weak var daysLabel: WKInterfaceLabel!
     @IBOutlet weak var descriptionLabel: WKInterfaceLabel!
     @IBOutlet weak var nextSeasonLabel: WKInterfaceLabel!
+    
+    var seasons: Seasons = Seasons ()
+    var locationManager: CLLocationManager = CLLocationManager()
 
     override func willActivate() {
         addInformationToScreen()
+        startStandardUpdates()
         super.willActivate()
     }
 
@@ -28,13 +33,33 @@ class GlanceController: WKInterfaceController {
     // MARK: Private Methods
     
     func addInformationToScreen() {
-        let seasons = Seasons()
         let daysUntil = NSLocalizedString("Days until", value: "Days until", comment: "")
-        let days = seasons.daysUntilNextSeason
-        let nextSeason = seasons.nextSeason.name
+        let days = self.seasons.daysUntilNextSeason
+        let nextSeason = "\(self.seasons.nextSeason.name)_description"
         
         self.daysLabel.setText("\(days)")
         self.descriptionLabel.setText(daysUntil)
         self.nextSeasonLabel.setText(nextSeason)
     }
+    
+    func startStandardUpdates() {
+        self.locationManager.delegate = self;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        self.locationManager.distanceFilter = kCLDistanceFilterNone;
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.startUpdatingLocation()
+    }
+    
+    // MARK: CLLocationManagerDelegate Methods
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        let location = locations.last as CLLocation
+        if (location.coordinate.latitude > 0) {
+            self.seasons.isNorthernHemisphere = true;
+            addInformationToScreen()
+        }
+    }
+    
+    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {}
+
 }
