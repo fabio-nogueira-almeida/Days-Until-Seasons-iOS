@@ -10,14 +10,17 @@
 
 @interface AppDelegate ()
 
+- (void)_setupAnalytics;
+
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
+    [self _setupAnalytics];
     
     return YES;
 }
@@ -42,6 +45,15 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Private Methods
+
+- (void)_setupAnalytics {
+    GAI *gai = [GAI sharedInstance];
+    gai.trackUncaughtExceptions = YES;
+    gai.dispatchInterval = 20;
+    [gai trackerWithTrackingId:@"UA-61605327-1"];
 }
 
 @end
