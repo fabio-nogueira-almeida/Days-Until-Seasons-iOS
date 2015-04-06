@@ -18,10 +18,10 @@ So I think the focus on this app is show the information on the **Widget** and *
 *	Today Extension (Widget)
 *	Create our own Cocoa Touch Framework
 *	Core Location (we get the user Localization for defining the current Hemisphere)
-*	Internationalization ( as soon as possible )
+*	Internationalization
 *	Unit Tests
-*	Google Analitycs ( as soon as possible )
-*	Facebook Parse and Analitycs ( as soon as possible )
+*	Google Analytics
+*	Facebook Parse and Analytics
 *	CI with Travis ( as soon as possible )
 *	Sketch 3 Design ( all arquives from sketch 3 is inside the project )
 
