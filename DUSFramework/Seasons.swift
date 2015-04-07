@@ -73,28 +73,28 @@ import UIKit
         self.summer = Season(
             seasonStartDate: startSummer,
             seasonEndDate: endSummer,
-            seasonName: NSLocalizedString("Summer", value: "Summer", comment: ""))
+            seasonName: "Summer")
         
         let startAutumn = NSDate.dateFromActualYear(21, month: 3)
         let endAutumn = NSDate.dateFromActualYear(20, month: 6)
         self.autumn = Season(
             seasonStartDate: startAutumn,
             seasonEndDate: endAutumn,
-            seasonName: NSLocalizedString("Autumn", value: "Autumn", comment: ""))
+            seasonName: "Autumn")
         
         let startWinter = NSDate.dateFromActualYear(21, month: 6)
         let endWinter = NSDate.dateFromActualYear(20, month: 9)
         self.winter = Season(
             seasonStartDate: startWinter,
             seasonEndDate: endWinter,
-            seasonName: NSLocalizedString("Winter", value: "Winter", comment: ""))
+            seasonName: "Winter")
         
         let startSpring = NSDate.dateFromActualYear(21, month: 9)
         let endSpring = NSDate.dateFromActualYear(20, month: 12)
         self.spring = Season(
             seasonStartDate: startSpring,
             seasonEndDate: endSpring,
-            seasonName: NSLocalizedString("Spring", value: "Spring", comment: ""))
+            seasonName: "Spring")
         return [self.summer, self.autumn, self.winter, self.spring]
     }
     
@@ -104,28 +104,28 @@ import UIKit
         self.winter = Season(
             seasonStartDate: startWinter,
             seasonEndDate: endWinter,
-            seasonName: NSLocalizedString("Winter", value: "Winter", comment: ""))
+            seasonName: "Winter")
         
         let startSpring = NSDate.dateFromActualYear(21, month: 3)
         let endSpring = NSDate.dateFromActualYear(20, month: 6)
         self.spring = Season(
             seasonStartDate: startSpring,
             seasonEndDate: endSpring,
-            seasonName: NSLocalizedString("Spring", value: "Spring", comment: ""))
+            seasonName: "Spring")
         
         let startSummer = NSDate.dateFromActualYear(21, month: 6)
         let endSummer = NSDate.dateFromActualYear(20, month: 9)
         self.summer = Season(
             seasonStartDate: startSummer,
             seasonEndDate: endSummer,
-            seasonName: NSLocalizedString("Summer", value: "Summer", comment: ""))
+            seasonName: "Summer")
         
         let startAutumn = NSDate.dateFromActualYear(21, month: 9)
         let endAutumn = NSDate.dateFromActualYear(20, month: 12)
         self.autumn = Season(
             seasonStartDate: startAutumn,
             seasonEndDate: endAutumn,
-            seasonName: NSLocalizedString("Autumn", value: "Autumn", comment: ""))
+            seasonName: "Autumn")
         return [self.winter, self.spring, self.summer, self.autumn]
     }
     

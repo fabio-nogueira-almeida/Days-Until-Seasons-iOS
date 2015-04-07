@@ -50,6 +50,10 @@
 		705281591ACB84200099A80D /* DUSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705281581ACB84200099A80D /* DUSFrameworkTests.swift */; };
 		7052815C1ACB84200099A80D /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
 		7052815D1ACB84200099A80D /* DUSFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7070E6CA1AD4984700302D6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
+		7070E6CB1AD4984800302D6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
+		7070E6CC1AD4984800302D6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
+		7070E6CD1AD4984A00302D6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
 		70DFDF3A1ACEE18800A2DE87 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF391ACEE18800A2DE87 /* Season.swift */; };
 		70DFDF3C1ACEE19A00A2DE87 /* Seasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF3B1ACEE19A00A2DE87 /* Seasons.swift */; };
 		70DFDF431ACEE7DE00A2DE87 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF421ACEE7DE00A2DE87 /* NSDateExtension.swift */; };
@@ -354,6 +358,7 @@
 		705280C71ACB718D0099A80D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70DFDF821ACF8C0200A2DE87 /* Localizable.strings */,
 				705280C81ACB718D0099A80D /* Info.plist */,
 				705280C91ACB718D0099A80D /* main.m */,
 			);
@@ -473,7 +478,6 @@
 		705281471ACB841F0099A80D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				70DFDF821ACF8C0200A2DE87 /* Localizable.strings */,
 				705281481ACB841F0099A80D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -751,6 +755,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7070E6CC1AD4984800302D6D /* Localizable.strings in Resources */,
 				705280D31ACB718D0099A80D /* Main.storyboard in Resources */,
 				705280D81ACB718D0099A80D /* LaunchScreen.xib in Resources */,
 				705280D51ACB718D0099A80D /* Images.xcassets in Resources */,
@@ -770,6 +775,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7052810F1ACB73210099A80D /* MainInterface.storyboard in Resources */,
+				7070E6CB1AD4984800302D6D /* Localizable.strings in Resources */,
 				70F68D591ACDE7A900C048CB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -779,6 +785,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70F68D5E1ACDEF2600C048CB /* Images.xcassets in Resources */,
+				7070E6CA1AD4984700302D6D /* Localizable.strings in Resources */,
 				7052812A1ACB74140099A80D /*  WatchKit App.app in Resources */,
 				705281261ACB74140099A80D /* Images.xcassets in Resources */,
 			);
@@ -789,6 +796,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				705281321ACB74140099A80D /* Interface.storyboard in Resources */,
+				7070E6CD1AD4984A00302D6D /* Localizable.strings in Resources */,
 				70F68D5D1ACDEF2100C048CB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -983,7 +991,6 @@
 				70DFDF841ACF8C0700A2DE87 /* pt */,
 			);
 			name = Localizable.strings;
-			path = "../Days Until Seasons";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

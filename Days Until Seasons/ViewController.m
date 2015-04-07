@@ -61,13 +61,13 @@
 }
 
 - (void)_addInformationToScreen {
-    NSString *imageNamed = NSLocalizedString(self.seasons.currentSeason.name, nil);
+    NSString *imageNamed = self.seasons.currentSeason.name;
     NSString *daysUntil = NSLocalizedString(@"Days until", nil);
     NSString *days = [NSString stringWithFormat:@"%ld", (long)self.seasons.daysUntilNextSeason];
     NSString *nextSeasonLocalizedString = [NSString stringWithFormat:@"%@_description", self.seasons.nextSeason.name];
     NSString *nextSeason = NSLocalizedString(nextSeasonLocalizedString, nil);
     self.currentSeasonImageView.image = [UIImage imageNamed:imageNamed];
-    self.currentSeasonLabel.text = imageNamed;
+    self.currentSeasonLabel.text = NSLocalizedString(imageNamed, nil);
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         NSString *ipadText = [NSString stringWithFormat:@"%@ %@ %@", days, daysUntil, nextSeason];
