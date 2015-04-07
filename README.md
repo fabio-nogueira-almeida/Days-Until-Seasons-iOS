@@ -23,6 +23,7 @@ So I think the focus on this app is show the information on the **Widget** and *
 *	Google Analytics
 *	Facebook Parse and Analytics
 *	CI with Travis ( as soon as possible )
+*	iAd ( as soon as possible )
 *	Sketch 3 Design ( all arquives from sketch 3 is inside the project )
 
 ### Studying about Seasons
@@ -37,4 +38,5 @@ Follow @fabintk on Twitter or mail me at fna.contact@gmail.com.
 
 ##Licence
 
-Days Until Seasons is available under MIT licence. See the LICENCE file for more info.
+Days Until Seasons is available under MIT licence.
+Copyright (c) 2015 Fábio Nogueira.
