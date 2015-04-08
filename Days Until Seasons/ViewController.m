@@ -64,8 +64,7 @@
     NSString *imageNamed = self.seasons.currentSeason.name;
     NSString *daysUntil = NSLocalizedString(@"Days until", nil);
     NSString *days = [NSString stringWithFormat:@"%ld", (long)self.seasons.daysUntilNextSeason];
-    NSString *nextSeasonLocalizedString = [NSString stringWithFormat:@"%@_description", self.seasons.nextSeason.name];
-    NSString *nextSeason = NSLocalizedString(nextSeasonLocalizedString, nil);
+    NSString *nextSeason = NSLocalizedString(self.seasons.nextSeason.name, nil);
     self.currentSeasonImageView.image = [UIImage imageNamed:imageNamed];
     self.currentSeasonLabel.text = NSLocalizedString(imageNamed, nil);
     

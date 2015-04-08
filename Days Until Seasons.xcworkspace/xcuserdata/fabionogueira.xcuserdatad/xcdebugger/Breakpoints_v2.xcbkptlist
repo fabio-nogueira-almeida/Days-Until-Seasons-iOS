@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Days Until Seasons/ViewController.m"
-            timestampString = "450140468.467313"
+            timestampString = "450147816.383261"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "-_addInformationToScreen"
             landmarkType = "5">
          </BreakpointContent>

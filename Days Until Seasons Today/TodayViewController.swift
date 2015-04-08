@@ -40,8 +40,8 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
         self.currentSeasonImageView.image = UIImage(named: self.seasons.currentSeason.name)
         
         let nextSeasonLocalizedString = NSLocalizedString(
-            "\(self.seasons.nextSeason.name)_description",
-            value: "\(self.seasons.nextSeason.name)_description",
+            self.seasons.nextSeason.name,
+            value: self.seasons.nextSeason.name,
             comment: "")
         
         var descriptionText = "\(self.seasons.daysUntilNextSeason) \(daysUntil) \(nextSeasonLocalizedString)"

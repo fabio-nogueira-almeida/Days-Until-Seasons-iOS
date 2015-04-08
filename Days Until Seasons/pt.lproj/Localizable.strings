@@ -13,11 +13,6 @@
 "Autumn" = "Outono";
 "Winter" = "Inverno";
 
-"Spring_description" = "a Primavera";
-"Summer_description" = "o Verão";
-"Autumn_description" = "o Outono";
-"Winter_description" = "o Inverno";
-
 // Interface
 
 "Days until" = "Dias até";

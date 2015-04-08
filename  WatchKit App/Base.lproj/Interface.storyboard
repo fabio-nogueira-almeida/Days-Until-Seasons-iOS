@@ -29,18 +29,10 @@
                         <outlet property="daysLabel" destination="1Kf-Ay-LwN" id="hGh-Fe-o6k"/>
                         <outlet property="descriptionLabel" destination="HRc-rC-gRl" id="Bd8-Fj-SsV"/>
                         <outlet property="nextSeasonLabel" destination="Y8E-yc-Hgs" id="LI7-VG-zbK"/>
-                        <segue destination="r4C-lq-uXM" kind="relationship" relationship="nextPage" id="nfx-eO-eB6"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
-        </scene>
-        <!--Interface Controller-->
-        <scene sceneID="eXK-OQ-j6O">
-            <objects>
-                <controller id="r4C-lq-uXM"/>
-            </objects>
-            <point key="canvasLocation" x="447" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
