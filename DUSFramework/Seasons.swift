@@ -16,6 +16,13 @@ import UIKit
     var summer : Season = Season()
     var autumn : Season = Season()
     var winter : Season = Season()
+    
+    public let colors = [
+        "Spring": UIColor(red:0.02, green:0.95, blue:0.49, alpha:1),
+        "Summer": UIColor(red:0.94, green:0.22, blue:0.16, alpha:1),
+        "Autumn": UIColor.brownColor(),
+        "Winter": UIColor(red:0.1, green:0.57, blue:0.94, alpha:1),
+    ]
 
     var currentHemisphereSeasons : NSArray = []
     

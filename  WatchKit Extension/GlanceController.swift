@@ -42,6 +42,7 @@ class GlanceController: WKInterfaceController, CLLocationManagerDelegate {
         self.daysLabel.setText("\(days)")
         self.descriptionLabel.setText(daysUntil)
         self.nextSeasonLabel.setText(nextSeason)
+        self.nextSeasonLabel.setTextColor(self.seasons.colors[self.seasons.nextSeason.name])
     }
     
     func startStandardUpdates() {
