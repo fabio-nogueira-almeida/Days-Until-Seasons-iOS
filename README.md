@@ -19,6 +19,7 @@ So I think the focus on this app is show the information on the **Widget** and *
 *	Create our own Cocoa Touch Framework
 *	Core Location (we get the user Localization for defining the current Hemisphere)
 *	Internationalization
+*	Cocoapods
 *	Unit Tests
 *	Google Analytics
 *	Facebook Parse and Analytics
