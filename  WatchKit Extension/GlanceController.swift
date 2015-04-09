@@ -55,13 +55,22 @@ class GlanceController: WKInterfaceController, CLLocationManagerDelegate {
     // MARK: CLLocationManagerDelegate Methods
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        let location = locations.last as CLLocation
-        if (location.coordinate.latitude > 0) {
-            self.seasons.isNorthernHemisphere = true;
-            addInformationToScreen()
+        let location = locations.last as! CLLocation
+        if (location.coordinate.latitude < 0) {
+            self.seasons.isSouthernHemisphere = true;
+        }
+        addInformationToScreen()
+    }
+    
+    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if (status == CLAuthorizationStatus.NotDetermined ||
+            status == CLAuthorizationStatus.AuthorizedWhenInUse) {
+                self.locationManager.startUpdatingLocation()
         }
     }
     
-    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {}
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        self.locationManager.stopUpdatingLocation()
+    }
 
 }

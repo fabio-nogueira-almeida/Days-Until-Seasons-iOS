@@ -19,7 +19,7 @@ import UIKit
 
     var currentHemisphereSeasons : NSArray = []
     
-    public var isNorthernHemisphere: Bool = false {
+    public var isSouthernHemisphere: Bool = false {
         didSet {
             self.initialize()
         }
@@ -45,10 +45,10 @@ import UIKit
     }
     
     func currentHemisphere() {
-        if (self.isNorthernHemisphere) {
-            self.currentHemisphereSeasons = northernHemisphereSeasons()
+        if (self.isSouthernHemisphere) {
+            self.currentHemisphereSeasons = southernHemisphereSeasons()
         } else {
-            currentHemisphereSeasons = southernHemisphereSeasons()
+            currentHemisphereSeasons = northernHemisphereSeasons()
         }
     }
     
@@ -131,7 +131,7 @@ import UIKit
     
     func setNextSeasonOnSeasons(seasons: NSArray) {
         let indexOfCurrentSeason = seasons.indexOfObject(self.currentSeason)
-        let nextSeason = seasons.objectAtIndex(indexOfCurrentSeason + 1) as Season
+        let nextSeason = seasons.objectAtIndex(indexOfCurrentSeason + 1) as! Season
         self.nextSeason = nextSeason;
     }
     

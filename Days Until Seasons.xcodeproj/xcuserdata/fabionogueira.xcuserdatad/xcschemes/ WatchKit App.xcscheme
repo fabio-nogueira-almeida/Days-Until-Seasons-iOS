@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0620"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "705281281ACB74140099A80D"
-               BuildableName = " WatchKit App.app"
-               BlueprintName = " WatchKit App"
+               BlueprintIdentifier = "705280C31ACB718D0099A80D"
+               BuildableName = "Days Until Seasons.app"
+               BlueprintName = "Days Until Seasons"
                ReferencedContainer = "container:Days Until Seasons.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

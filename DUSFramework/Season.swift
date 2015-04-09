@@ -14,7 +14,7 @@ import UIKit
     
     var startDate : NSDate
     var endDate : NSDate
-    public var name : NSString = ""
+    public var name : String = ""
  
     // MARK: Initialize Methods
     
@@ -23,7 +23,7 @@ import UIKit
         endDate = NSDate()
     }
     
-    init(seasonStartDate: NSDate, seasonEndDate: NSDate, seasonName: NSString) {
+    init(seasonStartDate: NSDate, seasonEndDate: NSDate, seasonName: String) {
         self.startDate = seasonStartDate
         self.endDate = seasonEndDate
         name = seasonName

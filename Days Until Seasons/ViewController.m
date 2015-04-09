@@ -32,20 +32,17 @@
 }
 
 - (CLLocationManager *)locationManager {
-    if (_locationManager) {
+    if (!_locationManager) {
         _locationManager = [[CLLocationManager alloc] init];
+        _locationManager.delegate = self;
     }
     return _locationManager;
 }
 
 #pragma mark - UIViewController Methods
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:YES];
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     [self _addInformationToScreen];
     [self _startStandardUpdates];
 }
@@ -53,7 +50,6 @@
 #pragma mark - Private Methods
 
 - (void)_startStandardUpdates {
-    self.locationManager.delegate = self;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     self.locationManager.distanceFilter = kCLDistanceFilterNone;
     [self.locationManager requestWhenInUseAuthorization];
@@ -83,12 +79,21 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     CLLocation *location = [locations lastObject];
-    if (location.coordinate.latitude > 0) {
-        self.seasons.isNorthernHemisphere = YES;
-        [self _addInformationToScreen];
+    if (location.coordinate.latitude < 0) {
+        self.seasons.isSouthernHemisphere = YES;
+    }
+    [self _addInformationToScreen];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    if (status == kCLAuthorizationStatusNotDetermined ||
+        status == kCLAuthorizationStatusAuthorizedWhenInUse) {
+        [self.locationManager startUpdatingLocation];
     }
 }
 
-- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {}
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    [self.locationManager stopUpdatingLocation];
+}
 
 @end

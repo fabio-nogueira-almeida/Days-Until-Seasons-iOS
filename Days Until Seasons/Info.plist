@@ -47,6 +47,8 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationUsageDescription</key>
+	<string>We need to know your location for show you the correct Astronomical Seasons Information.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We need to know your location for show you the correct Astronomical Seasons Information.</string>
 </dict>
