@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "705281191ACB74140099A80D"
-               BuildableName = " WatchKit Extension.appex"
-               BlueprintName = " WatchKit Extension"
+               BuildableName = "WatchKit Extension.appex"
+               BlueprintName = "WatchKit Extension"
                ReferencedContainer = "container:Days Until Seasons.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -109,8 +109,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "705281281ACB74140099A80D"
-            BuildableName = " WatchKit App.app"
-            BlueprintName = " WatchKit App"
+            BuildableName = "WatchKit App.app"
+            BlueprintName = "WatchKit App"
             ReferencedContainer = "container:Days Until Seasons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -132,8 +132,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "705281281ACB74140099A80D"
-            BuildableName = " WatchKit App.app"
-            BlueprintName = " WatchKit App"
+            BuildableName = "WatchKit App.app"
+            BlueprintName = "WatchKit App"
             ReferencedContainer = "container:Days Until Seasons.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
@@ -141,8 +141,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "705281281ACB74140099A80D"
-            BuildableName = " WatchKit App.app"
-            BlueprintName = " WatchKit App"
+            BuildableName = "WatchKit App.app"
+            BlueprintName = "WatchKit App"
             ReferencedContainer = "container:Days Until Seasons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -162,8 +162,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "705281281ACB74140099A80D"
-            BuildableName = " WatchKit App.app"
-            BlueprintName = " WatchKit App"
+            BuildableName = "WatchKit App.app"
+            BlueprintName = "WatchKit App"
             ReferencedContainer = "container:Days Until Seasons.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
@@ -171,8 +171,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "705281281ACB74140099A80D"
-            BuildableName = " WatchKit App.app"
-            BlueprintName = " WatchKit App"
+            BuildableName = "WatchKit App.app"
+            BlueprintName = "WatchKit App"
             ReferencedContainer = "container:Days Until Seasons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
