@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		703AE1E11AF1A2B2009062D1 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705281231ACB74140099A80D /* GlanceController.swift */; };
+		703AE1E31AF1A32E009062D1 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052811F1ACB74140099A80D /* InterfaceController.swift */; };
+		703AE1E41AF1A625009062D1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D4BE981AE889D900AA2597 /* Media.xcassets */; };
+		703AE1E61AF1ABD0009062D1 /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
+		703AE1E71AF1ABEA009062D1 /* Days Until Seasons Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 705281071ACB73210099A80D /* Days Until Seasons Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		703AE1EA1AF1ABEB009062D1 /* WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7052811A1ACB74140099A80D /* WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		703AE1EE1AF1AF8E009062D1 /* WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 705281291ACB74140099A80D /* WatchKit App.app */; };
+		703AE1EF1AF1AF96009062D1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 705281301ACB74140099A80D /* Interface.storyboard */; };
 		7047DEEC1AD33CBC007C441D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
 		7047DEED1AD33CBE007C441D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
 		7047DF111AD34A34007C441D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7047DF101AD34A34007C441D /* AudioToolbox.framework */; };
@@ -35,10 +43,7 @@
 		705281081ACB73210099A80D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705280F31ACB73020099A80D /* NotificationCenter.framework */; };
 		7052810D1ACB73210099A80D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052810C1ACB73210099A80D /* TodayViewController.swift */; };
 		7052810F1ACB73210099A80D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7052810E1ACB73210099A80D /* MainInterface.storyboard */; };
-		705281201ACB74140099A80D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052811F1ACB74140099A80D /* InterfaceController.swift */; };
 		705281221ACB74140099A80D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705281211ACB74140099A80D /* NotificationController.swift */; };
-		705281241ACB74140099A80D /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705281231ACB74140099A80D /* GlanceController.swift */; };
-		7052812A1ACB74140099A80D /* WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 705281291ACB74140099A80D /* WatchKit App.app */; };
 		705281321ACB74140099A80D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 705281301ACB74140099A80D /* Interface.storyboard */; };
 		7052814A1ACB841F0099A80D /* DUSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 705281491ACB841F0099A80D /* DUSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		705281501ACB841F0099A80D /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
@@ -49,9 +54,6 @@
 		7070E6CD1AD4984A00302D6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
 		7088C4AF1AD895C600D45629 /*  WatchKit Extension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 705997321AD7625600C8CCF9 /*  WatchKit Extension.entitlements */; };
 		7088C4B11AD898AF00D45629 /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
-		7088C4B41AD8AD1900D45629 /* WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7052811A1ACB74140099A80D /* WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7088C4B71AD8AE1C00D45629 /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
-		70D4BE991AE889D900AA2597 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D4BE981AE889D900AA2597 /* Media.xcassets */; };
 		70D4BE9A1AE889D900AA2597 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D4BE981AE889D900AA2597 /* Media.xcassets */; };
 		70D4BE9B1AE889D900AA2597 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D4BE981AE889D900AA2597 /* Media.xcassets */; };
 		70DFDF3A1ACEE18800A2DE87 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF391ACEE18800A2DE87 /* Season.swift */; };
@@ -66,7 +68,6 @@
 		70DFDF721ACF82E500A2DE87 /* NSDateExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 70DFDF421ACEE7DE00A2DE87 /* NSDateExtension.swift */; };
 		70DFDF731ACF82E500A2DE87 /* Season.swift in Headers */ = {isa = PBXBuildFile; fileRef = 70DFDF391ACEE18800A2DE87 /* Season.swift */; };
 		70E8779D1AD783B600BA1375 /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
-		70E877A31AD7EC3400BA1375 /* Days Until Seasons Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 705281071ACB73210099A80D /* Days Until Seasons Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		70F68D581ACCB6AE00C048CB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */; };
 		70F68D591ACDE7A900C048CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705280D41ACB718D0099A80D /* Images.xcassets */; };
 		70F68D5F1ACDEF2C00C048CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705280D41ACB718D0099A80D /* Images.xcassets */; };
@@ -74,6 +75,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		703AE1E81AF1ABEA009062D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 705281061ACB73210099A80D;
+			remoteInfo = "Days Until Seasons Today";
+		};
+		703AE1EB1AF1ABEB009062D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 705281191ACB74140099A80D;
+			remoteInfo = "WatchKit Extension";
+		};
 		705280DE1ACB718D0099A80D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
@@ -102,20 +117,6 @@
 			remoteGlobalIDString = 705280C31ACB718D0099A80D;
 			remoteInfo = "Days Until Seasons";
 		};
-		7088C4B51AD8AD1900D45629 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 705281191ACB74140099A80D;
-			remoteInfo = " WatchKit Extension";
-		};
-		70E877A41AD7EC3400BA1375 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 705281061ACB73210099A80D;
-			remoteInfo = "Days Until Seasons Today";
-		};
 		70E877AB1AD7EC7200BA1375 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
@@ -126,14 +127,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		70E877A91AD7EC3400BA1375 /* Embed App Extensions */ = {
+		703AE1ED1AF1ABEC009062D1 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				7088C4B41AD8AD1900D45629 /* WatchKit Extension.appex in Embed App Extensions */,
-				70E877A31AD7EC3400BA1375 /* Days Until Seasons Today.appex in Embed App Extensions */,
+				703AE1EA1AF1ABEB009062D1 /* WatchKit Extension.appex in Embed App Extensions */,
+				703AE1E71AF1ABEA009062D1 /* Days Until Seasons Today.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,7 +254,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7088C4B71AD8AE1C00D45629 /* DUSFramework.framework in Frameworks */,
+				703AE1E61AF1ABD0009062D1 /* DUSFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,14 +540,14 @@
 				705280C11ACB718D0099A80D /* Frameworks */,
 				705280C21ACB718D0099A80D /* Resources */,
 				498BEDA30F96DD165AFC3E46 /* Copy Pods Resources */,
-				70E877A91AD7EC3400BA1375 /* Embed App Extensions */,
+				703AE1ED1AF1ABEC009062D1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				70E877A51AD7EC3400BA1375 /* PBXTargetDependency */,
 				70E877AC1AD7EC7200BA1375 /* PBXTargetDependency */,
-				7088C4B61AD8AD1900D45629 /* PBXTargetDependency */,
+				703AE1E91AF1ABEA009062D1 /* PBXTargetDependency */,
+				703AE1EC1AF1ABEB009062D1 /* PBXTargetDependency */,
 			);
 			name = "Days Until Seasons";
 			productName = "Days Until Seasons";
@@ -746,7 +747,6 @@
 				705280D31ACB718D0099A80D /* Main.storyboard in Resources */,
 				705280D81ACB718D0099A80D /* LaunchScreen.xib in Resources */,
 				705280D51ACB718D0099A80D /* Images.xcassets in Resources */,
-				70D4BE991AE889D900AA2597 /* Media.xcassets in Resources */,
 				70F68D581ACCB6AE00C048CB /* Main_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -772,10 +772,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703AE1EF1AF1AF96009062D1 /* Interface.storyboard in Resources */,
+				703AE1EE1AF1AF8E009062D1 /* WatchKit App.app in Resources */,
 				7070E6CA1AD4984700302D6D /* Localizable.strings in Resources */,
 				7088C4AF1AD895C600D45629 /*  WatchKit Extension.entitlements in Resources */,
 				70D4BE9A1AE889D900AA2597 /* Media.xcassets in Resources */,
-				7052812A1ACB74140099A80D /* WatchKit App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,6 +795,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70F68D5F1ACDEF2C00C048CB /* Images.xcassets in Resources */,
+				703AE1E41AF1A625009062D1 /* Media.xcassets in Resources */,
 				7047DEEC1AD33CBC007C441D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -872,9 +874,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703AE1E31AF1A32E009062D1 /* InterfaceController.swift in Sources */,
 				705281221ACB74140099A80D /* NotificationController.swift in Sources */,
-				705281201ACB74140099A80D /* InterfaceController.swift in Sources */,
-				705281241ACB74140099A80D /* GlanceController.swift in Sources */,
+				703AE1E11AF1A2B2009062D1 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -904,6 +906,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		703AE1E91AF1ABEA009062D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 705281061ACB73210099A80D /* Days Until Seasons Today */;
+			targetProxy = 703AE1E81AF1ABEA009062D1 /* PBXContainerItemProxy */;
+		};
+		703AE1EC1AF1ABEB009062D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 705281191ACB74140099A80D /* WatchKit Extension */;
+			targetProxy = 703AE1EB1AF1ABEB009062D1 /* PBXContainerItemProxy */;
+		};
 		705280DF1ACB718D0099A80D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 705280C31ACB718D0099A80D /* Days Until Seasons */;
@@ -923,16 +935,6 @@
 			isa = PBXTargetDependency;
 			target = 705280C31ACB718D0099A80D /* Days Until Seasons */;
 			targetProxy = 705281531ACB84200099A80D /* PBXContainerItemProxy */;
-		};
-		7088C4B61AD8AD1900D45629 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 705281191ACB74140099A80D /* WatchKit Extension */;
-			targetProxy = 7088C4B51AD8AD1900D45629 /* PBXContainerItemProxy */;
-		};
-		70E877A51AD7EC3400BA1375 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 705281061ACB73210099A80D /* Days Until Seasons Today */;
-			targetProxy = 70E877A41AD7EC3400BA1375 /* PBXContainerItemProxy */;
 		};
 		70E877AC1AD7EC7200BA1375 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1073,6 +1075,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Days Until Seasons/Days Until Seasons.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framework",
@@ -1114,6 +1117,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Days Until Seasons/Days Until Seasons.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framework",
@@ -1193,6 +1197,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Days Until Seasons Today/Days Until Seasons Today.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1213,6 +1218,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Days Until Seasons Today/Days Until Seasons Today.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = "Days Until Seasons Today/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1228,6 +1234,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = MediaAppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1248,6 +1255,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = MediaAppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				IBSC_MODULE = _WatchKit_Extension;
 				INFOPLIST_FILE = " WatchKit App/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1264,6 +1272,7 @@
 				CODE_SIGN_ENTITLEMENTS = " WatchKit Extension/ WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1283,6 +1292,7 @@
 				CODE_SIGN_ENTITLEMENTS = " WatchKit Extension/ WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = " WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -1303,6 +1313,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1331,6 +1342,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = DUSFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
