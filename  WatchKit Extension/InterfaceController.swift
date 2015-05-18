@@ -22,8 +22,13 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     var locationManager: CLLocationManager = CLLocationManager()
     
     override func awakeWithContext(context: AnyObject?) {
+        addMenuItemWithItemIcon(
+            WKMenuItemIcon.Decline,
+            title: NSLocalizedString("Back", value: "Back", comment: "")
+,
+            action: ""
+        )
         super.awakeWithContext(context)
-        // Configure interface objects here.
     }
 
     override func willActivate() {

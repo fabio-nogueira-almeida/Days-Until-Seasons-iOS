@@ -53,7 +53,8 @@
 		7070E6CC1AD4984800302D6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
 		7070E6CD1AD4984A00302D6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
 		7088C4AF1AD895C600D45629 /*  WatchKit Extension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 705997321AD7625600C8CCF9 /*  WatchKit Extension.entitlements */; };
-		7088C4B11AD898AF00D45629 /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
+		70B2AAE81AFDBE9600F169BE /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; };
+		70B2AAE91AFDBE9600F169BE /* DUSFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 705281451ACB841F0099A80D /* DUSFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		70D4BE9A1AE889D900AA2597 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D4BE981AE889D900AA2597 /* Media.xcassets */; };
 		70D4BE9B1AE889D900AA2597 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D4BE981AE889D900AA2597 /* Media.xcassets */; };
 		70DFDF3A1ACEE18800A2DE87 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFDF391ACEE18800A2DE87 /* Season.swift */; };
@@ -117,6 +118,13 @@
 			remoteGlobalIDString = 705280C31ACB718D0099A80D;
 			remoteInfo = "Days Until Seasons";
 		};
+		70B2AAEA1AFDBE9600F169BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 705281441ACB841F0099A80D;
+			remoteInfo = DUSFramework;
+		};
 		70E877AB1AD7EC7200BA1375 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
@@ -137,6 +145,17 @@
 				703AE1E71AF1ABEA009062D1 /* Days Until Seasons Today.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B2AAEC1AFDBE9700F169BE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				70B2AAE91AFDBE9600F169BE /* DUSFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -213,9 +232,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7088C4B11AD898AF00D45629 /* DUSFramework.framework in Frameworks */,
 				7047DF3B1AD34F16007C441D /* Accounts.framework in Frameworks */,
 				7047DF391AD34EEE007C441D /* Social.framework in Frameworks */,
+				70B2AAE81AFDBE9600F169BE /* DUSFramework.framework in Frameworks */,
 				7047DF251AD34A87007C441D /* libsqlite3.dylib in Frameworks */,
 				7047DF231AD34A7C007C441D /* libz.dylib in Frameworks */,
 				7047DF211AD34A72007C441D /* SystemConfiguration.framework in Frameworks */,
@@ -541,6 +560,7 @@
 				705280C21ACB718D0099A80D /* Resources */,
 				498BEDA30F96DD165AFC3E46 /* Copy Pods Resources */,
 				703AE1ED1AF1ABEC009062D1 /* Embed App Extensions */,
+				70B2AAEC1AFDBE9700F169BE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -548,6 +568,7 @@
 				70E877AC1AD7EC7200BA1375 /* PBXTargetDependency */,
 				703AE1E91AF1ABEA009062D1 /* PBXTargetDependency */,
 				703AE1EC1AF1ABEB009062D1 /* PBXTargetDependency */,
+				70B2AAEB1AFDBE9600F169BE /* PBXTargetDependency */,
 			);
 			name = "Days Until Seasons";
 			productName = "Days Until Seasons";
@@ -935,6 +956,11 @@
 			isa = PBXTargetDependency;
 			target = 705280C31ACB718D0099A80D /* Days Until Seasons */;
 			targetProxy = 705281531ACB84200099A80D /* PBXContainerItemProxy */;
+		};
+		70B2AAEB1AFDBE9600F169BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 705281441ACB841F0099A80D /* DUSFramework */;
+			targetProxy = 70B2AAEA1AFDBE9600F169BE /* PBXContainerItemProxy */;
 		};
 		70E877AC1AD7EC7200BA1375 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1335,8 +1361,8 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
