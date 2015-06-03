@@ -7,7 +7,7 @@ Sometimes I need to know what is the current seasons and what is the next season
 
 So I think the focus on this app is show the information on the **Widget** and **Apple Watch** Screen. And that is what I made.
 
-**The app will be on Apple store after the apple review. I will put the link in this page when aproved it.**
+**https://itunes.apple.com/us/app/days-until-seasons-follow/id982726692?mt=8**
 
 ### Technology used in this project
 
