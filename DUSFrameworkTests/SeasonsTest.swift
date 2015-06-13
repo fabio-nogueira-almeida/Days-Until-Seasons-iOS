@@ -11,9 +11,12 @@ import XCTest
 
 class SeasonsTest: XCTestCase {
 
+    var seasons: Seasons!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.seasons = Seasons()
+        self.seasons.isSouthernHemisphere = true
     }
     
     override func tearDown() {
@@ -22,22 +25,22 @@ class SeasonsTest: XCTestCase {
     }
 
     func testShouldReturnAutumnSeason() {
-        let autumn = Seasons().seasonForDate(NSDate.dateFromActualYear(3, month: 4))
+        let autumn = self.seasons.seasonForDate(NSDate.dateFromActualYear(3, month: 4))
         XCTAssertEqual(autumn.name, Seasons().autumn.name, "Autumn Season")
     }
     
     func testShouldReturnSpringSeason() {
-        let spring = Seasons().seasonForDate(NSDate.dateFromActualYear(23, month: 9))
+        let spring = self.seasons.seasonForDate(NSDate.dateFromActualYear(23, month: 9))
         XCTAssertEqual(spring.name, Seasons().spring.name, "Spring Season")
     }
     
     func testShouldReturnSummerSeason() {
-        let summer = Seasons().seasonForDate(NSDate.dateFromActualYear(28, month: 1))
+        let summer = self.seasons.seasonForDate(NSDate.dateFromActualYear(28, month: 1))
         XCTAssertEqual(summer.name, Seasons().summer.name, "Summer Season")
     }
     
     func testShouldReturnWinterSeason() {
-        let winter = Seasons().seasonForDate(NSDate.dateFromActualYear(23, month: 7))
+        let winter = self.seasons.seasonForDate(NSDate.dateFromActualYear(23, month: 7))
         XCTAssertEqual(winter.name, Seasons().winter.name, "Winter Season")
     }
 }
