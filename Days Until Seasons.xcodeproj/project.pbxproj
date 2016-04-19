@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7024F0CE1CC6F22C000D03B3 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0CC1CC6F22C000D03B3 /* Season.swift */; };
-		7024F0CF1CC6F22C000D03B3 /* Seasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0CD1CC6F22C000D03B3 /* Seasons.swift */; };
-		7024F0D11CC6F243000D03B3 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0D01CC6F243000D03B3 /* NSDateExtension.swift */; };
-		7024F0D21CC6F2CD000D03B3 /* Seasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0CD1CC6F22C000D03B3 /* Seasons.swift */; };
-		7024F0D31CC6F2CF000D03B3 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0CC1CC6F22C000D03B3 /* Season.swift */; };
-		7024F0D41CC6F2D1000D03B3 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0D01CC6F243000D03B3 /* NSDateExtension.swift */; };
+		7024F0DB1CC6F905000D03B3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7024F0D91CC6F905000D03B3 /* Interface.storyboard */; };
+		7024F0DD1CC6F905000D03B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7024F0DC1CC6F905000D03B3 /* Assets.xcassets */; };
+		7024F0E41CC6F905000D03B3 /* Days Until Seasons Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7024F0E31CC6F905000D03B3 /* Days Until Seasons Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7024F0E91CC6F905000D03B3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0E81CC6F905000D03B3 /* InterfaceController.swift */; };
+		7024F0EB1CC6F905000D03B3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0EA1CC6F905000D03B3 /* ExtensionDelegate.swift */; };
+		7024F0ED1CC6F905000D03B3 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0EC1CC6F905000D03B3 /* GlanceController.swift */; };
+		7024F0EF1CC6F905000D03B3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0EE1CC6F905000D03B3 /* ComplicationController.swift */; };
+		7024F0F11CC6F905000D03B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7024F0F01CC6F905000D03B3 /* Assets.xcassets */; };
+		7024F0F51CC6F905000D03B3 /* Days Until Seasons Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7024F0D71CC6F905000D03B3 /* Days Until Seasons Watch.app */; };
+		7024F1051CC6F92A000D03B3 /* DUSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7024F1041CC6F92A000D03B3 /* DUSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7024F10C1CC6F92A000D03B3 /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7024F1021CC6F92A000D03B3 /* DUSFramework.framework */; };
+		7024F1171CC6F92A000D03B3 /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7024F1021CC6F92A000D03B3 /* DUSFramework.framework */; };
+		7024F1181CC6F92A000D03B3 /* DUSFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7024F1021CC6F92A000D03B3 /* DUSFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7024F1241CC6FA3B000D03B3 /* SeasonsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F1221CC6FA3B000D03B3 /* SeasonsTest.swift */; };
+		7024F1251CC6FC27000D03B3 /* Seasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0CD1CC6F22C000D03B3 /* Seasons.swift */; };
+		7024F1261CC6FC29000D03B3 /* Seasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0CD1CC6F22C000D03B3 /* Seasons.swift */; };
+		7024F1271CC6FC2D000D03B3 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0CC1CC6F22C000D03B3 /* Season.swift */; };
+		7024F1281CC6FC2D000D03B3 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0CC1CC6F22C000D03B3 /* Season.swift */; };
+		7024F1291CC6FC33000D03B3 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0D01CC6F243000D03B3 /* NSDateExtension.swift */; };
+		7024F12A1CC6FC33000D03B3 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0D01CC6F243000D03B3 /* NSDateExtension.swift */; };
+		7024F12D1CC6FCEB000D03B3 /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7024F1021CC6F92A000D03B3 /* DUSFramework.framework */; };
 		703AE1E71AF1ABEA009062D1 /* Days Until Seasons Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 705281071ACB73210099A80D /* Days Until Seasons Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7047DF111AD34A34007C441D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7047DF101AD34A34007C441D /* AudioToolbox.framework */; };
 		7047DF131AD34A3B007C441D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7047DF121AD34A3B007C441D /* CFNetwork.framework */; };
@@ -47,6 +62,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7024F0E51CC6F905000D03B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7024F0E21CC6F905000D03B3;
+			remoteInfo = "Days Until Seasons Watch Extension";
+		};
+		7024F0F31CC6F905000D03B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7024F0D61CC6F905000D03B3;
+			remoteInfo = "Days Until Seasons Watch";
+		};
+		7024F10D1CC6F92A000D03B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7024F1011CC6F92A000D03B3;
+			remoteInfo = DUSFramework;
+		};
+		7024F10F1CC6F92A000D03B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 705280C31ACB718D0099A80D;
+			remoteInfo = "Days Until Seasons";
+		};
+		7024F1151CC6F92A000D03B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7024F1011CC6F92A000D03B3;
+			remoteInfo = DUSFramework;
+		};
 		703AE1E81AF1ABEA009062D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 705280BC1ACB718D0099A80D /* Project object */;
@@ -57,6 +107,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		7024F0F91CC6F905000D03B3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7024F0E41CC6F905000D03B3 /* Days Until Seasons Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		703AE1ED1AF1ABEC009062D1 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,6 +135,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7024F1181CC6F92A000D03B3 /* DUSFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +146,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
+				7024F0F51CC6F905000D03B3 /* Days Until Seasons Watch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,9 +158,26 @@
 		5FED708C0C79D1EE33457FE9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		700C05E91AD4A71F00BEF0C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7024F0CB1CC6F22B000D03B3 /* Days Until Seasons-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Days Until Seasons-Bridging-Header.h"; sourceTree = "<group>"; };
-		7024F0CC1CC6F22C000D03B3 /* Season.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
-		7024F0CD1CC6F22C000D03B3 /* Seasons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seasons.swift; sourceTree = "<group>"; };
-		7024F0D01CC6F243000D03B3 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		7024F0CC1CC6F22C000D03B3 /* Season.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Season.swift; path = "../Days Until Seasons/Season.swift"; sourceTree = "<group>"; };
+		7024F0CD1CC6F22C000D03B3 /* Seasons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Seasons.swift; path = "../Days Until Seasons/Seasons.swift"; sourceTree = "<group>"; };
+		7024F0D01CC6F243000D03B3 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSDateExtension.swift; path = "../Days Until Seasons/NSDateExtension.swift"; sourceTree = "<group>"; };
+		7024F0D71CC6F905000D03B3 /* Days Until Seasons Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Days Until Seasons Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7024F0DA1CC6F905000D03B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7024F0DC1CC6F905000D03B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7024F0DE1CC6F905000D03B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7024F0E31CC6F905000D03B3 /* Days Until Seasons Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Days Until Seasons Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7024F0E81CC6F905000D03B3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7024F0EA1CC6F905000D03B3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7024F0EC1CC6F905000D03B3 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		7024F0EE1CC6F905000D03B3 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		7024F0F01CC6F905000D03B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7024F0F21CC6F905000D03B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7024F1021CC6F92A000D03B3 /* DUSFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DUSFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7024F1041CC6F92A000D03B3 /* DUSFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DUSFramework.h; sourceTree = "<group>"; };
+		7024F1061CC6F92A000D03B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7024F10B1CC6F92A000D03B3 /* DUSFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DUSFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7024F1141CC6F92A000D03B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7024F1221CC6FA3B000D03B3 /* SeasonsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonsTest.swift; sourceTree = "<group>"; };
 		7047DF101AD34A34007C441D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7047DF121AD34A3B007C441D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7047DF141AD34A43007C441D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,12 +218,35 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7024F0E01CC6F905000D03B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7024F0FE1CC6F92A000D03B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7024F1081CC6F92A000D03B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7024F10C1CC6F92A000D03B3 /* DUSFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		705280C11ACB718D0099A80D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7047DF3B1AD34F16007C441D /* Accounts.framework in Frameworks */,
 				7047DF391AD34EEE007C441D /* Social.framework in Frameworks */,
+				7024F1171CC6F92A000D03B3 /* DUSFramework.framework in Frameworks */,
 				7047DF251AD34A87007C441D /* libsqlite3.dylib in Frameworks */,
 				7047DF231AD34A7C007C441D /* libz.dylib in Frameworks */,
 				7047DF211AD34A72007C441D /* SystemConfiguration.framework in Frameworks */,
@@ -166,6 +269,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7024F12D1CC6FCEB000D03B3 /* DUSFramework.framework in Frameworks */,
 				705281081ACB73210099A80D /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,11 +286,75 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7024F0D81CC6F905000D03B3 /* Days Until Seasons Watch */ = {
+			isa = PBXGroup;
+			children = (
+				7024F0D91CC6F905000D03B3 /* Interface.storyboard */,
+				7024F0DC1CC6F905000D03B3 /* Assets.xcassets */,
+				7024F0DE1CC6F905000D03B3 /* Info.plist */,
+			);
+			path = "Days Until Seasons Watch";
+			sourceTree = "<group>";
+		};
+		7024F0E71CC6F905000D03B3 /* Days Until Seasons Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7024F0E81CC6F905000D03B3 /* InterfaceController.swift */,
+				7024F0EA1CC6F905000D03B3 /* ExtensionDelegate.swift */,
+				7024F0EC1CC6F905000D03B3 /* GlanceController.swift */,
+				7024F0EE1CC6F905000D03B3 /* ComplicationController.swift */,
+				7024F0F01CC6F905000D03B3 /* Assets.xcassets */,
+				7024F0F21CC6F905000D03B3 /* Info.plist */,
+			);
+			path = "Days Until Seasons Watch Extension";
+			sourceTree = "<group>";
+		};
+		7024F1031CC6F92A000D03B3 /* DUSFramework */ = {
+			isa = PBXGroup;
+			children = (
+				7024F1201CC6F967000D03B3 /* Extension */,
+				7024F11F1CC6F962000D03B3 /* Model */,
+				7024F1041CC6F92A000D03B3 /* DUSFramework.h */,
+				7024F1061CC6F92A000D03B3 /* Info.plist */,
+			);
+			path = DUSFramework;
+			sourceTree = "<group>";
+		};
+		7024F1111CC6F92A000D03B3 /* DUSFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				7024F1221CC6FA3B000D03B3 /* SeasonsTest.swift */,
+				7024F1141CC6F92A000D03B3 /* Info.plist */,
+			);
+			path = DUSFrameworkTests;
+			sourceTree = "<group>";
+		};
+		7024F11F1CC6F962000D03B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7024F0CC1CC6F22C000D03B3 /* Season.swift */,
+				7024F0CD1CC6F22C000D03B3 /* Seasons.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7024F1201CC6F967000D03B3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7024F0D01CC6F243000D03B3 /* NSDateExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		705280BB1ACB718D0099A80D = {
 			isa = PBXGroup;
 			children = (
 				705280C61ACB718D0099A80D /* Days Until Seasons */,
 				705281091ACB73210099A80D /* Days Until Seasons Today */,
+				7024F0D81CC6F905000D03B3 /* Days Until Seasons Watch */,
+				7024F0E71CC6F905000D03B3 /* Days Until Seasons Watch Extension */,
+				7024F1031CC6F92A000D03B3 /* DUSFramework */,
+				7024F1111CC6F92A000D03B3 /* DUSFrameworkTests */,
 				705280F21ACB73020099A80D /* Frameworks */,
 				705280C51ACB718D0099A80D /* Products */,
 				58499FDACBCC0619840D115F /* Pods */,
@@ -198,6 +366,10 @@
 			children = (
 				705280C41ACB718D0099A80D /* Days Until Seasons.app */,
 				705281071ACB73210099A80D /* Days Until Seasons Today.appex */,
+				7024F0D71CC6F905000D03B3 /* Days Until Seasons Watch.app */,
+				7024F0E31CC6F905000D03B3 /* Days Until Seasons Watch Extension.appex */,
+				7024F1021CC6F92A000D03B3 /* DUSFramework.framework */,
+				7024F10B1CC6F92A000D03B3 /* DUSFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,9 +377,6 @@
 		705280C61ACB718D0099A80D /* Days Until Seasons */ = {
 			isa = PBXGroup;
 			children = (
-				7024F0D01CC6F243000D03B3 /* NSDateExtension.swift */,
-				7024F0CC1CC6F22C000D03B3 /* Season.swift */,
-				7024F0CD1CC6F22C000D03B3 /* Seasons.swift */,
 				705997301AD761E000C8CCF9 /* Days Until Seasons.entitlements */,
 				70DFDF4C1ACF7CBF00A2DE87 /* Controller */,
 				70DFDF4B1ACF7CA800A2DE87 /* Interface */,
@@ -297,7 +466,89 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		7024F0FF1CC6F92A000D03B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7024F1051CC6F92A000D03B3 /* DUSFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		7024F0D61CC6F905000D03B3 /* Days Until Seasons Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7024F0FA1CC6F905000D03B3 /* Build configuration list for PBXNativeTarget "Days Until Seasons Watch" */;
+			buildPhases = (
+				7024F0D51CC6F905000D03B3 /* Resources */,
+				7024F0F91CC6F905000D03B3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7024F0E61CC6F905000D03B3 /* PBXTargetDependency */,
+			);
+			name = "Days Until Seasons Watch";
+			productName = "Days Until Seasons Watch";
+			productReference = 7024F0D71CC6F905000D03B3 /* Days Until Seasons Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7024F0E21CC6F905000D03B3 /* Days Until Seasons Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7024F0F61CC6F905000D03B3 /* Build configuration list for PBXNativeTarget "Days Until Seasons Watch Extension" */;
+			buildPhases = (
+				7024F0DF1CC6F905000D03B3 /* Sources */,
+				7024F0E01CC6F905000D03B3 /* Frameworks */,
+				7024F0E11CC6F905000D03B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Days Until Seasons Watch Extension";
+			productName = "Days Until Seasons Watch Extension";
+			productReference = 7024F0E31CC6F905000D03B3 /* Days Until Seasons Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		7024F1011CC6F92A000D03B3 /* DUSFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7024F1191CC6F92B000D03B3 /* Build configuration list for PBXNativeTarget "DUSFramework" */;
+			buildPhases = (
+				7024F0FD1CC6F92A000D03B3 /* Sources */,
+				7024F0FE1CC6F92A000D03B3 /* Frameworks */,
+				7024F0FF1CC6F92A000D03B3 /* Headers */,
+				7024F1001CC6F92A000D03B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DUSFramework;
+			productName = DUSFramework;
+			productReference = 7024F1021CC6F92A000D03B3 /* DUSFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7024F10A1CC6F92A000D03B3 /* DUSFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7024F11C1CC6F92B000D03B3 /* Build configuration list for PBXNativeTarget "DUSFrameworkTests" */;
+			buildPhases = (
+				7024F1071CC6F92A000D03B3 /* Sources */,
+				7024F1081CC6F92A000D03B3 /* Frameworks */,
+				7024F1091CC6F92A000D03B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7024F10E1CC6F92A000D03B3 /* PBXTargetDependency */,
+				7024F1101CC6F92A000D03B3 /* PBXTargetDependency */,
+			);
+			name = DUSFrameworkTests;
+			productName = DUSFrameworkTests;
+			productReference = 7024F10B1CC6F92A000D03B3 /* DUSFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		705280C31ACB718D0099A80D /* Days Until Seasons */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 705280E71ACB718D0099A80D /* Build configuration list for PBXNativeTarget "Days Until Seasons" */;
@@ -316,6 +567,8 @@
 			);
 			dependencies = (
 				703AE1E91AF1ABEA009062D1 /* PBXTargetDependency */,
+				7024F0F41CC6F905000D03B3 /* PBXTargetDependency */,
+				7024F1161CC6F92A000D03B3 /* PBXTargetDependency */,
 			);
 			name = "Days Until Seasons";
 			productName = "Days Until Seasons";
@@ -349,6 +602,21 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Fábio Nogueira de Almeida";
 				TargetAttributes = {
+					7024F0D61CC6F905000D03B3 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = C7Q44C43S9;
+					};
+					7024F0E21CC6F905000D03B3 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					7024F1011CC6F92A000D03B3 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = C7Q44C43S9;
+					};
+					7024F10A1CC6F92A000D03B3 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 705280C31ACB718D0099A80D;
+					};
 					705280C31ACB718D0099A80D = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = C7Q44C43S9;
@@ -385,11 +653,46 @@
 			targets = (
 				705280C31ACB718D0099A80D /* Days Until Seasons */,
 				705281061ACB73210099A80D /* Days Until Seasons Today */,
+				7024F0D61CC6F905000D03B3 /* Days Until Seasons Watch */,
+				7024F0E21CC6F905000D03B3 /* Days Until Seasons Watch Extension */,
+				7024F1011CC6F92A000D03B3 /* DUSFramework */,
+				7024F10A1CC6F92A000D03B3 /* DUSFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7024F0D51CC6F905000D03B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7024F0DD1CC6F905000D03B3 /* Assets.xcassets in Resources */,
+				7024F0DB1CC6F905000D03B3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7024F0E11CC6F905000D03B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7024F0F11CC6F905000D03B3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7024F1001CC6F92A000D03B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7024F1091CC6F92A000D03B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		705280C21ACB718D0099A80D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,15 +766,44 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7024F0DF1CC6F905000D03B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7024F0EB1CC6F905000D03B3 /* ExtensionDelegate.swift in Sources */,
+				7024F0EF1CC6F905000D03B3 /* ComplicationController.swift in Sources */,
+				7024F0E91CC6F905000D03B3 /* InterfaceController.swift in Sources */,
+				7024F0ED1CC6F905000D03B3 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7024F0FD1CC6F92A000D03B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7024F12A1CC6FC33000D03B3 /* NSDateExtension.swift in Sources */,
+				7024F1281CC6FC2D000D03B3 /* Season.swift in Sources */,
+				7024F1251CC6FC27000D03B3 /* Seasons.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7024F1071CC6F92A000D03B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7024F1291CC6FC33000D03B3 /* NSDateExtension.swift in Sources */,
+				7024F1261CC6FC29000D03B3 /* Seasons.swift in Sources */,
+				7024F1271CC6FC2D000D03B3 /* Season.swift in Sources */,
+				7024F1241CC6FA3B000D03B3 /* SeasonsTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		705280C01ACB718D0099A80D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7024F0D11CC6F243000D03B3 /* NSDateExtension.swift in Sources */,
-				7024F0CE1CC6F22C000D03B3 /* Season.swift in Sources */,
 				705280D01ACB718D0099A80D /* ViewController.m in Sources */,
 				705280CD1ACB718D0099A80D /* AppDelegate.m in Sources */,
-				7024F0CF1CC6F22C000D03B3 /* Seasons.swift in Sources */,
 				705280CA1ACB718D0099A80D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,9 +812,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7024F0D41CC6F2D1000D03B3 /* NSDateExtension.swift in Sources */,
-				7024F0D21CC6F2CD000D03B3 /* Seasons.swift in Sources */,
-				7024F0D31CC6F2CF000D03B3 /* Season.swift in Sources */,
 				7052810D1ACB73210099A80D /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +819,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7024F0E61CC6F905000D03B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7024F0E21CC6F905000D03B3 /* Days Until Seasons Watch Extension */;
+			targetProxy = 7024F0E51CC6F905000D03B3 /* PBXContainerItemProxy */;
+		};
+		7024F0F41CC6F905000D03B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7024F0D61CC6F905000D03B3 /* Days Until Seasons Watch */;
+			targetProxy = 7024F0F31CC6F905000D03B3 /* PBXContainerItemProxy */;
+		};
+		7024F10E1CC6F92A000D03B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7024F1011CC6F92A000D03B3 /* DUSFramework */;
+			targetProxy = 7024F10D1CC6F92A000D03B3 /* PBXContainerItemProxy */;
+		};
+		7024F1101CC6F92A000D03B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 705280C31ACB718D0099A80D /* Days Until Seasons */;
+			targetProxy = 7024F10F1CC6F92A000D03B3 /* PBXContainerItemProxy */;
+		};
+		7024F1161CC6F92A000D03B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7024F1011CC6F92A000D03B3 /* DUSFramework */;
+			targetProxy = 7024F1151CC6F92A000D03B3 /* PBXContainerItemProxy */;
+		};
 		703AE1E91AF1ABEA009062D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 705281061ACB73210099A80D /* Days Until Seasons Today */;
@@ -498,6 +852,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		7024F0D91CC6F905000D03B3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7024F0DA1CC6F905000D03B3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		705280D11ACB718D0099A80D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -526,6 +888,173 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7024F0F71CC6F905000D03B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Days Until Seasons Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Days-Until-Seasons.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		7024F0F81CC6F905000D03B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Days Until Seasons Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Days-Until-Seasons.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		7024F0FB1CC6F905000D03B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Fabio Nogueira (7KA79YNVQQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Fabio Nogueira (7KA79YNVQQ)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Days_Until_Seasons_Watch_Extension;
+				INFOPLIST_FILE = "Days Until Seasons Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Days-Until-Seasons.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		7024F0FC1CC6F905000D03B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Fabio Nogueira (C7Q44C43S9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fabio Nogueira (C7Q44C43S9)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Days_Until_Seasons_Watch_Extension;
+				INFOPLIST_FILE = "Days Until Seasons Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Days-Until-Seasons.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		7024F11A1CC6F92B000D03B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Fabio Nogueira (7KA79YNVQQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Fabio Nogueira (7KA79YNVQQ)";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = DUSFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.fabionogueira.DUSFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7024F11B1CC6F92B000D03B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Fabio Nogueira (C7Q44C43S9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fabio Nogueira (C7Q44C43S9)";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = DUSFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.fabionogueira.DUSFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7024F11D1CC6F92B000D03B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = DUSFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.fabionogueira.DUSFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Days Until Seasons.app/Days Until Seasons";
+			};
+			name = Debug;
+		};
+		7024F11E1CC6F92B000D03B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = DUSFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.fabionogueira.DUSFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Days Until Seasons.app/Days Until Seasons";
+			};
+			name = Release;
+		};
 		705280E51ACB718D0099A80D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -563,7 +1092,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
@@ -603,7 +1132,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				PROVISIONING_PROFILE = "";
@@ -657,7 +1186,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Days Until Seasons/Days Until Seasons-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "arm64 armv7 armv7s  i386";
 			};
 			name = Debug;
 		};
@@ -703,7 +1232,7 @@
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OBJC_BRIDGING_HEADER = "Days Until Seasons/Days Until Seasons-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "arm64 armv7 armv7s  i386";
 			};
 			name = Release;
 		};
@@ -719,7 +1248,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Days Until Seasons Today/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Days-Until-Seasons.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -738,7 +1267,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = "Days Until Seasons Today/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Days-Until-Seasons.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -751,6 +1280,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7024F0F61CC6F905000D03B3 /* Build configuration list for PBXNativeTarget "Days Until Seasons Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7024F0F71CC6F905000D03B3 /* Debug */,
+				7024F0F81CC6F905000D03B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7024F0FA1CC6F905000D03B3 /* Build configuration list for PBXNativeTarget "Days Until Seasons Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7024F0FB1CC6F905000D03B3 /* Debug */,
+				7024F0FC1CC6F905000D03B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7024F1191CC6F92B000D03B3 /* Build configuration list for PBXNativeTarget "DUSFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7024F11A1CC6F92B000D03B3 /* Debug */,
+				7024F11B1CC6F92B000D03B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7024F11C1CC6F92B000D03B3 /* Build configuration list for PBXNativeTarget "DUSFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7024F11D1CC6F92B000D03B3 /* Debug */,
+				7024F11E1CC6F92B000D03B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		705280BF1ACB718D0099A80D /* Build configuration list for PBXProject "Days Until Seasons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

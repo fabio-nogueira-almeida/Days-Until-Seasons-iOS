@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "705281441ACB841F0099A80D"
+               BlueprintIdentifier = "7024F1011CC6F92A000D03B3"
                BuildableName = "DUSFramework.framework"
                BlueprintName = "DUSFramework"
                ReferencedContainer = "container:Days Until Seasons.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "705281441ACB841F0099A80D"
+            BlueprintIdentifier = "7024F1011CC6F92A000D03B3"
             BuildableName = "DUSFramework.framework"
             BlueprintName = "DUSFramework"
             ReferencedContainer = "container:Days Until Seasons.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "705281441ACB841F0099A80D"
+            BlueprintIdentifier = "7024F1011CC6F92A000D03B3"
             BuildableName = "DUSFramework.framework"
             BlueprintName = "DUSFramework"
             ReferencedContainer = "container:Days Until Seasons.xcodeproj">

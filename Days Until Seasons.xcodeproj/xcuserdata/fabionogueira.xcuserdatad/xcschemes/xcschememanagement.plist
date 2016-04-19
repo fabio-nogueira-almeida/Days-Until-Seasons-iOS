@@ -4,34 +4,56 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key> WatchKit App.xcscheme</key>
+		<key>DUSFramework.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>5</integer>
 		</dict>
-		<key>DUSFramework.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>Days Until Seasons Today.xcscheme</key>
+		<key>Days Until Seasons Today.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Days Until Seasons.xcscheme</key>
+		<key>Days Until Seasons Watch (Complication).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
 		</dict>
-		<key>Glance -  WatchKit App.xcscheme</key>
+		<key>Days Until Seasons Watch (Glance).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>Days Until Seasons Watch.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Days Until Seasons.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>7024F0D61CC6F905000D03B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7024F1011CC6F92A000D03B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7024F10A1CC6F92A000D03B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>705280C31ACB718D0099A80D</key>
 		<dict>
 			<key>primary</key>

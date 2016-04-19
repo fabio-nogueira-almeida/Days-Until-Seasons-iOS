@@ -9,6 +9,7 @@
 import UIKit
 import NotificationCenter
 import CoreLocation
+import DUSFramework
 
 class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManagerDelegate {
         
