@@ -23,7 +23,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     [self _setupAnalytics];
     [self _setupPushNotification];
     [self _setupParseAnalitycs:launchOptions];

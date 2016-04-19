@@ -12,7 +12,7 @@
 		<key>DUSFramework.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>4</integer>
 		</dict>
 		<key>Days Until Seasons Today.xcscheme</key>
 		<dict>
@@ -26,13 +26,6 @@
 		</dict>
 		<key>Glance -  WatchKit App.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>Notification -  WatchKit App.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
@@ -80,6 +73,21 @@
 			<true/>
 		</dict>
 		<key>70DFDF5B1ACF827100A2DE87</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>70F8F7191C87CDCD00011C06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>70F8F7511C87D11900011C06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>70F8F77C1C87D1E500011C06</key>
 		<dict>
 			<key>primary</key>
 			<true/>

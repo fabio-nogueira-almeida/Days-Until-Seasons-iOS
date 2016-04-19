@@ -8,7 +8,6 @@
 
 import UIKit
 import NotificationCenter
-import DUSFramework
 import CoreLocation
 
 class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManagerDelegate {
@@ -34,7 +33,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
     // MARK: Private Methods
     
     func addInformationToScreen() {
-        let seasonName = NSLocalizedString(self.seasons.currentSeason.name, value: self.seasons.currentSeason.name, comment: "")
+        _ = NSLocalizedString(self.seasons.currentSeason.name, value: self.seasons.currentSeason.name, comment: "")
         let daysUntil = NSLocalizedString("Days until", value: "Days until", comment: "")
         
         self.currentSeasonImageView.image = UIImage(named: self.seasons.currentSeason.name)
@@ -44,7 +43,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
             value: self.seasons.nextSeason.name,
             comment: "")
         
-        var descriptionText = "\(self.seasons.daysUntilNextSeason) \(daysUntil) \(nextSeasonLocalizedString)"
+        let descriptionText = "\(self.seasons.daysUntilNextSeason) \(daysUntil) \(nextSeasonLocalizedString)"
         self.descriptionLabel.text = descriptionText;
     }
     
@@ -58,7 +57,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
     
     // MARK: Today Methods
     
-    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
+    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
 
         // If an error is encountered, use NCUpdateResult.Failed
@@ -74,22 +73,22 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
     
     // MARK: CLLocationManagerDelegate Methods
     
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        let location = locations.last as! CLLocation
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations.last! as CLLocation
         if (location.coordinate.latitude < 0) {
             self.seasons.isSouthernHemisphere = true;
         }
         addInformationToScreen()
     }
     
-    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if (status == CLAuthorizationStatus.NotDetermined ||
             status == CLAuthorizationStatus.AuthorizedWhenInUse) {
             self.locationManager.startUpdatingLocation()
         }
     }
     
-    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         self.locationManager.stopUpdatingLocation()
     }
     

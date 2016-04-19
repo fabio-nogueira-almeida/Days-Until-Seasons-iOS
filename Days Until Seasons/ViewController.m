@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Days_Until_Seasons-swift.h"
 
-@import DUSFramework;
 @import CoreLocation;
 
 @interface ViewController () <CLLocationManagerDelegate>
