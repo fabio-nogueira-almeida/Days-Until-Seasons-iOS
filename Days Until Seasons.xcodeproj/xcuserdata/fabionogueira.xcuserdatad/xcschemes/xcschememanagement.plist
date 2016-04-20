@@ -7,9 +7,19 @@
 		<key>DUSFramework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>5</integer>
+		</dict>
+		<key>DUSFrameworkWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>DUSFrameworkWatchKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>Days Until Seasons Today.xcscheme_^#shared#^_</key>
 		<dict>
@@ -50,6 +60,16 @@
 			<true/>
 		</dict>
 		<key>7024F10A1CC6F92A000D03B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7024F13E1CC7087B000D03B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7024F1471CC7087C000D03B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -95,6 +115,11 @@
 			<true/>
 		</dict>
 		<key>70DFDF5B1ACF827100A2DE87</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>70F2BC2A1CC70CFD004ED19A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -100,6 +100,16 @@
                ReferencedContainer = "container:Days Until Seasons.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7024F1471CC7087C000D03B3"
+               BuildableName = "DUSFrameworkWatchTests.xctest"
+               BlueprintName = "DUSFrameworkWatchTests"
+               ReferencedContainer = "container:Days Until Seasons.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
