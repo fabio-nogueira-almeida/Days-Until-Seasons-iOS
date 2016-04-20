@@ -7,17 +7,14 @@
 		<key>DUSFramework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
+			<false/>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
-		<key>DUSFrameworkWatch.xcscheme</key>
+		<key>DUSFrameworkWatchKit.xcscheme_^#shared#^_</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
-		</dict>
-		<key>DUSFrameworkWatchKit.xcscheme</key>
-		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>

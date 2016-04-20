@@ -47,11 +47,11 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
         let seasonName = NSLocalizedString(self.seasons.currentSeason.name, value: self.seasons.currentSeason.name, comment: "")
         let daysUntil = NSLocalizedString("Days until", value: "Days until", comment: "")
         let days = self.seasons.daysUntilNextSeason
-        let nextSeason = NSLocalizedString(self.seasons.nextSeason.name,
-                                           value:(self.seasons.nextSeason.name),
+        let nextSeason = NSLocalizedString(seasonName,
+                                           value:(seasonName),
                                            comment: "")
         
-        self.currentSeasonImageView.setImage(UIImage(named: "\(self.seasons.currentSeason.name)_Watch"))
+        self.currentSeasonImageView.setImage(UIImage(named: "\(self.seasons.currentSeason.name)_watch"))
         self.daysLabel.setText("\(days)")
         self.descriptionLabel.setText(daysUntil)
         self.nextSeasonLabel.setText(nextSeason)
