@@ -43,11 +43,10 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     // MARK: Private Methods
     
     func addInformationToScreen() {
-        let seasonName = NSLocalizedString(self.seasons.currentSeason.name, value: self.seasons.currentSeason.name, comment: "")
         let daysUntil = NSLocalizedString("Days until", value: "Days until", comment: "")
         let days = self.seasons.daysUntilNextSeason
-        let nextSeason = NSLocalizedString(seasonName,
-                                           value:(seasonName),
+        let nextSeason = NSLocalizedString(self.seasons.nextSeason.name,
+                                           value:(self.seasons.nextSeason.name),
                                            comment: "")
         
         self.currentSeasonImageView.setImage(UIImage(named: "\(self.seasons.currentSeason.name)_watch"))

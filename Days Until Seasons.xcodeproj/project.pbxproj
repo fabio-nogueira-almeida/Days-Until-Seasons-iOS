@@ -168,6 +168,7 @@
 		7024F1221CC6FA3B000D03B3 /* SeasonsSouthernTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonsSouthernTest.swift; sourceTree = "<group>"; };
 		703A860C1CC96FEC00E6AFA3 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		703A860D1CC96FEC00E6AFA3 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		703A86101CC988A300E6AFA3 /* Days Until Seasons WatchKit 1 Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Days Until Seasons WatchKit 1 Extension.entitlements"; sourceTree = "<group>"; };
 		7047DF101AD34A34007C441D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7047DF121AD34A3B007C441D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7047DF141AD34A43007C441D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -307,6 +308,7 @@
 		704D838E1CC90A8800449920 /* Days Until Seasons WatchKit 1 Extension */ = {
 			isa = PBXGroup;
 			children = (
+				703A86101CC988A300E6AFA3 /* Days Until Seasons WatchKit 1 Extension.entitlements */,
 				704D838F1CC90A8800449920 /* Supporting Files */,
 				704D83971CC90A8800449920 /* Assets.xcassets */,
 				704D83951CC90A8800449920 /* GlanceController.swift */,
@@ -505,6 +507,7 @@
 				704D838A1CC90A8800449920 /* Frameworks */,
 				704D838B1CC90A8800449920 /* Resources */,
 				704D83B51CC90AA900449920 /* Embed Frameworks */,
+				703A86121CC990DA00E6AFA3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -594,6 +597,11 @@
 					704D838C1CC90A8800449920 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = C7Q44C43S9;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					704D839B1CC90A8800449920 = {
 						CreatedOnToolsVersion = 7.3;
@@ -717,6 +725,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run ba0eee4e53729a8c93fd47ad94835d6be7ec81c8 2528283f91789f2c490e8cadb68eeecee0135adf9e6e3be669a7ad903559bc6e";
+		};
+		703A86121CC990DA00E6AFA3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -949,13 +970,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CODE_SIGN_ENTITLEMENTS = "Days Until Seasons WatchKit 1 App/Days Until Seasons WatchKit 1 App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Fabio Nogueira (7KA79YNVQQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Fabio Nogueira (7KA79YNVQQ)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IBSC_MODULE = Days_Until_Seasons_WatchKit_1_Extension;
 				INFOPLIST_FILE = "Days Until Seasons WatchKit 1 App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Days-Until-Seasons.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -971,12 +996,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Fabio Nogueira (C7Q44C43S9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fabio Nogueira (C7Q44C43S9)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IBSC_MODULE = Days_Until_Seasons_WatchKit_1_Extension;
 				INFOPLIST_FILE = "Days Until Seasons WatchKit 1 App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Days-Until-Seasons.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -987,15 +1014,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "Days Until Seasons WatchKit 1 Extension/Days Until Seasons WatchKit 1 Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Fabio Nogueira (7KA79YNVQQ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Fabio Nogueira (7KA79YNVQQ)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Days Until Seasons WatchKit 1 Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Days-Until-Seasons.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -1005,15 +1034,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_ENTITLEMENTS = "Days Until Seasons WatchKit 1 Extension/Days Until Seasons WatchKit 1 Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Fabio Nogueira (C7Q44C43S9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fabio Nogueira (C7Q44C43S9)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Days Until Seasons WatchKit 1 Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Days-Until-Seasons.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -1201,8 +1232,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Days Until Seasons Today/Days Until Seasons Today.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Fabio Nogueira (7KA79YNVQQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Fabio Nogueira (7KA79YNVQQ)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				ENABLE_BITCODE = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
