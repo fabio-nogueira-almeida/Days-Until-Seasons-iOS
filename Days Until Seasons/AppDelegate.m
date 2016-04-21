@@ -7,15 +7,15 @@
 //
 
 #import "AppDelegate.h"
-#import <Parse/Parse.h>
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self _setupPushNotification];
-    [self _setupParseAnalitycs:launchOptions];
     [self _registerPushNotification:application];
+    [Fabric with:@[[Crashlytics class]]];
     return YES;
 }
 
@@ -42,26 +42,12 @@
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    // Store the deviceToken in the current installation and save it to Parse.
-    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation setDeviceTokenFromData:deviceToken];
-    [currentInstallation saveInBackground];
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    [PFPush handlePush:userInfo];
 }
 
 #pragma mark - Private Methods
-
-- (void)_setupPushNotification {
-    [Parse setApplicationId:@"fv9ZvS2pMv0HZMa7TmrxU67L66vCrzzSk0utoQ23"
-                  clientKey:@"ZclOOLXJnsqz3hKWk7Ej6k76CLD1vblvTOqfSTy1"];
-}
-
-- (void)_setupParseAnalitycs:(NSDictionary *)launchOptions {
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-}
 
 - (void)_registerPushNotification:(UIApplication *)application {
     UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
