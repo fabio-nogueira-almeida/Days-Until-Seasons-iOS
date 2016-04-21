@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Days Until Seasons-Bridging-Header.h"
 #import <DUSFramework/DUSFramework.h>
 
 @import CoreLocation;
@@ -62,17 +63,9 @@
     NSString *days = [NSString stringWithFormat:@"%ld", (long)self.seasons.daysUntilNextSeason];
     NSString *nextSeason = NSLocalizedString(self.seasons.nextSeason.name, nil);
     self.currentSeasonImageView.image = [UIImage imageNamed:imageNamed];
-    self.currentSeasonLabel.text = NSLocalizedString(imageNamed, nil);
-    
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        NSString *ipadText = [NSString stringWithFormat:@"%@ %@ %@", days, daysUntil, nextSeason];
-        self.descriptionIpadLabel.text = ipadText;
-
-    } else {
-        self.daysLabel.text = days;
-        self.descriptionLabel.text = daysUntil;
-        self.nextSeasonLabel.text = nextSeason;
-    }
+    self.daysLabel.text = days;
+    self.descriptionLabel.text = daysUntil;
+    self.nextSeasonLabel.text = nextSeason;
 }
 
 #pragma mark - CLocationManagerDelete Methods

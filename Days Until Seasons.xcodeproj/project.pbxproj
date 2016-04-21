@@ -57,7 +57,6 @@
 		7052810F1ACB73210099A80D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7052810E1ACB73210099A80D /* MainInterface.storyboard */; };
 		7070E6CB1AD4984800302D6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
 		7070E6CC1AD4984800302D6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70DFDF821ACF8C0200A2DE87 /* Localizable.strings */; };
-		70F68D581ACCB6AE00C048CB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */; };
 		70F68D591ACDE7A900C048CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705280D41ACB718D0099A80D /* Images.xcassets */; };
 		789EED57CEE91C60BA3A3D66 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C054168DA74CA833D341685 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -221,7 +220,6 @@
 		70A0520E1AD1FD6D005EB46F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70DFDF831ACF8C0600A2DE87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		70DFDF841ACF8C0700A2DE87 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
-		70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 		70F8F7121C87CCA700011C06 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
 		7C054168DA74CA833D341685 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -304,7 +302,8 @@
 				7024F1041CC6F92A000D03B3 /* DUSFramework.h */,
 				7024F1061CC6F92A000D03B3 /* Info.plist */,
 			);
-			path = DUSFramework;
+			name = DUSFramework;
+			path = ../DUSFramework;
 			sourceTree = "<group>";
 		};
 		7024F1111CC6F92A000D03B3 /* DUSFrameworkTests */ = {
@@ -313,7 +312,8 @@
 				7024F1141CC6F92A000D03B3 /* Info.plist */,
 				7024F1221CC6FA3B000D03B3 /* SeasonsTest.swift */,
 			);
-			path = DUSFrameworkTests;
+			name = DUSFrameworkTests;
+			path = ../DUSFrameworkTests;
 			sourceTree = "<group>";
 		};
 		7024F11F1CC6F962000D03B3 /* Model */ = {
@@ -368,8 +368,6 @@
 		705280BB1ACB718D0099A80D = {
 			isa = PBXGroup;
 			children = (
-				7024F1031CC6F92A000D03B3 /* DUSFramework */,
-				7024F1111CC6F92A000D03B3 /* DUSFrameworkTests */,
 				705280C61ACB718D0099A80D /* Days Until Seasons */,
 				705281091ACB73210099A80D /* Days Until Seasons Today */,
 				704D838E1CC90A8800449920 /* Days Until Seasons WatchKit 1 Extension */,
@@ -421,6 +419,8 @@
 		705280F21ACB73020099A80D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7024F1031CC6F92A000D03B3 /* DUSFramework */,
+				7024F1111CC6F92A000D03B3 /* DUSFrameworkTests */,
 				70F8F7121C87CCA700011C06 /* WatchKit.framework */,
 				7047DF3C1AD35020007C441D /* Parse.framework */,
 				7047DF3A1AD34F16007C441D /* Accounts.framework */,
@@ -469,7 +469,6 @@
 			children = (
 				705280D61ACB718D0099A80D /* LaunchScreen.xib */,
 				705280D11ACB718D0099A80D /* Main.storyboard */,
-				70F68D571ACCB6AE00C048CB /* Main_iPad.storyboard */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -728,7 +727,6 @@
 				705280D31ACB718D0099A80D /* Main.storyboard in Resources */,
 				705280D81ACB718D0099A80D /* LaunchScreen.xib in Resources */,
 				705280D51ACB718D0099A80D /* Images.xcassets in Resources */,
-				70F68D581ACCB6AE00C048CB /* Main_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

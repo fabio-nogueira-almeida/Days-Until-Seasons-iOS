@@ -11,11 +11,9 @@
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *currentSeasonImageView;
-@property (weak, nonatomic) IBOutlet UILabel *currentSeasonLabel;
 @property (weak, nonatomic) IBOutlet UILabel *daysLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nextSeasonLabel;
-@property (weak, nonatomic) IBOutlet UILabel *descriptionIpadLabel;
 
 @end
 
