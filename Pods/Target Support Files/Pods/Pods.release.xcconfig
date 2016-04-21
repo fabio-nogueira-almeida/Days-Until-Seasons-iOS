@@ -1,6 +1,0 @@
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(SDKROOT)/usr/include/libz $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GoogleAnalytics-iOS-SDK"
-LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/GoogleAnalytics-iOS-SDK"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GoogleAnalytics-iOS-SDK"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"GoogleAnalyticsServices" -l"sqlite3" -l"z" -framework "CFNetwork" -framework "CoreData" -framework "Foundation" -framework "SystemConfiguration" -framework "UIKit"
-PODS_ROOT = ${SRCROOT}/Pods

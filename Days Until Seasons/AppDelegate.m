@@ -7,23 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import <GoogleAnalytics-iOS-SDK/GAI.h>
 #import <Parse/Parse.h>
-
-@interface AppDelegate ()
-
-- (void)_setupAnalytics;
-- (void)_setupPushNotification;
-- (void)_setupParseAnalitycs:(NSDictionary *)launchOptions;
-- (void)_registerPushNotification:(UIApplication *)application;
-
-@end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self _setupAnalytics];
     [self _setupPushNotification];
     [self _setupParseAnalitycs:launchOptions];
     [self _registerPushNotification:application];
@@ -64,13 +53,6 @@
 }
 
 #pragma mark - Private Methods
-
-- (void)_setupAnalytics {
-    GAI *gai = [GAI sharedInstance];
-    gai.trackUncaughtExceptions = YES;
-    gai.dispatchInterval = 20;
-    [gai trackerWithTrackingId:@"UA-61605327-1"];
-}
 
 - (void)_setupPushNotification {
     [Parse setApplicationId:@"fv9ZvS2pMv0HZMa7TmrxU67L66vCrzzSk0utoQ23"
