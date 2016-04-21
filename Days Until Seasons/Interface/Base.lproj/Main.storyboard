@@ -21,13 +21,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Rlj-B5-IJm">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ra3-zV-LPA">
-                                <rect key="frame" x="20" y="558" width="22" height="22"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.17254901959999999" green="0.20392156859999999" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QoI-od-WDe">
                                 <rect key="frame" x="60" y="40" width="480" height="520"/>
                                 <subviews>
@@ -42,7 +35,7 @@
                                             <rect key="frame" x="310" y="0.0" width="140" height="107"/>
                                         </variation>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="129" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7DB-Rr-kzZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7DB-Rr-kzZ">
                                         <rect key="frame" x="0.0" y="227" width="480" height="107"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="90"/>
@@ -52,7 +45,7 @@
                                             <rect key="frame" x="0.0" y="107" width="760" height="107"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days until" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nbF-8Y-DTI">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nbF-8Y-DTI">
                                         <rect key="frame" x="0.0" y="334" width="480" height="77"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -65,7 +58,7 @@
                                             <rect key="frame" x="0.0" y="214" width="760" height="77"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Spring" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9m-09-cew">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9m-09-cew">
                                         <rect key="frame" x="0.0" y="411" width="480" height="109"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="109" id="X0s-MF-w3Y"/>
@@ -76,11 +69,11 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="7DB-Rr-kzZ" firstAttribute="leading" secondItem="QoI-od-WDe" secondAttribute="leading" id="UB4-T1-knc"/>
+                                    <constraint firstItem="7DB-Rr-kzZ" firstAttribute="leading" secondItem="QoI-od-WDe" secondAttribute="leading" id="HI4-RU-OYG"/>
                                     <constraint firstAttribute="bottom" secondItem="I9m-09-cew" secondAttribute="bottom" id="Xxn-LE-dST"/>
+                                    <constraint firstItem="7DB-Rr-kzZ" firstAttribute="leading" secondItem="nbF-8Y-DTI" secondAttribute="leading" id="kq0-4G-G2g"/>
                                     <constraint firstAttribute="trailing" secondItem="I9m-09-cew" secondAttribute="trailing" id="o20-WO-kvD"/>
                                     <constraint firstItem="I9m-09-cew" firstAttribute="leading" secondItem="QoI-od-WDe" secondAttribute="leading" id="r2I-En-Wj4"/>
-                                    <constraint firstItem="7DB-Rr-kzZ" firstAttribute="leading" secondItem="nbF-8Y-DTI" secondAttribute="leading" id="wNj-Et-LSS"/>
                                     <constraint firstItem="nbF-8Y-DTI" firstAttribute="leading" secondItem="I9m-09-cew" secondAttribute="leading" id="yql-JK-JuO"/>
                                 </constraints>
                                 <variation key="default">
@@ -98,6 +91,13 @@
                                     </mask>
                                 </variation>
                             </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ra3-zV-LPA">
+                                <rect key="frame" x="20" y="558" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.17254901959999999" green="0.20392156859999999" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
