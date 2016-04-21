@@ -1,26 +1,27 @@
 //
 //  GlanceController.swift
-//  Days Until Seasons Watch Extension
+//  Days Until Seasons WatchKit 1 Extension
 //
-//  Created by Fabio Nogueira on 19/04/16.
+//  Created by Fabio Nogueira on 21/04/16.
 //  Copyright © 2016 Fábio Nogueira de Almeida. All rights reserved.
 //
+
 
 import WatchKit
 import Foundation
 import CoreLocation
-import DUSFrameworkWatchKit
+import DUSFramework
 
 class GlanceController: WKInterfaceController, CLLocationManagerDelegate {
     
     @IBOutlet weak var daysLabel: WKInterfaceLabel!
     @IBOutlet weak var descriptionLabel: WKInterfaceLabel!
     @IBOutlet weak var nextSeasonLabel: WKInterfaceLabel!
-
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
     }
-
+    
     var seasons: Seasons = Seasons ()
     var locationManager: CLLocationManager = CLLocationManager()
     
@@ -54,28 +55,29 @@ class GlanceController: WKInterfaceController, CLLocationManagerDelegate {
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
         self.locationManager.distanceFilter = kCLDistanceFilterNone;
         self.locationManager.requestWhenInUseAuthorization()
-//        self.locationManager.startUpdatingLocation()
+        self.locationManager.startUpdatingLocation()
     }
     
     // MARK: CLLocationManagerDelegate Methods
-//    
-//    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-//        let location = locations.last as! CLLocation
-//        if (location.coordinate.latitude < 0) {
-//            self.seasons.isSouthernHemisphere = true;
-//        }
-//        addInformationToScreen()
-//    }
     
-//    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-//        if (status == CLAuthorizationStatus.NotDetermined ||
-//            status == CLAuthorizationStatus.AuthorizedWhenInUse) {
-//            self.locationManager.startUpdatingLocation()
-//        }
-//    }
-//    
-//    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
-//        self.locationManager.stopUpdatingLocation()
-//    }
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations.last
+        if (location!.coordinate.latitude < 0) {
+            self.seasons.isSouthernHemisphere = true;
+        }
+        addInformationToScreen()
+    }
     
+    
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if (status == CLAuthorizationStatus.NotDetermined ||
+            status == CLAuthorizationStatus.AuthorizedWhenInUse) {
+            self.locationManager.startUpdatingLocation()
+        }
+    }
+
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        self.locationManager.stopUpdatingLocation()
+    }
+
 }

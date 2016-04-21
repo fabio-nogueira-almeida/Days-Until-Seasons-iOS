@@ -1,14 +1,14 @@
 //
 //  InterfaceController.swift
-//  Days Until Seasons Watch Extension
+//  Days Until Seasons WatchKit 1 Extension
 //
-//  Created by Fabio Nogueira on 19/04/16.
+//  Created by Fabio Nogueira on 21/04/16.
 //  Copyright © 2016 Fábio Nogueira de Almeida. All rights reserved.
 //
 
 import WatchKit
 import Foundation
-import DUSFrameworkWatchKit
+import DUSFramework
 
 class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     
@@ -37,7 +37,6 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     }
     
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
     
@@ -63,27 +62,23 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
         self.locationManager.distanceFilter = kCLDistanceFilterNone;
         self.locationManager.requestWhenInUseAuthorization()
-        // TODO
-//        self.locationManager.startUpdatingLocation()
+        self.locationManager.startUpdatingLocation()
     }
     
     // MARK: CLLocationManagerDelegate Methods
-
-    // TODO
     
-//    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-//        let location = locations.last as! CLLocation
-//        if (location.coordinate.latitude < 0) {
-//            self.seasons.isSouthernHemisphere = true;
-//        }
-//        addInformationToScreen()
-//    }
-//    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations.last
+        if (location!.coordinate.latitude < 0) {
+            self.seasons.isSouthernHemisphere = true;
+        }
+        addInformationToScreen()
+    }
+    
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if (status == CLAuthorizationStatus.NotDetermined ||
             status == CLAuthorizationStatus.AuthorizedWhenInUse) {
-            // TODO
-//            self.locationManager.startUpdatingLocation()
+            self.locationManager.startUpdatingLocation()
         }
     }
     

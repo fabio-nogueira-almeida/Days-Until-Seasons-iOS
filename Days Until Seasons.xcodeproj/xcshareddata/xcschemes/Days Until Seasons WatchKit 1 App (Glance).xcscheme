@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0730"
-   version = "1.3">
+   version = "2.0">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7024F0D61CC6F905000D03B3"
-               BuildableName = "Days Until Seasons Watch.app"
-               BlueprintName = "Days Until Seasons Watch"
+               BlueprintIdentifier = "704D839B1CC90A8800449920"
+               BuildableName = "Days Until Seasons WatchKit 1 App.app"
+               BlueprintName = "Days Until Seasons WatchKit 1 App"
                ReferencedContainer = "container:Days Until Seasons.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -48,6 +48,20 @@
                ReferencedContainer = "container:Days Until Seasons.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "704D838C1CC90A8800449920"
+               BuildableName = "Days Until Seasons WatchKit 1 Extension.appex"
+               BlueprintName = "Days Until Seasons WatchKit 1 Extension"
+               ReferencedContainer = "container:Days Until Seasons.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -56,23 +70,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7024F1471CC7087C000D03B3"
-               BuildableName = "DUSFrameworkWatchTests.xctest"
-               BlueprintName = "DUSFrameworkWatchTests"
-               ReferencedContainer = "container:Days Until Seasons.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7024F0D61CC6F905000D03B3"
-            BuildableName = "Days Until Seasons Watch.app"
-            BlueprintName = "Days Until Seasons Watch"
+            BlueprintIdentifier = "704D839B1CC90A8800449920"
+            BuildableName = "Days Until Seasons WatchKit 1 App.app"
+            BlueprintName = "Days Until Seasons WatchKit 1 App"
             ReferencedContainer = "container:Days Until Seasons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -88,25 +92,27 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES">
+      allowLocationSimulation = "YES"
+      launchAutomaticallySubstyle = "4"
+      notificationPayloadFile = "Days Until Seasons WatchKit 1 Extension/PushNotificationPayload.apns">
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.carousel"
          RemotePath = "/Days Until Seasons">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7024F0D61CC6F905000D03B3"
-            BuildableName = "Days Until Seasons Watch.app"
-            BlueprintName = "Days Until Seasons Watch"
+            BlueprintIdentifier = "704D839B1CC90A8800449920"
+            BuildableName = "Days Until Seasons WatchKit 1 App.app"
+            BlueprintName = "Days Until Seasons WatchKit 1 App"
             ReferencedContainer = "container:Days Until Seasons.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7024F0D61CC6F905000D03B3"
-            BuildableName = "Days Until Seasons Watch.app"
-            BlueprintName = "Days Until Seasons Watch"
+            BlueprintIdentifier = "704D839B1CC90A8800449920"
+            BuildableName = "Days Until Seasons WatchKit 1 App.app"
+            BlueprintName = "Days Until Seasons WatchKit 1 App"
             ReferencedContainer = "container:Days Until Seasons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -118,25 +124,27 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES">
+      debugDocumentVersioning = "YES"
+      launchAutomaticallySubstyle = "4"
+      notificationPayloadFile = "Days Until Seasons WatchKit 1 Extension/PushNotificationPayload.apns">
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.carousel"
          RemotePath = "/Days Until Seasons">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7024F0D61CC6F905000D03B3"
-            BuildableName = "Days Until Seasons Watch.app"
-            BlueprintName = "Days Until Seasons Watch"
+            BlueprintIdentifier = "704D839B1CC90A8800449920"
+            BuildableName = "Days Until Seasons WatchKit 1 App.app"
+            BlueprintName = "Days Until Seasons WatchKit 1 App"
             ReferencedContainer = "container:Days Until Seasons.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7024F0D61CC6F905000D03B3"
-            BuildableName = "Days Until Seasons Watch.app"
-            BlueprintName = "Days Until Seasons Watch"
+            BlueprintIdentifier = "704D839B1CC90A8800449920"
+            BuildableName = "Days Until Seasons WatchKit 1 App.app"
+            BlueprintName = "Days Until Seasons WatchKit 1 App"
             ReferencedContainer = "container:Days Until Seasons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
