@@ -75,29 +75,29 @@ import UIKit
     }
     
     func southernHemisphereSeasons() -> NSArray {
-        let startSummer = NSDate.date(21, month: 12, year: NSDate().year()-1)
-        let endSummer = NSDate.dateFromActualYear(20, month: 3)
+        let startSummer = NSDate.date(1, month: 12, year: NSDate().year()-1)
+        let endSummer = NSDate.dateFromActualYear(28, month: 2)
         self.summer = Season(
             seasonStartDate: startSummer,
             seasonEndDate: endSummer,
             seasonName: "Summer")
         
-        let startAutumn = NSDate.dateFromActualYear(21, month: 3)
-        let endAutumn = NSDate.dateFromActualYear(20, month: 6)
+        let startAutumn = NSDate.dateFromActualYear(1, month: 3)
+        let endAutumn = NSDate.dateFromActualYear(31, month: 5)
         self.autumn = Season(
             seasonStartDate: startAutumn,
             seasonEndDate: endAutumn,
             seasonName: "Autumn")
         
-        let startWinter = NSDate.dateFromActualYear(21, month: 6)
-        let endWinter = NSDate.dateFromActualYear(20, month: 9)
+        let startWinter = NSDate.dateFromActualYear(1, month: 6)
+        let endWinter = NSDate.dateFromActualYear(31, month: 8)
         self.winter = Season(
             seasonStartDate: startWinter,
             seasonEndDate: endWinter,
             seasonName: "Winter")
         
-        let startSpring = NSDate.dateFromActualYear(21, month: 9)
-        let endSpring = NSDate.dateFromActualYear(20, month: 12)
+        let startSpring = NSDate.dateFromActualYear(1, month: 9)
+        let endSpring = NSDate.dateFromActualYear(30, month: 11)
         self.spring = Season(
             seasonStartDate: startSpring,
             seasonEndDate: endSpring,
@@ -106,29 +106,29 @@ import UIKit
     }
     
     func northernHemisphereSeasons() -> NSArray {
-        let startWinter = NSDate.date(21, month: 12, year: NSDate().year()-1)
-        let endWinter = NSDate.dateFromActualYear(20, month: 3)
+        let startWinter = NSDate.date(1, month: 12, year: NSDate().year()-1)
+        let endWinter = NSDate.dateFromActualYear(22, month: 2)
         self.winter = Season(
             seasonStartDate: startWinter,
             seasonEndDate: endWinter,
             seasonName: "Winter")
         
-        let startSpring = NSDate.dateFromActualYear(21, month: 3)
-        let endSpring = NSDate.dateFromActualYear(20, month: 6)
+        let startSpring = NSDate.dateFromActualYear(1, month: 3)
+        let endSpring = NSDate.dateFromActualYear(31, month: 5)
         self.spring = Season(
             seasonStartDate: startSpring,
             seasonEndDate: endSpring,
             seasonName: "Spring")
         
-        let startSummer = NSDate.dateFromActualYear(21, month: 6)
-        let endSummer = NSDate.dateFromActualYear(20, month: 9)
+        let startSummer = NSDate.dateFromActualYear(1, month: 6)
+        let endSummer = NSDate.dateFromActualYear(31, month: 8)
         self.summer = Season(
             seasonStartDate: startSummer,
             seasonEndDate: endSummer,
             seasonName: "Summer")
         
-        let startAutumn = NSDate.dateFromActualYear(21, month: 9)
-        let endAutumn = NSDate.dateFromActualYear(20, month: 12)
+        let startAutumn = NSDate.dateFromActualYear(1, month: 9)
+        let endAutumn = NSDate.dateFromActualYear(30, month: 11)
         self.autumn = Season(
             seasonStartDate: startAutumn,
             seasonEndDate: endAutumn,
