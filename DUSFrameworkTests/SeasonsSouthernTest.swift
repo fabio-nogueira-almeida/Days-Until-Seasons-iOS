@@ -16,7 +16,7 @@ class SeasonsTest: XCTestCase {
     override func setUp() {
         super.setUp()
         self.seasons = Seasons()
-        self.seasons.isSouthernHemisphere = true
+        self.seasons.isSouthernHemisphere = false
     }
     
     override func tearDown() {

@@ -10,7 +10,7 @@
 		7024F1051CC6F92A000D03B3 /* DUSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7024F1041CC6F92A000D03B3 /* DUSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7024F10C1CC6F92A000D03B3 /* DUSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7024F1021CC6F92A000D03B3 /* DUSFramework.framework */; };
 		7024F1181CC6F92A000D03B3 /* DUSFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7024F1021CC6F92A000D03B3 /* DUSFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7024F1241CC6FA3B000D03B3 /* SeasonsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F1221CC6FA3B000D03B3 /* SeasonsTest.swift */; };
+		7024F1241CC6FA3B000D03B3 /* SeasonsSouthernTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F1221CC6FA3B000D03B3 /* SeasonsSouthernTest.swift */; };
 		7024F1251CC6FC27000D03B3 /* Seasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0CD1CC6F22C000D03B3 /* Seasons.swift */; };
 		7024F1261CC6FC29000D03B3 /* Seasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0CD1CC6F22C000D03B3 /* Seasons.swift */; };
 		7024F1271CC6FC2D000D03B3 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024F0CC1CC6F22C000D03B3 /* Season.swift */; };
@@ -173,7 +173,7 @@
 		7024F1061CC6F92A000D03B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7024F10B1CC6F92A000D03B3 /* DUSFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DUSFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7024F1141CC6F92A000D03B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7024F1221CC6FA3B000D03B3 /* SeasonsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonsTest.swift; sourceTree = "<group>"; };
+		7024F1221CC6FA3B000D03B3 /* SeasonsSouthernTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonsSouthernTest.swift; sourceTree = "<group>"; };
 		7047DF101AD34A34007C441D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7047DF121AD34A3B007C441D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7047DF141AD34A43007C441D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -310,7 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				7024F1141CC6F92A000D03B3 /* Info.plist */,
-				7024F1221CC6FA3B000D03B3 /* SeasonsTest.swift */,
+				7024F1221CC6FA3B000D03B3 /* SeasonsSouthernTest.swift */,
 			);
 			name = DUSFrameworkTests;
 			path = ../DUSFrameworkTests;
@@ -808,7 +808,7 @@
 				7024F1291CC6FC33000D03B3 /* NSDateExtension.swift in Sources */,
 				7024F1261CC6FC29000D03B3 /* Seasons.swift in Sources */,
 				7024F1271CC6FC2D000D03B3 /* Season.swift in Sources */,
-				7024F1241CC6FA3B000D03B3 /* SeasonsTest.swift in Sources */,
+				7024F1241CC6FA3B000D03B3 /* SeasonsSouthernTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1340,6 +1340,7 @@
 				704D83AC1CC90A8800449920 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		704D83AD1CC90A8800449920 /* Build configuration list for PBXNativeTarget "Days Until Seasons WatchKit 1 Extension" */ = {
 			isa = XCConfigurationList;
@@ -1348,6 +1349,7 @@
 				704D83AF1CC90A8800449920 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		705280BF1ACB718D0099A80D /* Build configuration list for PBXProject "Days Until Seasons" */ = {
 			isa = XCConfigurationList;
